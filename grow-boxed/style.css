@@ -1,0 +1,555 @@
+/*
+Theme Name: Grow Boxed
+Theme URI: https://www.thinkupthemes.com/free/grow/
+Author: Think Up Themes
+Author URI: https://www.thinkupthemes.com
+Description: Grow Boxed is the free version of the multi-purpose professional theme (Grow Pro) ideal for a business or blog website. The theme has a responsive layout, HD retina ready and comes with a powerful theme options panel with can be used to make awesome changes without touching any code. The theme also comes with a full width easy to use slider. Easily add a logo to your site and create a beautiful homepage using the built-in homepage layout. Compatible with WooCommerce, WPML, Polylang, Flat Parallax Slider, Photo Gallery and Travel Map, Elementor, Page Builder, Beaver Builder, Visual Composer, SiteOrigin, Divi, etc. It's a perfect theme for small businesses (restaurants, wedding planners, sport/medical shops), startups, corporate businesses, online agencies and firms, portfolios, ecommerce (WooCommerce), and freelancers.
+Template: grow
+Version: 1.0.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-header, custom-menu, full-width-template, theme-options, threaded-comments, editor-style, featured-images, featured-image-header, post-formats, sticky-post, translation-ready, flexible-header, custom-background, grid-layout, footer-widgets, blog, e-commerce, portfolio, rtl-language-support
+Text Domain: grow-boxed
+*/
+
+/* General */
+.themebutton,
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	color: #FFF;
+	background: #DDAF4D;
+}
+a.themebutton {
+	color: #FFF;
+	background: #DDAF4D;
+}
+.themebutton:hover,
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	color: #AAA;
+	background: #EEE;
+}
+
+/* Pre Header */
+#pre-header {
+	background: #eee;
+	border-top: none;
+	border-bottom: 1px solid #f7f7f7;
+}
+#pre-header .header-links li a,
+#pre-header-social li,
+#pre-header-social li a {
+	color: #232323;
+}
+#pre-header .header-links .menu-hover > a,
+#pre-header .header-links > ul > li > a:hover {
+	color: #232323;
+	background: #eee;
+}
+#pre-header .header-links li a {
+	background: #f7f7f7;
+}
+#pre-header .header-links > ul > li > a {
+	border-left: 1px solid #eee;
+}
+#pre-header .header-links > ul > li:last-child > a {
+	border-right: 1px solid #eee;
+}
+#pre-header .header-links .sub-menu {
+	border-top: none;
+}
+#pre-header .header-links .sub-menu a:hover {
+	color: #232323;
+	background: #eee;
+}
+
+#pre-header-social li a {
+	background: #f7f7f7;
+	border-left: 1px solid #eee;
+}
+#pre-header-social li:last-child > a {
+	border-right: 1px solid #eee;
+}
+#pre-header-search .search {
+	color: #231212;
+	background: #f7f7f7;
+}
+
+.pre-header-style2 #pre-header {
+	background: #f7f7f7;
+	border-top: none;
+	border-bottom: 1px solid #eee;
+}
+.pre-header-style2 #pre-header .header-links li a,
+.pre-header-style2 #pre-header-social li,
+.pre-header-style2 #pre-header-social li a {
+	color: #232323;
+}
+.pre-header-style2 #pre-header .header-links .menu-hover > a,
+.pre-header-style2 #pre-header .header-links > ul > li > a:hover {
+	color: #232323;
+	background: #f7f7f7;
+}
+.pre-header-style2 #pre-header .header-links li a {
+	background: #eee;
+}
+.pre-header-style2 #pre-header .header-links > ul > li > a {
+	border-left: 1px solid #f7f7f7;
+}
+.pre-header-style2 #pre-header .header-links > ul > li:last-child > a {
+	border-right: 1px solid #f7f7f7;
+}
+.pre-header-style2 #pre-header .header-links .sub-menu {
+	border: none;
+}
+#pre-header .header-links .sub-menu a:hover {
+	color: #232323;
+	background: #f7f7f7;
+}
+
+.pre-header-style2 #pre-header-social li a {
+	background: #eee;
+	border-left: 1px solid #f7f7f7;
+}
+.pre-header-style2 #pre-header-social li:last-child > a {
+	border-right: 1px solid #eee;
+}
+.pre-header-style2 #pre-header-search .search {
+	color: #231212;
+	background: #eee;
+}
+
+
+/* Main Header */
+.header-style2 #header .header-links li a,
+.header-style2 #header-sticky .header-links li a {
+	color: #232323;
+}
+.header-style2 #header #header-links,
+.header-style2 #header-sticky #header-sticky-links {
+	background: #fff;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.header-style2.intro-on #header #header-links,
+.header-style2.slider-full #header #header-links {
+	border-bottom: none;
+}
+.header-style2 #header .menu > li.menu-hover > a,
+.header-style2 #header .menu > li.current-menu-item > a,
+.header-style2 #header .menu > li.current-menu-ancestor > a,
+.header-style2 #header .menu > li > a:hover,
+.header-style2 #header-sticky .menu > li.menu-hover > a,
+.header-style2 #header-sticky .menu > li.current-menu-item > a,
+.header-style2 #header-sticky .menu > li.current-menu-ancestor > a,
+.header-style2 #header-sticky .menu > li > a:hover {
+	color: #fff;
+	background: #DDAF4D;
+}
+.header-style2 #header .header-links > ul > li > a,
+.header-style2 #header-sticky .header-links > ul > li > a {
+	border-left: none;
+}
+.header-style2 #header .header-links > ul > li:last-child > a,
+.header-style2 #header-sticky .header-links > ul > li:last-child > a {
+	border-right: none;
+}
+
+.header-style2 #header .header-links .sub-menu,
+.header-style2 #header-sticky .header-links .sub-menu {
+	background: #f7f7f7;
+	border-top: 3px solid #DDAF4D;
+	border-bottom: none;
+}
+.header-style2 #header .sub-menu li,
+.header-style2 #header-sticky .sub-menu li {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.header-style2 #header .header-links .sub-menu,
+.header-style2 #header-sticky .header-links .sub-menu {
+}
+.header-style2 #header .main-navigation .sub-menu .sub-menu,
+.header-style2 #header-sticky .main-navigation .sub-menu .sub-menu {
+    top: -3px;
+}
+
+.header-style2 #header #header-search {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+.header-style2 #header #header-search .search {
+	color: #7a7a7a;
+}
+
+/* Call To Action */
+#introaction,
+#outroaction {
+	color: #fff;
+	background: #ddaf4d;
+	padding: 67px 10px 70px;
+}
+.action-text h3 {
+	color: #fff;
+}
+.action-text h3:after {
+	border-bottom: 3px solid #fff;
+}
+.action-link a {
+	color: #ddaf4d;
+	font-size: 13px;
+	background: #fff;
+	padding: 6px 18px;
+}
+.action-link a:hover {
+	color: #AAA;
+	background: #EEE;
+}
+
+/* Featured Content */
+#section-home {
+	background: #f7f7f7;
+}
+#section-home-inner {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	margin-top: 0;
+}
+.services-builder.style1 {
+	background: #fff;
+	padding: 40px 30px 12px;
+}
+.services-builder.style1 .iconmain h3 {
+	font-size: 17px;
+	font-weight: 600;
+	margin-bottom: 21px;
+}
+.services-builder.style1 .iconmain h3:after {
+	display: none;
+}
+.services-builder.style1 .iconmain .iconurl {
+	margin: 0;
+	padding-top: 2px;
+	padding-bottom: 28px;
+}
+.services-builder.style1 .iconmain .iconurl a {
+	display: inline-block;
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+	background: #ddaf4d;
+	padding: 4px 18px;
+}
+.services-builder.style1 .iconmain .iconurl a:hover {
+	color: #AAA;
+	background: #EEE;
+}
+
+/* Page Intro */
+#intro {
+	background: #f7f7f7;
+	padding: 30px 10px;
+}
+#intro #intro-core {
+	width: auto;
+	background: #fff;
+	padding: 10px 54px;
+}
+#intro .page-title,
+#intro #breadcrumbs {
+	color: #232323;
+}
+#intro.option2 .page-title,
+#intro.option2 #breadcrumbs {
+	text-align: center !important;	
+}
+#intro.option2 .page-title,
+#intro.option2 #breadcrumbs {
+	width: 100%;
+	display: block;
+}
+
+#intro #breadcrumbs-core {
+	position: relative;
+	margin-top: 14px;
+	padding-bottom: 4px;
+}
+#intro #breadcrumbs-core:before {
+	content: '';
+	position: absolute;
+	margin: auto;
+	top: -11px;
+	bottom: auto;
+	left: 0;
+	right: 0;
+	height: 0;
+	width: 30px;
+	border-bottom: 3px solid #ddaf4d;
+}
+
+/* Blog Archive */
+.blog-style1-layout2 .blog-article {
+	overflow: hidden;
+	background: #f7f7f7;
+	border-bottom: 3px solid #eee;
+	margin-bottom: 40px;
+}
+.blog-style1-layout2 .blog-article.format-nomedia,
+.blog-style1-layout2.search-results .blog-article {
+	padding-top: 18px;
+}
+.blog-style1-layout2 .blog-article .blog-title {
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: none;
+}
+.blog-style1-layout2 .blog-article .entry-content {
+	padding: 0 20px 10px;
+}
+.blog-style1-layout2 .blog-article .entry-meta {
+	border-bottom: 1px solid #e7e7e7;
+	margin-bottom: 16px;
+	padding-bottom: 10px;
+	-webkit-box-shadow: -30px -1px 0 0 #f7f7f7, 30px -1px 0 0 #f7f7f7, -30px 0 0 0 #e7e7e7, 30px 0 0 0 #e7e7e7;
+	-moz-box-shadow: -30px -1px 0 0 #f7f7f7, 30px -1px 0 0 #f7f7f7, -30px 0 0 0 #e7e7e7, 30px 0 0 0 #e7e7e7;
+	-ms-box-shadow: -30px -1px 0 0 #f7f7f7, 30px -1px 0 0 #f7f7f7, -30px 0 0 0 #e7e7e7, 30px 0 0 0 #e7e7e7;
+	-o-box-shadow: -30px -1px 0 0 #f7f7f7, 30px -1px 0 0 #f7f7f7, -30px 0 0 0 #e7e7e7, 30px 0 0 0 #e7e7e7;
+	box-shadow: -30px -1px 0 0 #f7f7f7, 30px -1px 0 0 #f7f7f7, -30px 0 0 0 #e7e7e7, 30px 0 0 0 #e7e7e7;
+}
+.blog-style1-layout2 .blog-article .entry-meta:after {
+	display: none;
+}
+
+/* Blog Archive - Pagination */
+.navigation.pagination .nav-links a,
+.navigation.pagination .nav-links span {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+}
+
+/* Blog Posts */
+.single article.post {
+	overflow: hidden;
+	background: #f7f7f7;
+	border-bottom: 3px solid #eee;
+}
+.single .post-thumb {
+	margin-bottom: 0;
+}
+.single .entry-header {
+	padding: 20px 20px 0;
+}
+.single .entry-content {
+	padding: 0 20px 10px;
+}
+.single .post-title {
+	font-size: 19px;
+	font-weight: 600;
+	text-transform: none;
+	margin-bottom: 5px;
+}
+.single .entry-meta {
+	border-bottom: 1px solid #e7e7e7;
+	margin-bottom: 16px;
+	padding-bottom: 10px;
+	-webkit-box-shadow: -30px -1px 0 0 #f7f7f7, 30px -1px 0 0 #f7f7f7, -30px 0 0 0 #e7e7e7, 30px 0 0 0 #e7e7e7;
+	-moz-box-shadow: -30px -1px 0 0 #f7f7f7, 30px -1px 0 0 #f7f7f7, -30px 0 0 0 #e7e7e7, 30px 0 0 0 #e7e7e7;
+	-ms-box-shadow: -30px -1px 0 0 #f7f7f7, 30px -1px 0 0 #f7f7f7, -30px 0 0 0 #e7e7e7, 30px 0 0 0 #e7e7e7;
+	-o-box-shadow: -30px -1px 0 0 #f7f7f7, 30px -1px 0 0 #f7f7f7, -30px 0 0 0 #e7e7e7, 30px 0 0 0 #e7e7e7;
+	box-shadow: -30px -1px 0 0 #f7f7f7, 30px -1px 0 0 #f7f7f7, -30px 0 0 0 #e7e7e7, 30px 0 0 0 #e7e7e7;
+}
+.single .entry-meta:after {
+	display: none;
+}
+
+#author-bio {
+	background: #f7f7f7;
+	border-bottom: 3px solid #eee;
+	padding-bottom: 0;
+}
+#author-content {
+	padding-top: 20px;
+	padding-right: 20px;
+}
+#author-title a {
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: none;
+}
+
+#author-title p:last-child {
+	border-bottom: 1px solid #eee;
+}
+#author-title p:after {
+	display: none;
+}
+
+/* Blog Posts - Pagination */
+
+/* Comments & Leave Comment Style */
+#comments-title h3 {
+	background: #f7f7f7;
+	border-bottom: 3px solid #eee;
+	margin-bottom: 0;
+	padding: 13px 20px;
+}
+#comments-title span {
+	position: relative;
+	top: -3px;
+}
+#comments .commentlist {
+	background: #f7f7f7;
+	border-bottom: 3px solid #eee;
+	padding: 20px 20px 0;
+}
+#comments .commentlist .comment .clearboth,
+#comments .commentlist .pingback .clearboth {
+	display: none;
+}
+#comments .comment-meta a {
+	color: #DDAF4D;;
+}
+#comments .comment-author a:hover,
+#comments .comment-meta a:hover {
+	color: inherit;
+}
+
+#respond {
+	background: #f7f7f7;
+	border-bottom: 3px solid #eee;
+}
+#respond #reply-title {
+	border-bottom: 1px solid #eee;
+	padding: 17px 20px;
+	margin: 0;
+}
+#respond form {
+	padding: 20px;
+}
+
+/* Footer */
+#footer {
+	background: #fff;
+	border-top: 4px solid #DDAF4D;
+}
+#footer-core h3 {
+	display: block;
+	color: #1e1e1e;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 7px;
+}
+#footer-core,
+#footer-core p {
+	color: #7a7a7a;
+}
+
+#footer-core input[type=text],
+#footer-core input[type=email],
+#footer-core input[type=password],
+#footer-core select,
+#footer-core textarea {
+	color: #7a7a7;
+	background: #f7f7f7;
+	border: 1px solid #f7f7f7;
+}
+#footer table,
+#footer th,
+#footer td {
+	border-color: #eee;
+}
+
+/* Sub Footer */
+#sub-footer {
+	text-align: center;
+	background: #e7e7e7;
+	padding: 20px 10px;
+}
+#sub-footer,
+#sub-footer a:hover {
+    color: #7a7a7a;
+}
+#post-footer-social li a {
+    color: #7a7a7a;
+	background: #ddd;
+}
+#sub-footer-core .copyright,
+#post-footer-social,
+#sub-footer-core #footer-menu {
+	display: block;
+}
+#sub-footer-core #footer-menu {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+#post-footer-social ul {
+	float: none;
+	margin: 15px auto 0;	
+}
+#post-footer-social li a {
+	width: 35px;
+	height: 35px;
+	margin-left: 5px;
+}
+#post-footer-social li:first-child a {
+	margin-left: 0;
+}
+
+/* Sidebar */
+#sidebar .widget {
+	overflow: hidden;
+	background: #f7f7f7;
+	padding: 13px 20px;
+	margin-bottom: 30px;
+	border-bottom: 3px solid #eee;
+}
+#sidebar h3.widget-title {
+	display: block;
+	border-bottom: 1px solid #e7e7e7;
+	padding-bottom: 13px;
+	-webkit-box-shadow: -30px -1px 0 0 #f7f7f7, 30px -1px 0 0 #f7f7f7, -30px 0 0 0 #e7e7e7, 30px 0 0 0 #e7e7e7;
+	-moz-box-shadow: -30px -1px 0 0 #f7f7f7, 30px -1px 0 0 #f7f7f7, -30px 0 0 0 #e7e7e7, 30px 0 0 0 #e7e7e7;
+	-ms-box-shadow: -30px -1px 0 0 #f7f7f7, 30px -1px 0 0 #f7f7f7, -30px 0 0 0 #e7e7e7, 30px 0 0 0 #e7e7e7;
+	-o-box-shadow: -30px -1px 0 0 #f7f7f7, 30px -1px 0 0 #f7f7f7, -30px 0 0 0 #e7e7e7, 30px 0 0 0 #e7e7e7;
+	box-shadow: -30px -1px 0 0 #f7f7f7, 30px -1px 0 0 #f7f7f7, -30px 0 0 0 #e7e7e7, 30px 0 0 0 #e7e7e7;
+}
+
+/* Widgets - Calendar */
+#footer .widget_calendar #calendar_wrap {
+	border-color: #eee;
+}
+
+/* Widgets - Tags Cloud */
+.widget_tag_cloud a {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+}
+#sidebar .widget_tag_cloud a {
+	color: #7a7a7a;
+	background: #e7e7e7;
+}
+#sidebar .widget_tag_cloud a:hover {
+	color: #DDAF4D;
+	background: #fff;
+}
+
+#footer .widget_tag_cloud a {
+	color: #fff;
+	background: #DDAF4D;
+}
+#footer .widget_tag_cloud a:hover {
+	color: #7a7a7a;
+	background: #e7e7e7;
+}
