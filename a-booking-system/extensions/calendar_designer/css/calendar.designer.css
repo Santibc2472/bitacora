@@ -1,0 +1,21 @@
+#absd-wrapper .absd-content-box .absd-content .absd-right-column{
+    width: 100%;
+    margin-left: 0; 
+    margin-right: 0; 
+    border-left: 0;
+    border-right: 0;
+    overflow: hidden;
+}
+
+#absd-wrapper h3{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.pickr .pcr-button{
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    overflow: hidden;
+}

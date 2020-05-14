@@ -1,0 +1,18 @@
+.absd-right-header-container .absd-abookinsystem-live-updates{
+    position: relative;
+}
+
+.absd-right-header-container .absd-abookinsystem-live-updates img{
+    width: 60px;
+    float: right;
+}
+
+.absd-right-header-container .absd-abookinsystem-live-updates .HW_badge_cont{
+    position: absolute;
+    top: 4px;
+    right: -5px;
+}
+
+.absd-right-header-container .absd-abookinsystem-live-updates .HW_badge {
+    background: #ef4e59 !important;
+}

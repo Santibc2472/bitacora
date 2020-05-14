@@ -1,0 +1,62 @@
+.bookeucom-container{
+    min-height: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+div[data-type="bookeucom/bookeucom"].block-editor-block-list__block.is-selected>.block-editor-block-list__block-edit:before{
+    min-width: 840px;
+}
+
+.aplusbooking_shortcode_input{
+    display: none;
+}
+
+.aplusbooking_shortcode_change_container {
+    margin-bottom: 20px;
+}
+
+.aplusbooking_shortcode_change {
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #232831;
+    padding: 0px;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 3px;
+    float: left;
+    display: block;
+}
+
+.aplusbooking_shortcode_change:after {
+    content: '\25BC';
+    font-size: 15px;
+    background: #2d343e;
+    float: right;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+}
+
+.aplusbooking_shortcode_change:hover:after {
+  background: #009900;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+  display: block;
+}
+
+.wdh-bec-booking-calendar-header-nav-element-right i{
+    font-style: normal !important;
+}

@@ -1,0 +1,142 @@
+:root{
+    /*
+     * Font
+     */
+    --bookeucom-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+
+    /*
+     * Box
+     */
+    --bookeucom-box-background-color: #fff;
+    --bookeucom-box-border-color: #dddfe1;
+
+     /*
+      * Calendar Header
+      */
+    --bookeucom-header-title-color: #4d4d4d;
+    --bookeucom-header-day-color: #666666;
+    --bookeucom-header-nav-next-prev-background-color: #999;
+    --bookeucom-header-nav-next-prev-hover-background-color: #001000;
+
+    /*
+     * Calendar - Day -> Availability
+     */
+    --bookeucom-calendar-day-text-color: #fff;
+    --bookeucom-calendar-day-unavailable-color: #cacaca;
+    --bookeucom-calendar-day-incart-first-color: #2f2f2f;
+    --bookeucom-calendar-day-incart-second-color: #1d1d1d;
+    --bookeucom-calendar-day-booked-color: #c15557;
+    --bookeucom-calendar-day-available-color: #608f43;
+    --bookeucom-calendar-day-selected-available-color: #3e5d2c;
+    --bookeucom-calendar-day-availability-progressbar-available-color: #fff;
+    --bookeucom-calendar-day-availability-progressbar-booked-color: #ffff00;
+    
+    /*
+     * Calendar - Day
+     */
+    --bookeucom-calendar-day-header-background-color: #fff;
+    --bookeucom-calendar-day-header-info-background-color: #3e5d2c;
+    --bookeucom-calendar-day-header-info-details-text-color: #cccccc;
+    --bookeucom-calendar-day-header-info-details-background-color: #001000;
+
+    /*
+     * Calendar - Message
+     */
+    --bookeucom-body-message-background-color: #f2f2f2;
+    --bookeucom-body-message-text-color: #999999;
+    --bookeucom-body-message-error-text-color: #c15557;
+    --bookeucom-body-message-error-border-color: #f9e1e2;
+    --bookeucom-body-message-success-text-color: #090;
+
+
+     /*
+      * Right sidebar
+      */
+
+    /*
+     * Sidebar header
+     */
+    --bookeucom-reservation-sidebar-header-text-color: #fff;
+    --bookeucom-reservation-sidebar-header-background-color: #2f2f2f;
+
+    /*
+     * Sidebar rooms
+     */
+    --bookeucom-reservation-rooms-checkbox-background-color: #fff;
+    --bookeucom-reservation-rooms-checkbox-border-color: #23282d;
+    --bookeucom-reservation-rooms-checkbox-checked-background-color: #009900;
+    --bookeucom-reservation-rooms-checkbox-checked-border-color: #009900;
+    --bookeucom-reservation-rooms-tooltip-text-color: #999999;
+    --bookeucom-reservation-rooms-tooltip-link-color: #ffffff;
+    --bookeucom-reservation-rooms-tooltip-link-background-color: #009900;
+    --bookeucom-reservation-rooms-tooltip-link-hover-background-color: #00cc00;
+    --bookeucom-reservation-rooms-tooltip-background-color: #131311;
+    --bookeucom-reservation-rooms-error-text-color: #c00;
+
+    /*
+     * Sidebar reservations
+     */
+    --bookeucom-reservation-details-box-border-bottom-color: #eaeaea;
+    --bookeucom-remove-reservation-button-icon-color: #4b4f57;
+    --bookeucom-remove-reservation-button-background-color: #f6f7f8;
+    --bookeucom-remove-reservation-button-hover-icon-color: #fff;
+    --bookeucom-remove-reservation-button-hover-background-color: #990000;
+
+    /*
+     * Sidebar fields
+     */
+    --bookeucom-text-color: #2f2f2f;
+    --bookeucom-form-fields-background-color: #fff;
+    --bookeucom-form-fields-border-color: #dddfe1;
+    --bookeucom-form-fields-checkbox-border-color: rgba(0,0,0,.075);
+    --bookeucom-form-fields-checkbox-checked-border-color: #484848;
+    --bookeucom-form-fields-terms-and-conditions-text-color: #2f2f2f;
+    --bookeucom-form-fields-terms-and-conditions-link-color: #608f43;
+
+    /*
+     * Select options
+     */
+    --bookeucom-select-dropdown-icon-color: #bdc0c2;
+    --bookeucom-select-options-text-color: #adacac;
+    --bookeucom-select-options-background-color: #f5f5f5;
+    --bookeucom-select-options-hover-background-color: #fff;
+    --bookeucom-select-options-border-color: #e6e7e8;
+
+     /*
+      * Buttons
+      */
+    --bookeucom-button-text-color: #fff;
+    --bookeucom-green-button-background-color: #608f43;
+    --bookeucom-green-button-hover-background-color: #3e5c2d;
+    --bookeucom-red-button-background-color: #c15557;
+    --bookeucom-red-button-hover-background-color: #9a2022;
+
+    /*
+     * VAT Box
+     */
+   --bookeucom-vat-text-color: #959596;
+   --bookeucom-vat-second-color: #414446;
+   --bookeucom-vat-background-color: #ebecec;
+
+    /*
+     * Reservation book.eu.com protection
+     */
+    --bookeucom-reservation-protection-title-color: #fff;
+    --bookeucom-reservation-protection-text-color: #f8f8f8;
+    --bookeucom-reservation-protection-border-top-color: #5d5a5a;
+    --bookeucom-reservation-protection-background-color: rgba(43, 43, 43, 0.97);
+    --bookeucom-reservation-protection-read-more-text-color: #f46a75;
+    --bookeucom-reservation-estimated-price-text-color: #b3e785;
+
+    /*
+     * Reservation error Box
+     */
+    --bookeucom-reservation-error-box-text-color: #fff;
+    --bookeucom-reservation-error-box-background-color: #c15557;
+
+    /*
+     * Steps loader
+     */
+    --bookeucom-steps-loader-background-color: #fff;
+    --bookeucom-steps-loader-color: rgb(0, 153, 0);
+}
