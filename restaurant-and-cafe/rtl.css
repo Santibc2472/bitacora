@@ -1,0 +1,262 @@
+/*
+Theme Name: Restaurant And Cafe
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+.main-navigation ul ul,
+.main-navigation ul ul ul {
+    display: none;
+}
+
+.main-navigation ul li:hover > ul {
+    left: 0;
+    right: auto;
+}
+
+.main-navigation ul ul li:hover > ul {
+    left: 100%;
+    right: auto;
+}
+
+.main-navigation ul ul::before {
+    left: auto;
+    right: 10px;
+}
+
+.main-navigation ul li:hover > ul {
+    left: auto;
+    right: 0;
+    display: block;
+}
+
+.site-header .site-branding,
+.main-navigation ul li {
+    float: right;
+}
+
+.main-navigation {
+    float: left;
+}
+
+.main-navigation ul li {
+    margin-left: 0;
+    margin-right: 44px;
+}
+
+.main-navigation ul li:first-child {
+    margin-right: 0;
+}
+
+.btn-green::after {
+    display: inline-block;
+    transform: rotateY(180deg);
+    margin-left: 0;
+    margin-right: 13px;
+}
+
+.section-1 .col {
+    float: right;
+}
+
+.section-2 .col,
+.section-3 .text-holder {
+    float: right;
+}
+
+.section-2 .main-title::after {
+    left: auto;
+    right: 0;
+}
+
+.section-3 .text-holder .services .icon-holder {
+    float: right;
+}
+
+.section-3 .img-holder {
+    float: left;
+}
+
+.section-3 .text-holder .services .icon-holder {
+    margin-right: 0;
+    margin-left: 12px;
+}
+
+.section-3 .text-holder .main-title::after {
+    left: auto;
+    right: 0;
+}
+
+.section-5 .tab-content .col {
+    float: right;
+}
+
+.section-5 .tab-content .img-holder {
+    float: right;
+    margin-right: 0;
+    margin-left: 21px;
+}
+
+.section-5 .tab-content .text-holder h3 {
+    float: right;
+}
+
+.section-5 .tab-content .text-holder .price {
+    float: left;
+}
+
+.wpcf7 {
+    direction: rtl;
+}
+
+.blog-section .post .post-thumbnail {
+    float: right;
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+.blog-section .post .text-holder .entry-footer .readmore {
+    display: inline-block;
+    margin-right: 0;
+    margin-left: 38px;
+}
+
+.blog-section .post .text-holder .entry-footer .comments-link a {
+    display: inline-block;
+    background-position: 100% 3px;
+    padding-left: 0;
+    padding-right: 22px;
+    margin-right: 0;
+    margin-left: 38px;
+}
+
+.blog-section .post .text-holder .entry-header .entry-meta span {
+    display: inline-block;
+}
+
+.blog-section .post:nth-child(2n) .post-thumbnail {
+    float: left;
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+.site-footer .footer-t .col-3 {
+    float: right;
+}
+
+.widget.widget_restaurant_and_cafe_social_links .social-networks li {
+    float: right;
+    margin-left: 14px;
+    margin-right: 0;
+}
+
+#crumbs a {
+    display: inline-block;
+}
+
+.widget_search .search-form label,
+.widget_search .search-form input[type="search"],.search .search-form label,
+.search .search-form input[type="search"] {
+    float: right;
+}
+
+.widget_search .search-form input[type="submit"],
+.search .search-form input[type="submit"] {
+    float: left;
+}
+
+.widget .widget-title::after {
+    left: auto;
+    right: 0;
+}
+
+#primary .post .entry-meta .comments-link {
+    background-position: 100% 3px;
+    padding-left: 0;
+    padding-right: 22px;
+}
+
+#primary .post .entry-meta .posted-on::before,
+#primary .post .entry-meta .byline::before {
+    margin-right: 0;
+    margin-left: 8px;
+    display: inline-block;
+}
+
+#primary .post .entry-meta .byline {
+    margin-right: 0;
+    margin-left: 47px;
+}
+
+#primary .post .entry-meta .posted-on {
+    margin-right: 0;
+    margin-left: 40px;
+}
+
+#primary .post .entry-meta a {
+    display: inline-block;
+}
+
+.comments-area .comment-list .comment-body img {
+    float: right;
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+.comments-area .comment-list .comment-body .comment-author {
+    float: right;
+}
+
+.comments-area .comment-list .comment-body .comment-content,
+.comments-area .comment-list .comment-body .reply {
+    left: auto;
+    right: 100px;
+}
+
+.comments-area .comment-list .comment-body .comment-metadata{
+	float: left;
+}
+
+.comments-area .comment-list .children{
+	margin-left: 0;
+	margin-right: 100px;
+}
+
+@media only screen and (max-width: 1024px){
+    .site-header .site-branding .custom-logo-link{
+        margin-right: 0;
+        margin-left: 15px;
+    }
+
+    .main-navigation{
+        right: inherit;
+        left: 0;
+        -webkit-transform: translateX(-420px);
+        -moz-transform: translateX(-420px);
+        transform: translateX(-420px);
+    }
+
+    .main-navigation .btn-close-menu{
+        right: inherit;
+        left: 25px;
+    }
+
+    .main-navigation ul li{
+        margin: 0;
+    }
+
+    .main-navigation ul li .angle-down{
+        right: inherit;
+        left: 0;
+    }
+}
