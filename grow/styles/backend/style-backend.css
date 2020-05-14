@@ -1,0 +1,771 @@
+/* Add Styling to Admin Area */
+
+/*----------------------------------------------------
+	RECOMMENDED PLUGINS
+---------------------------------------------------- */
+
+/* Ready Google Maps */
+#gmpWelcomePageFindUsForm .about-message,
+#gmpWelcomePageFindUsForm .plug-icon-shell,
+#gmpWelcomePageFindUsForm > h2,
+#gmpWelcomePageFindUsForm label,
+#gmpWelcomePageFindUsForm .col-3,
+.gmpAdminFooterShell {
+	display: none !important;
+}
+
+#gmpEditMapForm > div:nth-child(4), 
+#gmpEditMapForm > div:nth-child(5), 
+#gmpEditMapForm > div:nth-child(6),
+#gmpEditMapForm > div:nth-child(7),
+#gmpEditMapForm > div:nth-child(9),
+#gmpEditMapForm > div:nth-child(11),
+#gmpEditMapForm > div:nth-child(24) {
+    display: none !important;
+}
+
+/*----------------------------------------------------
+	HIDE WOOCOMMERCE TRACKER / PROMOTIONAL MESSAGE
+---------------------------------------------------- */
+
+/*.woocommerce-message.woocommerce-tracker {
+	display: none !important;
+}*/
+
+
+/*----------------------------------------------------
+	HIDE REDUX PROMOTIONAL MESSAGE
+---------------------------------------------------- */
+
+[id*="redux_blast_"].redux-notice {
+	display: none !important;
+}
+
+
+/*----------------------------------------------------
+	REDUX CUSTOM STYLING
+---------------------------------------------------- */
+
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section1_link,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section2_link,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section3_link,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section1_link,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section2_link,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section3_link {
+	border-bottom: 1px solid #E7E7E7 !important;
+}
+
+/* Override extention css to always show blog layout setting */
+#customize-controls #thinkup_redux_variables-thinkup_blog_style1layout.thinkup-hide {
+    display: block !important;
+}
+
+
+/*---------------------------------------------------- 
+	META BOXES
+---------------------------------------------------- */
+
+/* Font styles for CMB meta boxes */
+table.cmb_metabox td label {
+  font-size: 13px !important;
+  vertical-align: middle !important;
+}
+
+/* Custom styling for side metabox - Featured Media */
+._thinkup_meta_featuredmedia th,
+._thinkup_meta_featuredmediatype th,
+._thinkup_meta_featuredmediamain th {
+	width: 100% !important;
+	text-align: left !important;
+	border-bottom: none !important;
+	padding-bottom: 10px !important;
+}
+._thinkup_meta_featuredmedia input[type=text],
+._thinkup_meta_featuredmediatype select,
+._thinkup_meta_featuredmediamain select {
+	width: 90% !important;
+	margin-bottom: 10px !important;
+}
+._thinkup_meta_featuredmedia p,
+._thinkup_meta_featuredmediatype p,
+._thinkup_meta_featuredmediamain p {
+	font-size: 13px !important;
+}
+
+/* Custom styling for side metabox - Featured Media (Post Page) */
+#thinkup_metaboxfeaturedmedia_post th {
+	display: none !important;
+}
+#thinkup_metaboxfeaturedmedia_post p {
+	font-size: 13px !important;
+}
+
+/* Hide image sizes from in-page ThinkUpSlider & Featured gallery */
+#_thinkup_meta_sliderimages .imgpreview .sizes,
+#_thinkup_meta_sliderimages .imgpreview .preview,
+#_thinkup_meta_featuredgallery .imgpreview .sizes,
+#_thinkup_meta_featuredgallery .imgpreview .preview {
+	display: none;
+}
+
+/* Template Selection - Portfolio */
+#_thinkup_meta_pagetemplates  .field_template th {
+	width: 100% !important;
+	display: block !important;
+	padding-bottom: 0 !important;
+}
+#_thinkup_meta_pagetemplates  .field_template td {
+	display: block !important;
+}
+#_thinkup_meta_pagetemplates  .field_template select {
+	width: 100% !important;
+}
+
+
+
+
+
+/*---------------------------------------------------- 
+	HIDE META OPTION FROM SHORTCODE CATEGORIES LIST
+---------------------------------------------------- */
+#thinkupshortcodes-categories option[value="metaoptions"] {
+	display: none;
+}
+
+
+/*---------------------------------------------------- 
+	HIDE IN-DEVELOPMENT FEATURES
+---------------------------------------------------- */
+
+._thinkup_meta_colorscheme {
+	display: none;
+}
+
+
+/*---------------------------------------------------- 
+	FIX REDUX IMAGE ISSUE - MEDIA UPLOADER
+---------------------------------------------------- */
+
+.redux-slides-image {
+	max-height: 340px;
+	max-width: 340px;
+	padding: 5px;
+	margin-top: 10px;
+	border: 1px solid #E3E3E3;
+	background: #F7F7F7;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+
+/*---------------------------------------------------- 
+	HIDE UPDATE NOTICE ON UPDATE-CORE PAGE
+---------------------------------------------------- */
+
+.update-php #thinkup-theme-update,
+.update-core-php #thinkup-theme-update {
+	display: none;
+}
+
+
+/*---------------------------------------------------- 
+	FIX STYLING ISSUES WHEN USING DEMO INSTALLER
+---------------------------------------------------- */
+
+body {
+	background: none;
+	font-family: "Open Sans",sans-serif;
+	font-size: 13px;
+}
+
+/* Hide Map Errors */
+.appearance_page_easint .xdebug-error.xe-warning {
+    display: none !important;
+}
+
+
+/*---------------------------------------------------- 
+	PAGE BUILDER - CALDERA PAGE BUILDER MODULES STYLING
+---------------------------------------------------- */
+
+/* General - Remove button for grouped shortcodes aligned left */
+[class*="thinkup-content-thinkup_builder_"] [class*="-removeRow"] {
+    float: left !important;
+    margin: 0 0 25px !important;
+}
+
+.panel-dialog .imgpreview .noselection {
+	margin-top: 45px !important;
+}
+.panel-dialog .imgpreview .sizes {
+	width: 60px;
+	font-size: 12px;
+}
+.imgpreview .sizes[class*="column"],
+.imgpreview .sizes[class*="sc"],
+.imgpreview .sizes[class*="shop"],
+.imgpreview .sizes[class*="_"] {
+	display: none;
+}
+
+/* Button Module */
+.thinkup_builder_button {
+	display: none !important;
+}
+.widget-dialog-thinkup_builder_buttontheme,
+.thinkup-content-thinkup_builder_buttontheme {
+	overflow: auto;
+}
+.widget-dialog-thinkup_builder_buttontheme [class*="-groupbox"],
+.thinkup-content-thinkup_builder_buttontheme [class*="-groupbox"] {
+	width: 100%;
+	height: 100%
+}
+.widget-dialog-thinkup_builder_buttontheme [class*="-widget-config-content"] {
+	width: 720px;
+}
+.thinkup-content-thinkup_builder_buttontheme [class*="-widget-config-content"] {
+	width: 100%;
+}
+.widget-dialog-thinkup_builder_buttontheme #groupitems,
+.thinkup-content-thinkup_builder_buttontheme #groupitems {
+	margin-bottom: 30px;
+}
+.widget-dialog-thinkup_builder_buttontheme [class*="-field-row"],
+.thinkup-content-thinkup_builder_buttontheme [class*="-field-row"] {
+	display: table;
+	width: 100%;	
+}
+.widget-dialog-thinkup_builder_buttontheme [class*="-field-row"] label,
+.widget-dialog-thinkup_builder_buttontheme [class*="-field-row"] input,
+.widget-dialog-thinkup_builder_buttontheme [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_buttontheme [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_buttontheme [class*="-field-row"] input,
+.thinkup-content-thinkup_builder_buttontheme [class*="-field-row"] select {
+	width: 200px;
+	font-size: 13px;
+	display: table-cell;
+}
+
+/* Button Module */
+.widget-dialog-thinkup_builder_counternumber,
+.thinkup-content-thinkup_builder_counternumber {
+	overflow: auto;
+}
+.widget-dialog-thinkup_builder_counternumber [class*="-groupbox"],
+.thinkup-content-thinkup_builder_counternumber [class*="-groupbox"] {
+	width: 100%;
+	height: 100%
+}
+.widget-dialog-thinkup_builder_counternumber [class*="-widget-config-content"] {
+	width: 720px;
+}
+.thinkup-content-thinkup_builder_counternumber [class*="-widget-config-content"] {
+	width: 100%;
+}
+.widget-dialog-thinkup_builder_counternumber #groupitems,
+.thinkup-content-thinkup_builder_counternumber #groupitems {
+	margin-bottom: 30px;
+}
+.widget-dialog-thinkup_builder_counternumber [class*="-field-row"],
+.thinkup-content-thinkup_builder_counternumber [class*="-field-row"] {
+	display: table;
+	width: 100%;	
+}
+.widget-dialog-thinkup_builder_counternumber [class*="-field-row"] label,
+.widget-dialog-thinkup_builder_counternumber [class*="-field-row"] input,
+.widget-dialog-thinkup_builder_counternumber [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_counternumber [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_counternumber [class*="-field-row"] input,
+.thinkup-content-thinkup_builder_counternumber [class*="-field-row"] select {
+	width: 200px;
+	font-size: 13px;
+	display: table-cell;
+}
+
+/* Grid Module - Image */
+.widget-dialog-thinkup_builder_gridimage,
+.thinkup-content-thinkup_builder_gridimage {
+	overflow: hidden;
+	padding-bottom: 50px;
+}
+.widget-dialog-thinkup_builder_gridimage h3,
+.thinkup-content-thinkup_builder_gridimage h3 {
+	display: none;
+}
+.widget-dialog-thinkup_builder_gridimage [class*="-groupbox"],
+.thinkup-content-thinkup_builder_gridimage [class*="-groupbox"] {
+	margin-bottom: 50px !important;
+}
+.widget-dialog-thinkup_builder_gridimage [class*="-widget-config-content"],
+.thinkup-content-thinkup_builder_gridimage [class*="-widget-config-content"] {
+	width: 613px;
+	padding-right: 140px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.thinkup-content-thinkup_builder_gridimage [class*="-widget-config-content"] {
+	width: 100%;
+}
+.widget-dialog-thinkup_builder_gridimage [class*="-widget-config-content"] [class*="-groupbox"]:nth-child(2) [class*="-field-row"],
+.thinkup-content-thinkup_builder_gridimage [class*="-widget-config-content"] [class*="-groupbox"]:nth-child(2) [class*="-field-row"] {
+	display: table;
+	width: 100%;	
+}
+.widget-dialog-thinkup_builder_gridimage [class*="-widget-config-content"] [class*="-groupbox"]:nth-child(2) [class*="-field-row"] label,
+.widget-dialog-thinkup_builder_gridimage [class*="-widget-config-content"] [class*="-groupbox"]:nth-child(2) [class*="-field-row"] input,
+.widget-dialog-thinkup_builder_gridimage [class*="-widget-config-content"] [class*="-groupbox"]:nth-child(2) [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_gridimage [class*="-widget-config-content"] [class*="-groupbox"]:nth-child(2) [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_gridimage [class*="-widget-config-content"] [class*="-groupbox"]:nth-child(2) [class*="-field-row"] input,
+.thinkup-content-thinkup_builder_gridimage [class*="-widget-config-content"] [class*="-groupbox"]:nth-child(2) [class*="-field-row"] select {
+	width: 150px;
+	font-size: 13px;
+	display: table-cell;
+}
+
+/* Grid Module - Portfolio */
+.widget-dialog-thinkup_builder_gridportfolio [class*="-field-row"],
+.thinkup-content-thinkup_builder_gridportfolio [class*="-field-row"] {
+	display: table;
+	width: 100%;	
+}
+.widget-dialog-thinkup_builder_gridportfolio [class*="-field-row"] label,
+.widget-dialog-thinkup_builder_gridportfolio [class*="-field-row"] input,
+.widget-dialog-thinkup_builder_gridportfolio [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_gridportfolio [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_gridportfolio [class*="-field-row"] input,
+.thinkup-content-thinkup_builder_gridportfolio [class*="-field-row"] select {
+	width: 150px;
+	font-size: 13px;
+	display: table-cell;
+}
+
+/* Slideshow (Image) Module */
+.media-modal {
+	z-index: 300011;
+}
+.widget-dialog-thinkup_builder_sliderimage,
+.thinkup-content-thinkup_builder_sliderimage {
+	overflow: hidden;
+}
+.widget-dialog-thinkup_builder_sliderimage [class*="-groupbox"],
+.thinkup-content-thinkup_builder_sliderimage [class*="-groupbox"] {
+	margin-bottom: 50px;
+}
+.widget-dialog-thinkup_builder_sliderimage [class*="-widget-config-content"],
+.thinkup-content-thinkup_builder_sliderimage [class*="-widget-config-content"] {
+	width: 613px;
+	padding-right: 140px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.thinkup-content-thinkup_builder_sliderimage [class*="-widget-config-content"] {
+	width: 100%;
+}
+.widget-dialog-thinkup_builder_sliderimage .imgpreview .noselection,
+.thinkup-content-thinkup_builder_sliderimage .imgpreview .noselection {
+	margin-top: 45px !important;
+}
+.widget-dialog-thinkup_builder_sliderimage .imgpreview .sizes,
+.thinkup-content-thinkup_builder_sliderimage .imgpreview .sizes {
+	width: 80px;
+}
+.widget-dialog-thinkup_builder_sliderimage .imgpreview [class*="column"],
+.widget-dialog-thinkup_builder_sliderimage .imgpreview [class*="sc"],
+.thinkup-content-thinkup_builder_sliderimage .imgpreview [class*="column"],
+.thinkup-content-thinkup_builder_sliderimage .imgpreview [class*="sc"] {
+	display: none;
+}
+
+/* Slideshow (ThinkUpSlider) Module */
+.widget-dialog-thinkup_builder_thinkupslider,
+.thinkup-content-thinkup_builder_thinkupslider {
+	overflow: hidden;
+}
+.widget-dialog-thinkup_builder_thinkupslider [class*="-groupbox"],
+.thinkup-content-thinkup_builder_thinkupslider [class*="-groupbox"] {
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+}
+.widget-dialog-thinkup_builder_thinkupslider [class*="-groupbox"]  > h3,
+.thinkup-content-thinkup_builder_thinkupslider [class*="-groupbox"]  > h3 {
+	display: none;
+}
+.widget-dialog-thinkup_builder_thinkupslider [class*="-removeRow"],
+.thinkup-content-thinkup_builder_thinkupslider [class*="-removeRow"] {
+	margin-bottom: 20px;
+}
+.widget-dialog-thinkup_builder_thinkupslider [class*="-widget-config-content"],
+.thinkup-content-thinkup_builder_thinkupslider [class*="-widget-config-content"] {
+	width: 613px;
+	padding-right: 140px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.thinkup-content-thinkup_builder_thinkupslider [class*="-widget-config-content"] {
+	width: 100%;
+}
+.widget-dialog-thinkup_builder_thinkupslider .imgpreview .noselection,
+.thinkup-content-thinkup_builder_thinkupslider .imgpreview .noselection {
+	margin-top: 45px !important;
+}
+.widget-dialog-thinkup_builder_thinkupslider .imgpreview .sizes,
+.thinkup-content-thinkup_builder_thinkupslider .imgpreview .sizes {
+	width: 80px;
+}
+.widget-dialog-thinkup_builder_thinkupslider .imgpreview [class*="column"],
+.widget-dialog-thinkup_builder_thinkupslider .imgpreview [class*="sc"],
+.thinkup-content-thinkup_builder_thinkupslider .imgpreview [class*="column"],
+.thinkup-content-thinkup_builder_thinkupslider .imgpreview [class*="sc"] {
+	display: none;
+}
+.widget-dialog-thinkup_builder_thinkupslider [class*="-field-row"],
+.thinkup-content-thinkup_builder_thinkupslider [class*="-field-row"] {
+	display: table;
+	width: 100%;	
+}
+.widget-dialog-thinkup_builder_thinkupslider [class*="-field-row"] label,
+.widget-dialog-thinkup_builder_thinkupslider [class*="-field-row"] input,
+.widget-dialog-thinkup_builder_thinkupslider [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_thinkupslider [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_thinkupslider [class*="-field-row"] input,
+.thinkup-content-thinkup_builder_thinkupslider [class*="-field-row"] select {
+	font-size: 13px;
+	display: table-cell;
+}
+.widget-dialog-thinkup_builder_thinkupslider [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_thinkupslider [class*="-field-row"] label {
+	width: 150px;
+	vertical-align: top;
+}
+.widget-dialog-thinkup_builder_thinkupslider [class*="-field-row"] input,
+.widget-dialog-thinkup_builder_thinkupslider [class*="-field-row"] textarea,
+.widget-dialog-thinkup_builder_thinkupslider [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_thinkupslider [class*="-field-row"] input,
+.thinkup-content-thinkup_builder_thinkupslider [class*="-field-row"] textarea,
+.thinkup-content-thinkup_builder_thinkupslider [class*="-field-row"] select {
+	width: 290px;
+}
+
+/* Toggle / Accordion Module */
+.widget-dialog-thinkup_builder_toggle,
+.thinkup-content-thinkup_builder_toggle {
+	overflow: hidden;
+}
+.widget-dialog-thinkup_builder_toggle [class*="-groupbox"],
+.thinkup-content-thinkup_builder_toggle [class*="-groupbox"] {
+	margin-bottom: 50px !important;
+}
+.widget-dialog-thinkup_builder_toggle [class*="-widget-config-content"],
+.thinkup-content-thinkup_builder_toggle [class*="-widget-config-content"] {
+	width: 613px;
+	padding-right: 140px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.thinkup-content-thinkup_builder_toggle [class*="-widget-config-content"] {
+	width: 100%;
+}
+.widget-dialog-thinkup_builder_toggle [class*="-field-row"],
+.thinkup-content-thinkup_builder_toggle [class*="-field-row"] {
+	display: table;
+	width: 100%;	
+}
+.widget-dialog-thinkup_builder_toggle [class*="-field-row"] label,
+.widget-dialog-thinkup_builder_toggle [class*="-field-row"] input,
+.widget-dialog-thinkup_builder_toggle [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_toggle [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_toggle [class*="-field-row"] input,
+.thinkup-content-thinkup_builder_toggle [class*="-field-row"] select {
+	font-size: 13px;
+	display: table-cell;
+}
+.widget-dialog-thinkup_builder_toggle [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_toggle [class*="-field-row"] label {
+	width: 150px;
+	vertical-align: top;
+}
+.widget-dialog-thinkup_builder_toggle [class*="-field-row"] input,
+.widget-dialog-thinkup_builder_toggle [class*="-field-row"] textarea,
+.widget-dialog-thinkup_builder_toggle [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_toggle [class*="-field-row"] input,
+.thinkup-content-thinkup_builder_toggle [class*="-field-row"] textarea,
+.thinkup-content-thinkup_builder_toggle [class*="-field-row"] select {
+	width: 310px;
+}
+.widget-dialog-thinkup_builder_toggle [class*="-groupbox"] .button,
+.thinkup-content-thinkup_builder_toggle [class*="-groupbox"] .button {
+	margin: 20px 0 !important;
+}
+
+/* Blockquote Module */
+.widget-dialog-thinkup_builder_blockquote [class*="-field-row"],
+.thinkup-content-thinkup_builder_blockquote [class*="-field-row"] {
+	display: table;
+	width: 100%;	
+}
+.widget-dialog-thinkup_builder_blockquote [class*="-field-row"] label,
+.widget-dialog-thinkup_builder_blockquote [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_blockquote [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_blockquote [class*="-field-row"] select {
+	font-size: 13px;
+	display: table-cell;
+}
+.widget-dialog-thinkup_builder_blockquote [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_blockquote [class*="-field-row"] label {
+	width: 150px;
+	vertical-align: top;
+}
+.widget-dialog-thinkup_builder_blockquote [class*="-field-row"] textarea,
+.widget-dialog-thinkup_builder_blockquote [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_blockquote [class*="-field-row"] textarea,
+.thinkup-content-thinkup_builder_blockquote [class*="-field-row"] select {
+	width: 310px;
+}
+
+/* Call To Action Module */
+.widget-dialog-thinkup_builder_calltoaction [class*="-field-row"],
+.thinkup-content-thinkup_builder_calltoaction [class*="-field-row"] {
+	display: table;
+	width: 100%;	
+}
+.widget-dialog-thinkup_builder_calltoaction [class*="-field-row"] label,
+.widget-dialog-thinkup_builder_calltoaction [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_calltoaction [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_calltoaction [class*="-field-row"] select {
+	font-size: 13px;
+	display: table-cell;
+}
+.widget-dialog-thinkup_builder_calltoaction [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_calltoaction [class*="-field-row"] label {
+	width: 150px;
+	vertical-align: top;
+}
+.widget-dialog-thinkup_builder_calltoaction [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_calltoaction [class*="-field-row"] label {
+	width: 200px;
+}
+.widget-dialog-thinkup_builder_calltoaction [class*="-field-row"] input,
+.widget-dialog-thinkup_builder_calltoaction [class*="-field-row"] textarea,
+.widget-dialog-thinkup_builder_calltoaction [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_calltoaction [class*="-field-row"] input,
+.thinkup-content-thinkup_builder_calltoaction [class*="-field-row"] textarea,
+.thinkup-content-thinkup_builder_calltoaction [class*="-field-row"] select {
+	width: 310px;
+	font-size: 13px;
+	display: table-cell;
+}
+
+/* Feature Module */
+.thinkup_builder_featured {
+	display: none !important;
+}
+.widget-dialog-thinkup_builder_featuredtheme [class*="-field-row"],
+.thinkup-content-thinkup_builder_featuredtheme [class*="-field-row"] {
+	display: table;
+	width: 100%;	
+}
+.widget-dialog-thinkup_builder_featuredtheme [class*="-field-row"] label,
+.widget-dialog-thinkup_builder_featuredtheme [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_featuredtheme [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_featuredtheme [class*="-field-row"] select {
+	font-size: 13px;
+	display: table-cell;
+}
+.widget-dialog-thinkup_builder_featuredtheme [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_featuredtheme [class*="-field-row"] label {
+	width: 150px;
+	vertical-align: top;
+}
+.widget-dialog-thinkup_builder_featuredtheme [class*="-field-row"] input,
+.widget-dialog-thinkup_builder_featuredtheme [class*="-field-row"] textarea,
+.widget-dialog-thinkup_builder_featuredtheme [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_featuredtheme [class*="-field-row"] input,
+.thinkup-content-thinkup_builder_featuredtheme [class*="-field-row"] textarea,
+.thinkup-content-thinkup_builder_featuredtheme [class*="-field-row"] select {
+	width: 310px;
+}
+.widget-dialog-thinkup_builder_featuredtheme.panel-dialog .imgpreview [class*="column"],
+.thinkup-content-thinkup_builder_featuredtheme.panel-dialog .imgpreview [class*="column"] {
+	display: block;
+}
+.widget-dialog-thinkup_builder_featuredtheme.panel-dialog .imgpreview .sizes,
+.thinkup-content-thinkup_builder_featuredtheme.panel-dialog .imgpreview .sizes {
+	width: auto;
+}
+
+/* List (Font Awesome) */
+.widget-dialog-thinkup_builder_listfontawesome,
+.thinkup-content-thinkup_builder_listfontawesome {
+	overflow: hidden;
+}
+.widget-dialog-thinkup_builder_listfontawesome [class*="-groupbox"],
+.thinkup-content-thinkup_builder_listfontawesome [class*="-groupbox"] {
+	margin-bottom: 50px !important;
+}
+.widget-dialog-thinkup_builder_listfontawesome [class*="-widget-config-content"],
+.thinkup-content-thinkup_builder_listfontawesome [class*="-widget-config-content"] {
+	width: 613px;
+	padding-right: 140px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.thinkup-content-thinkup_builder_listfontawesome [class*="-widget-config-content"] {
+	width: 100%;
+}
+.widget-dialog-thinkup_builder_listfontawesome [class*="-field-row"],
+.thinkup-content-thinkup_builder_listfontawesome [class*="-field-row"] {
+	display: table;
+	width: 100%;	
+}
+.widget-dialog-thinkup_builder_listfontawesome [class*="-field-row"] label,
+.widget-dialog-thinkup_builder_listfontawesome [class*="-field-row"] input,
+.widget-dialog-thinkup_builder_listfontawesome [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_listfontawesome [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_listfontawesome [class*="-field-row"] input,
+.thinkup-content-thinkup_builder_listfontawesome [class*="-field-row"] select {
+	font-size: 13px;
+	display: table-cell;
+}
+.widget-dialog-thinkup_builder_listfontawesome [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_listfontawesome [class*="-field-row"] label {
+	width: 150px;
+	vertical-align: top;
+}
+.widget-dialog-thinkup_builder_listfontawesome [class*="-field-row"] input,
+.widget-dialog-thinkup_builder_listfontawesome [class*="-field-row"] textarea,
+.widget-dialog-thinkup_builder_listfontawesome [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_listfontawesome [class*="-field-row"] input,
+.thinkup-content-thinkup_builder_listfontawesome [class*="-field-row"] textarea,
+.thinkup-content-thinkup_builder_listfontawesome [class*="-field-row"] select {
+	width: 310px;
+}
+.widget-dialog-thinkup_builder_listfontawesome [class*="-groupbox"] .button,
+.thinkup-content-thinkup_builder_listfontawesome [class*="-groupbox"] .button {
+	margin: 20px 0 !important;
+}
+
+/* Pricing Table Module */
+.widget-dialog-thinkup_builder_pricingtable,
+.thinkup-content-thinkup_builder_pricingtable {
+	overflow: hidden;
+}
+.widget-dialog-thinkup_builder_pricingtable [class*="-groupbox"],
+.thinkup-content-thinkup_builder_pricingtable [class*="-groupbox"] {
+	margin-bottom: 50px !important;
+}
+.widget-dialog-thinkup_builder_pricingtable [class*="-widget-config-content"],
+.thinkup-content-thinkup_builder_pricingtable [class*="-widget-config-content"] {
+	width: 613px;
+	padding-right: 140px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.thinkup-content-thinkup_builder_pricingtable [class*="-widget-config-content"] {
+	width: 100%;
+}
+.widget-dialog-thinkup_builder_pricingtable [class*="-field-row"],
+.thinkup-content-thinkup_builder_pricingtable [class*="-field-row"] {
+	display: table;
+	width: 100%;	
+}
+.widget-dialog-thinkup_builder_pricingtable [class*="-field-row"] label,
+.widget-dialog-thinkup_builder_pricingtable [class*="-field-row"] input,
+.widget-dialog-thinkup_builder_pricingtable [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_pricingtable [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_pricingtable [class*="-field-row"] input,
+.thinkup-content-thinkup_builder_pricingtable [class*="-field-row"] select {
+	font-size: 13px;
+	display: table-cell;
+}
+.widget-dialog-thinkup_builder_pricingtable [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_pricingtable [class*="-field-row"] label {
+	width: 150px;
+	vertical-align: top;
+}
+.widget-dialog-thinkup_builder_pricingtable [class*="-field-row"] input,
+.widget-dialog-thinkup_builder_pricingtable [class*="-field-row"] textarea,
+.widget-dialog-thinkup_builder_pricingtable [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_pricingtable [class*="-field-row"] input,
+.thinkup-content-thinkup_builder_pricingtable [class*="-field-row"] textarea,
+.thinkup-content-thinkup_builder_pricingtable [class*="-field-row"] select {
+	width: 290px;
+}
+.widget-dialog-thinkup_builder_pricingtable [class*="-groupbox"] .button,
+.thinkup-content-thinkup_builder_pricingtable [class*="-groupbox"] .button {
+	margin: 20px 0 !important;
+}
+
+/* Tabs */
+.widget-dialog-thinkup_builder_tabs,
+.thinkup-content-thinkup_builder_tabs {
+	overflow: hidden;
+}
+.widget-dialog-thinkup_builder_tabs [class*="-groupbox"],
+.thinkup-content-thinkup_builder_tabs [class*="-groupbox"] {
+	margin-bottom: 50px !important;
+}
+.widget-dialog-thinkup_builder_tabs [class*="-widget-config-content"],
+.thinkup-content-thinkup_builder_tabs [class*="-widget-config-content"] {
+	width: 613px;
+	padding-right: 140px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.thinkup-content-thinkup_builder_tabs [class*="-widget-config-content"] {
+	width: 100%;
+}
+.widget-dialog-thinkup_builder_tabs [class*="-field-row"],
+.thinkup-content-thinkup_builder_tabs [class*="-field-row"] {
+	display: table;
+	width: 100%;	
+}
+.widget-dialog-thinkup_builder_tabs [class*="-field-row"] label,
+.widget-dialog-thinkup_builder_tabs [class*="-field-row"] input,
+.widget-dialog-thinkup_builder_tabs [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_tabs [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_tabs [class*="-field-row"] input,
+.thinkup-content-thinkup_builder_tabs [class*="-field-row"] select {
+	font-size: 13px;
+	display: table-cell;
+}
+.widget-dialog-thinkup_builder_tabs [class*="-field-row"] label,
+.thinkup-content-thinkup_builder_tabs [class*="-field-row"] label {
+	width: 150px;
+	vertical-align: top;
+}
+.widget-dialog-thinkup_builder_tabs [class*="-field-row"] input,
+.widget-dialog-thinkup_builder_tabs [class*="-field-row"] textarea,
+.widget-dialog-thinkup_builder_tabs [class*="-field-row"] select,
+.thinkup-content-thinkup_builder_tabs [class*="-field-row"] input,
+.thinkup-content-thinkup_builder_tabs [class*="-field-row"] textarea,
+.thinkup-content-thinkup_builder_tabs [class*="-field-row"] select {
+	width: 290px;
+}
+.widget-dialog-thinkup_builder_tabs [class*="-groupbox"] .button,
+.thinkup-content-thinkup_builder_tabs [class*="-groupbox"] .button {
+	margin: 20px 0 !important;
+}
