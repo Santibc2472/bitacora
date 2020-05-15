@@ -1,0 +1,89 @@
+ul#tabnav { 
+text-align: left; 
+margin: 1em 0 1em 0; 
+border-bottom: 1px solid #C4DEF1; 
+list-style-type: none;
+padding: 1px 10px 0px 10px; 
+}
+
+.respro ul { 
+text-align: left; 
+margin-left: 15px; 
+list-style-type: square;
+padding: 14px 14px 14px 14px; 
+display: list-item;
+font-size: 17px;
+line-height: 1.5;
+}
+
+.respro li { 
+text-align: left; 
+list-style-type: circle;
+margin-left:  30px; 
+}
+
+
+ul#tabnav li { 
+display: inline;
+}
+
+div#orders li.tab1, div#makeorder li.tab2, div#resources li.tab3, div#offers li.tab4, div#settings li.tab5 { 
+border-bottom: 1px solid #F9F9F9; 
+background-color: #F9F9F9; 
+}
+
+
+div#orders li.tab1 a, div#makeorder li.tab2 a, div#resources li.tab3 a, div#offers li.tab4 a, div#settings li.tab5 a { 
+background: #F9F9F9 ; 
+color: #000; 
+position: relative;
+top: 1px;
+padding-top: 9px; 
+}
+#tabnav img{ position:relative; top: 2px;}
+
+
+ul#tabnav li a { 
+padding: 8px 8px; 
+border: 1px solid #C4DEF1; 
+background-color: #F1F1F1; 
+color: #21759B; 
+margin-right: 0px; 
+position: relative;
+
+line-height:30px;
+text-decoration: none;
+border-bottom: none;
+background: #999 url(../../../../../wp-admin/images/blue-grad.png)
+}
+
+
+ul#tabnav a:hover { 
+background: #fff; 
+color: #000;
+}
+
+select#settings{
+width:150px;
+}
+
+
+/* 
+jQTreeTable
+*/
+.collapsed { display: none; }
+.tablemain {min-width:600px;background-color:#ddeaf5;border-collapse: collapse; border: solid 1px #c4def1; padding: 0px; text-align: left; }
+.tablemain td {margin-left:3px;  text-align: center;}
+.tablemain th, .res_acthead { text-align: center; }
+.tablemain div,input{display:inline; padding:0;margin:0; }
+
+
+#treet {background-color:#f8f8f8}
+#treet td { font: normal 10pt Arial; padding: 3px 2px 3px 0px; cursor: pointer; border-bottom: 1px solid #c4def1;}
+#treet input {border: 1px solid #eee; background:none;}
+.res_capacity {text-align:center; width:60px;}
+.res_price{text-align:center; width:80px;}
+.adeimg, .ttimage, .parimg, .preimg { border: none; margin: 0px; padding: 0px; vertical-align: bottom; }
+.adeimg, .parimg {cursor: pointer; }
+.even { background-color: #fff; }
+.over { background-color: #ddeaf5; }

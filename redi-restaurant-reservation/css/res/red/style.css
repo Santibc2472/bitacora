@@ -1,0 +1,32 @@
+table.res { text-align:center; font-size: 12px; color:#fff}
+table.res thead{ background: #500101; }
+tr.row1 { background: #000; }
+tr.row-1 { background: #310101; }
+table.res select {	width: 70px;	}
+select.koldays{	width: 40px;	}
+div.alert {color:#f00; margin: 20px 0 0px}
+div.reservation  select {
+	font-size: 11px; font-family: Arial; color: #d8a85f; background: #0d0d0d; border: 1px solid #666666;
+	scrollbar-face-color: Red; 
+}
+div.reservation input {
+	font-size: 11px; font-family: Arial; color: #d8a85f; background: #0d0d0d; border: 1px solid #666666;
+	scrollbar-face-color: Red;
+}
+div.reservation button{
+	font-size: 11px; font-family: Arial; color: #d8a85f; background: #0d0d0d; border: 1px solid #666666;
+	scrollbar-face-color: Red; 
+}
+div.reservation textarea{
+	font-size: 11px; font-family: Arial; color: #d8a85f; background: #0d0d0d; border: 1px solid #666666;
+	scrollbar-face-color: Red;
+}
+div.resrvation a,input,img,button{
+	outline: none; 
+}
+
+#log {width:150px;}
+#pwd {width:150px;}
+
+.wp-admin tr.row-1  { background: #ddd; }
+.wp-admin tr.row1  { background: #f5f5f5; }

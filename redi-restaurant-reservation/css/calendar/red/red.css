@@ -1,0 +1,107 @@
+.DynarchCalendar, .DynarchCalendar-focused {
+  background-color: #450101;
+}
+.DynarchCalendar-focused { border-color: #666; }
+
+.DynarchCalendar-topBar,
+.DynarchCalendar-bottomBar {
+  background-color: #450101;
+  color: #666;
+  border-color: #666;
+}
+
+.DynarchCalendar-focused .DynarchCalendar-topBar,
+.DynarchCalendar-focused .DynarchCalendar-bottomBar {
+  background-color: #1E0000;
+  color: #666;
+  border-color: #666;
+}
+
+.DynarchCalendar-title div {
+  color: #FFF;
+  text-shadow: 1px 1px 1px #4B0E0E;
+}
+.DynarchCalendar-pressed-title div {
+  text-shadow: 1px 1px 1px #000;
+}
+
+.DynarchCalendar-dayNames div { color: #D8B580; }
+.DynarchCalendar-dayNames .DynarchCalendar-weekend { color: #fa0; }
+
+.DynarchCalendar-hover-navBtn div,
+.DynarchCalendar-hover-title div,
+.DynarchCalendar-hover-bottomBar-today {
+  border-color: #666;
+  background-color: #000;
+  color: #fa0;
+}
+.DynarchCalendar-menu table td div.DynarchCalendar-hover-navBtn {
+  border-color: #666;
+  background-color: #000;
+  color: #fa0;
+}
+
+.DynarchCalendar-menu-year {
+  background-color: #000;
+  color: #666;
+  border: 1px solid #666;
+}
+
+.DynarchCalendar-pressed-navBtn div,
+.DynarchCalendar-pressed-title div,
+.DynarchCalendar-pressed-bottomBar-today,
+.DynarchCalendar-menu table td div.DynarchCalendar-pressed-navBtn {
+  border-color: #666 ;
+  background-color: #000;
+  color: #fff;
+}
+
+.DynarchCalendar-hover-date {
+  border-color: #700;
+  color: #D8B580 !important;
+  background-color: #000;
+}
+.DynarchCalendar-day-othermonth.DynarchCalendar-hover-date { border-color: #400; color: #2a2; }
+.DynarchCalendar-day {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.DynarchCalendar-day-disabled {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  color: #000
+
+	}
+
+.DynarchCalendar-hover-week { background-color: #792525 !important; }
+
+.DynarchCalendar-menu {
+  background-color: #450101;
+  color: #fFF;
+}
+.DynarchCalendar-menu-sep {
+  border-color: #000;
+  background-color: #450101;
+}
+
+.DynarchCalendar-day-selected {
+  background-color: #000;
+  border: 1px solid #AA7B57;
+  margin: 0;
+  color: #F00 !important;
+}
+.DynarchCalendar-weekNumber { border-color: #666; color: #0c0; }
+.DynarchCalendar-day { color: #D8B580; }
+.DynarchCalendar-weekend { color: #fa0; }
+.DynarchCalendar-day-othermonth { color: #666; }
+.DynarchCalendar-day-othermonth.DynarchCalendar-weekend { color: #850; }
+.DynarchCalendar-day-today { color: #f00; }
+
+.DynarchCalendar-day-today.DynarchCalendar-day-selected { background-color: #000; }
+
+
+
+.DynarchCalendar-tooltipCont { background: #242; color: #9bf; }
+.DynarchCalendar-focused .DynarchCalendar-tooltipCont { background: #2A0000; }

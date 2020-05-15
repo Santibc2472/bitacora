@@ -1,0 +1,18 @@
+{
+    "durations": [
+        {
+          "duration": "90",
+          "name": "eat & go 1.5h"
+        },
+        {
+          "duration": "150",
+          "name": "relaxed eating 2.5h",
+          "limit": "10"
+        },
+        {
+          "duration": "300",
+          "name": "sit in with friends 5h",
+          "limit": "10"
+        }
+      ]
+}

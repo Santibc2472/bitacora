@@ -1,0 +1,435 @@
+label, input
+
+{
+
+ display: block;
+
+}
+
+
+
+input, textarea, h2
+
+{
+
+ margin-bottom: 20px;
+
+}
+
+
+
+h2
+
+{
+
+ display: inline-block;
+
+}
+
+
+
+#time_0
+
+{
+
+ display: block !important;
+
+}
+
+
+
+
+
+ @media screen and (min-width: 551px) {
+
+.rowLeft,
+
+.rowRight {
+
+  	display: inline;
+    }
+ }
+
+
+
+
+
+
+
+ @media screen and (max-width: 550px) {
+
+
+
+.rowLeft,
+
+.rowRight {
+
+  	display: block;
+
+	width: 100%;
+
+}
+
+
+
+.rowRight
+
+{
+
+ padding-bottom: 40px;	
+
+}
+
+
+
+.rowRight .cancel-reservation
+
+{
+
+  float: left;
+
+  margin-top: 0px;
+
+}
+
+   }
+
+
+
+/* ------- */
+
+
+
+.redi-reservation-select {
+
+    -moz-box-sizing: border-box;
+
+    background-clip: padding-box;
+
+    border: 1px solid #B7AEA6;
+
+    border-radius: 0.236em;
+
+    box-shadow: 0 0 0.236em 0 #E5E1DE;
+
+    color: #6C6158;
+
+    font-family: "Cutive", sans-serif;
+
+    font-size: 0.857em;
+
+    line-height: 1.618em;
+
+    outline: medium none;
+
+    padding: 0.4em;
+
+    transition: all 0.2s ease-in-out 0s;
+
+}
+
+
+
+.redi-reservation-alert {
+
+    background-color: #FCF8E3;
+
+    border: 1px solid #FBEED5;
+
+    border-radius: 4px 4px 4px 4px;
+
+    margin-bottom: 20px;
+
+    padding: 8px 35px 8px 14px;
+
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+
+}
+
+
+
+strong {
+
+    font-weight: bold;
+
+}
+
+
+
+.redi-reservation-alert-error {
+
+    background-color: #F2DEDE;
+
+    border-color: #EED3D7;
+
+    color: #B94A48;
+
+}
+
+
+.redi-reservation-error h4 {
+
+    color: #B94A48;
+
+}
+
+
+
+.redi-reservation-alert-info {
+
+    background-color: #D9EDF7;
+
+    border-color: #BCE8F1;
+
+    color: #3A87AD;
+
+}
+
+
+
+.redi-reservation-alert-success {
+
+    background-color: #DFF0D8;
+
+    border-color: #D6E9C6;
+
+    color: #468847;
+
+}
+
+
+
+.redi_required {
+
+    color: #DD0000;
+
+}
+
+
+
+.ui-datepicker {
+
+    z-index: 9999 !important;
+
+}
+
+
+
+.ui-timepicker-div > dl > dt {
+
+    font-weight: bold;
+
+}
+
+
+
+.ui-timepicker-div > dl > dd {
+
+    margin: 0 0 20px;
+
+}
+
+
+
+#persons, #redi-restaurant-startDate, #redi-restaurant-startTime, #children, #update_persons, #update_children {
+
+    width: 175px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.children_description {
+
+	margin: -15px 0 20px 0;
+	
+    font-size: 14px;
+
+}
+
+
+#redi-restaurant-startHour, #redi-restaurant-startMinute {
+
+    width: 83px;
+
+}
+
+
+
+.redi-restaurant-button-wrapper
+
+{
+
+    margin-top: 12px; 
+
+    margin-bottom: 24px;
+
+}
+
+
+
+.redi-restaurant-button {
+
+    font-weight: normal;
+
+    margin-bottom: 15px !important;	
+
+}
+
+
+
+.redi-restaurant-time-button {
+
+    float: left;
+
+    margin-left: 5px;
+
+    width: 21%;
+
+    margin-top: 5px;
+
+    padding-left: 2% !important;
+
+    padding-right: 2% !important;
+
+}
+
+
+
+.redi-restaurant-time-button, .redi-restaurant-button, .redi-restaurant-duration-button {
+    margin: 1px;
+    cursor: pointer;
+    border: 1px solid #d3d3d3;
+    background-color: #e6e6e6;
+    display: inline;
+}
+
+
+
+.redi-restaurant-time-button:hover, .redi-restaurant-button:hover, .redi-restaurant-duration-button:hover {
+
+    border: 1px solid #999999;
+
+    background: #dadada;
+
+    color: #212121;
+
+}
+
+
+
+.redi-restaurant-time-button[disabled="disabled"],
+
+.redi-restaurant-button[disabled="disabled"],
+
+input.disabled, button.disabled {
+
+    opacity: 0.4 !important;
+
+    filter: alpha(opacity=40) !important; /* For IE8 and earlier */
+
+
+
+}
+
+
+
+.redi-restaurant-time-button[select="select"], .redi-restaurant-button[select="select"], .redi-restaurant-duration-button[select="select"] {
+
+    font-weight: bold !important;
+
+    background-color: #DFF0D8 !important;
+
+}
+
+
+.cancel-reservation,
+.modify-reservation {
+
+    float: right;
+
+}
+
+
+
+.ui-tooltip {
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    width: 250px;
+
+}
+
+
+
+.ui-tooltip-content {
+
+    border: none;
+
+}
+
+
+
+.redi-restaurant-time-button.normal {
+
+    width: 15%;
+
+}
+
+
+
+.UserComments
+
+{
+    width: 100%;
+    max-width: 30em;
+}
+
+
+
+.buttons-wrapper
+
+{
+
+ margin-bottom: 15px;
+
+}
+
+
+
+.redi-restaurant-cancelReason
+
+{
+
+ width: 413px;
+
+}
+
+#redi-restaurant-modifyEmail {
+    margin-bottom: 20px;
+}
+
+input#redi-restaurant-startDate.redi-invalid{
+     border-color: #B94A48;
+}
+
+#redi-restaurant-startDate .ui-datepicker-inline .ui-datepicker-calendar tr td, 
+#redi-restaurant-startDate .ui-datepicker-inline .ui-datepicker-calendar tr th 
+{
+    padding: 1px;
+}
+
+.link-waitlist-form
+{
+    cursor: pointer;
+}
+
+/* intl-tel-input */
+.iti 
+{
+	display: block;
+}
