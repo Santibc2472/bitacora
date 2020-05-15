@@ -1,0 +1,314 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.1
+* File                    : assets/gui/css/backend-discounts.css
+* File Version            : 1.0.6
+* Created / Last Modified : 26 August 2015
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Back end discounts stylesheet.
+*/
+
+/*
+ * ***************************************************************************** Begin discounts.
+ */
+/*
+ * ************************************************** Begin discount items header.
+ */
+.DOPBSP-admin .dopbsp-discount-items-header{
+    border: 1px solid #e6e6e6;
+    border-right: none;
+    border-left: none;
+    height: 38px;
+    margin: 0 -10px 20px -10px;
+}
+
+.DOPBSP-admin .dopbsp-discount-items-header h3{
+    border: none !important;
+    color: #464646;
+    float: left;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 38px;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+.DOPBSP-admin .dopbsp-discount-items-header .dopbsp-button{
+    background-image: url('../images/sprite.png');
+    background-position: -41px -1px;
+    display: block;
+    height: 38px;
+    margin: 0 10px;
+    width: 38px;
+}
+
+.DOPBSP-admin .dopbsp-discount-items-header .dopbsp-button .dopbsp-info{
+    margin: 40px 0 0 0;
+}
+/*
+ * **************************************************** End discount items header.
+ */
+
+/*
+ * ********************************************************* Begin discount items.
+ */
+.DOPBSP-admin .dopbsp-discount-items{
+    list-style: none;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-placeholder{
+    border: 1px dashed #ff6300;
+    height: 58px;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-placeholder:last-child{
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper{
+    margin: 0 0 5px 0;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper:last-child{
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-preview-wrapper{
+    background-color: #fafafa;
+    padding: 20px 10px;
+    margin: 0 0 1px 0;
+    position: relative;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-preview-wrapper .dopbsp-preview{
+    float: left;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-preview-wrapper .dopbsp-preview.dopbsp-input-wrapper{
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-preview-wrapper .dopbsp-preview.dopbsp-input-wrapper label{
+    display: block;
+    float: none;
+    font-style: italic;
+    margin: 0;
+    width: 600px;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-preview-wrapper .dopbsp-preview.dopbsp-input-wrapper label .dopbsp-required{
+    color: #f1705c;
+}
+
+/*
+ * Buttons
+ */
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper{
+    bottom: 0px;
+    position: absolute;
+    right: 10px;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button{
+    background-color: #acacac;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button:last-child{
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button.dopbsp-toggle{
+    background-image: url('../images/sprite.png');
+    background-position: 0 -120px;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button.dopbsp-delete{
+    background-image: url('../images/sprite.png');
+    background-position: -80px -120px;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button.dopbsp-handle{
+    background-image: url('../images/sprite.png');
+    background-position: -120px -120px;
+    cursor: move;
+}
+   
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button:hover{
+    background-color: #ff6300;
+}
+
+/*
+ * Settings
+ */
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper{
+    background: #fafafa;
+    display: none;
+    padding: 19px 10px 20px 10px;
+}
+
+/* 
+ * Select options
+ */
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper{
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-button{
+    height: 30px;
+    width: 30px;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-button .dopbsp-info{
+    margin: 32px 0 0 0;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-buttons{
+    margin: 0 0 10px 0;
+    overflow: hidden;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-buttons .dopbsp-button.dopbsp-add{
+    background-image: url('../images/sprite.png');
+    background-position: -165px -125px;
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules{
+    margin: 0 0 0 150px !important;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules li.dopbsp-item-rule-wrapper{
+    border: 1px solid #e6e6e6;
+    background: #f1f1f1;
+    margin: 0 0 5px 0;
+    padding: 9px;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules li.dopbsp-item-rule-wrapper:last-child{
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules li.dopbsp-item-rule-wrapper .dopbsp-input-wrapper{
+    margin: 0 0 5px 0;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-placeholder{
+    background: none;
+    height: 123px;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-input-wrapper{
+    margin: 0 0 5px 0;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-input-wrapper .dopbsp-no-margin{
+    margin: 0 !important;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-input-wrapper label{
+    margin: 5px 0 0 20px;
+    width: auto;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-input-wrapper label.dopbsp-no-margin{
+    margin: 5px 0 0 0 !important;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-input-wrapper input[type=text].dopbsp-date{
+    background-image: url('../images/sprite.png');
+    background-position: -5px -207px;
+    margin: 0 0 5px 0;
+    padding: 4px 9px 4px 34px;
+    width: 135px;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-input-wrapper .DOPSelect.dopselect-single.dopbsp-hour{
+    float: left;
+    margin: 0 0 5px 5px;
+    width: 135px;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-input-wrapper .DOPSelect.dopselect-single.dopbsp-hour .dopselect-selection{
+    background-image: url('../images/sprite.png');
+    background-position: -5px -246px;
+    padding: 0 0 0 30px;
+    width: 75px;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-input-wrapper .DOPSelect.dopselect-single.dopbsp-hour ul{
+    width: 133px;
+}
+
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-input-wrapper .DOPSelect.dopselect-single.dopbsp-hour ul li{
+    width: 105px;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-input-wrapper input[type=text].dopbsp-small,
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-input-wrapper .DOPSelect.dopselect-single.dopbsp-small{
+    float: left;
+    margin: 0 0 5px 5px;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules li.dopbsp-item-rule-wrapper:last-child .dopbsp-input-wrapper{
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-input-wrapper .dopbsp-button.dopbsp-delete{
+    background-image: url('../images/sprite.png');
+    background-position: -85px -125px;
+    float: right;
+    margin: 0 0 5px 5px;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-input-wrapper .dopbsp-button.dopbsp-handle{
+    background-image: url('../images/sprite.png');
+    background-position: -125px -125px;
+    cursor: move;
+    float: right;
+    margin: 0 0 5px 5px;
+}
+
+/*
+ * Displayed discount item.
+ */
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper.dopbsp-displayed .dopbsp-settings-wrapper{
+    display: block;
+}
+
+.DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper.dopbsp-displayed .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button.dopbsp-toggle{
+    background-position: -40px -120px;
+}
+/*
+ * *********************************************************** End discount items.
+ */
+
+/*
+ * ***************************************************************************** Begin retina.
+ */
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi){ 
+    .DOPBSP-admin .dopbsp-discount-items-header .dopbsp-button,
+    .DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button.dopbsp-toggle,
+    .DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button.dopbsp-delete,
+    .DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button.dopbsp-handle,
+    .DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-buttons .dopbsp-button.dopbsp-add,
+    .DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-input-wrapper input[type=text].dopbsp-date,
+    .DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-input-wrapper .DOPSelect.dopselect-single.dopbsp-hour .dopselect-selection,
+    .DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-input-wrapper .dopbsp-button.dopbsp-delete,
+    .DOPBSP-admin .dopbsp-discount-items .dopbsp-item-wrapper .dopbsp-settings-wrapper .dopbsp-rules-wrapper .dopbsp-rules .dopbsp-input-wrapper .dopbsp-button.dopbsp-handle{
+        background-image: url('../images/sprite-retina.png') !important;
+        background-size: 600px 500px !important;
+    }
+}
+/*
+ * ***************************************************************************** End retina.
+ */
+/*
+ * ***************************************************************************** End discounts.
+ */

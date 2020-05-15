@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.6
+* File                    : assets/gui/css/backend-wp-admin.css
+* File Version            : 1.0.3
+* Created / Last Modified : 14 February 2016
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : WordPress admin stylesheet.
+*/
+
+/*
+ * ***************************************************************************** Begin menu.
+ */
+
+/*
+ * Beta & soon.
+ */
+#adminmenu .wp-submenu li .dopbsp-small.dopbsp-beta{
+    color: #ff6300;
+    opacity: 0.7;
+}
+
+#adminmenu .wp-submenu li .dopbsp-small.dopbsp-soon{
+    color: #777777;
+}
+
+/*
+ * Menu image.
+ */
+#toplevel_page_dopbsp .wp-menu-image{
+    background: transparent url('../images/icon.png') no-repeat center center;
+}
+
+#toplevel_page_dopbsp:hover .wp-menu-image,
+#toplevel_page_dopbsp.wp-has-current-submenu .wp-menu-image,
+#toplevel_page_dopbsp.current .wp-menu-image{
+    background: transparent url('../images/icon-hover.png') no-repeat center center;
+}
+
+/*
+ * Custom posts menu image.
+ */
+#menu-posts-booking-system img{
+    padding: 0 !important; 
+}
+/*
+ * ***************************************************************************** End menu.
+ */
+
+/*
+ * ***************************************************************************** Begin WooCommerce/
+ */
+#woocommerce-product-data ul.product_data_tabs li.dopbsp_tab a{
+    background: #f1f1f1 url('../images/icon.png') no-repeat;
+    padding: 5px 5px 5px 28px;
+}
+
+#woocommerce-product-data ul.product_data_tabs li.dopbsp_tab a:before{
+    content: "";
+}
+
+#woocommerce-product-data ul.product_data_tabs li.dopbsp_tab a:hover,
+#woocommerce-product-data ul.product_data_tabs li.dopbsp_tab.active a{
+    background: #f1f1f1 url('../images/icon-hover.png') no-repeat;
+    padding: 5px 5px 5px 28px;
+}
+
+#dopbsp_tab_data .form-field label{
+    float: left;
+    width: 14%;
+}
+
+#dopbsp_tab_data .form-field select{
+    float: left;
+    width: 20%;
+}
+
+#dopbsp_tab_data .form-field .description{
+    float: left;
+    margin: 0 0 0 1%;
+    width: 65%;
+}
+/*
+ * ***************************************************************************** End WooCommerce/
+ */

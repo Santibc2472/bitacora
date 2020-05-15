@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.1
+* File                    : assets/gui/css/backend-translation.css
+* File Version            : 1.0.4
+* Created / Last Modified : 26 August 2015
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Back end translation stylesheet.
+*/
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-header{
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    padding: 9px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-header .dopbsp-input-wrapper{
+    margin: 5px 30px 5px 0;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content{
+    padding: 0;
+}
+
+/******************************************************************************* Begin translation table */
+
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content table col.dopbsp-separator{
+    width: 10px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content table.dopbsp-translation td{
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    color: #898989;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content table.dopbsp-translation td:first-child{
+    padding: 9px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content table.dopbsp-translation tr:hover td{
+    background: #ddeefa;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content table.dopbsp-translation td.dopbsp-separator{
+    background: none !important;
+    border: none;
+    vertical-align: middle;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content table.dopbsp-translation td textarea{
+    background: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #252525;
+    display: block;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 9px;
+    resize: vertical;
+    width: 100%;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content table.dopbsp-translation td textarea:focus{
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content table.dopbsp-translation td .dopbsp-hint{
+    color: #ff6300;
+    font-size: 12px;
+}
+
+/******************************************************************************* End translation table */
+
+/******************************************************************************* Begin languages table */
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content table.dopbsp-languages td{
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    color: #acacac;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+    padding: 9px;
+    vertical-align: top;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content table.dopbsp-languages td:hover{
+    background: #ddeefa;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content table.dopbsp-languages td .dopbsp-input-wrapper{
+    margin: 0 0 1px 0;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content table.dopbsp-languages td .dopbsp-input-wrapper label.dopbsp-for-switch{
+    width: 230px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content table.dopbsp-languages td.dopbsp-separator{
+    background: none !important;
+    border: none;
+    vertical-align: middle;
+}
+
+/******************************************************************************* End translation table */
+
+/******************************************************************************* Begin check */
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content.dopbsp-checked{
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 19px 9px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content.dopbsp-checked .dopbsp-used{
+    color: #9cbc72;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-translation-content.dopbsp-checked .dopbsp-unused{
+    color: #f1705c;
+}
+
+/******************************************************************************* End check */

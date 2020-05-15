@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.1
+* File                    : assets/gui/css/backend-emails.css
+* File Version            : 1.0.2
+* Created / Last Modified : 26 August 2015
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Back end emails stylesheet.
+*/
+
+/*
+ * ***************************************************************************** Begin emails.
+ */
+.DOPBSP-admin .dopbsp-input-wrapper input[type=text].dopbsp-subject{
+    width: 100%;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper textarea.dopbsp-message{
+    background: #ffffff;
+    border: 1px solid #c9c9c9;
+    color: #acacac;
+    width: 100%;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-book-user,
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-book-with-approval-admin,
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-book-with-approval-user,
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-paypal-admin,
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-paypal-user,
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-approved,
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-canceled,
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-rejected{
+    display: none;
+}
+/*
+ * ***************************************************************************** End emails.
+ */

@@ -1,0 +1,316 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.8
+* File                    : assets/gui/css/backend-settings.css
+* File Version            : 1.1.1
+* Created / Last Modified : 17 March 2016
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Back end settings stylesheet.
+*/
+
+/*
+ * ***************************************************************************** Begin settings.
+*/
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item{
+    background: #c9c9c9;
+    cursor: pointer;
+    height: 38px;
+    margin: 0 0 2px 0;
+    overflow: hidden;
+    width: 230px;
+    -webkit-transition: background 300ms linear;
+    -moz-transition: background 300ms linear;
+    -o-transition: background 300ms linear;
+    transition: background 300ms linear;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item:hover,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item.dopbsp-selected{
+    background: #ff6300;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item .dopbsp-icon{
+    background-image: url('../images/sprite.png');
+    border-right: 1px solid #f3f1f1; 
+    float: left;
+    height: 38px;
+    width: 38px;
+}
+    
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item.dopbsp-settings .dopbsp-icon{
+    background-position: -121px -1px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item.dopbsp-calendars .dopbsp-icon{
+    background-position: -81px -1px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item.dopbsp-notifications .dopbsp-icon{
+    background-position: -241px -1px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item.dopbsp-payments .dopbsp-icon{
+    background-position: -281px -1px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item.dopbsp-users .dopbsp-icon{
+    background-position: -321px -1px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item.dopbsp-searches .dopbsp-icon{
+    background-position: -401px -1px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item.dopbsp-licences .dopbsp-icon{
+    background-position: -601px -1px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item:hover .dopbsp-icon,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item.dopbsp-selected .dopbsp-icon{
+    border-right: 1px solid #ffffff;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item .dopbsp-title{
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 300;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    padding: 0 0 0 10px;
+    width: 181px;
+    word-break: break-all;
+}
+/*
+ * ***************************************************************************** End settings items list.
+ */
+
+/*
+ * ***************************************************************************** Begin sidebar style.
+ */
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-sidebar-styles{
+    float: left;
+    margin: 0 !important;
+    overflow: hidden;
+}
+
+#DOPBSP-settings-sidebar-style1,
+#DOPBSP-settings-sidebar-style2,
+#DOPBSP-settings-sidebar-style3,
+#DOPBSP-settings-sidebar-style4,
+#DOPBSP-settings-sidebar-style5{
+    background-color: #c9c9c9;
+    background-image: url('../images/sprite.png');
+    border: none;
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    margin: 0 5px 0 0;
+    width: 30px;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+#DOPBSP-settings-sidebar-style1:hover,
+#DOPBSP-settings-sidebar-style2:hover,
+#DOPBSP-settings-sidebar-style3:hover,
+#DOPBSP-settings-sidebar-style4:hover,
+#DOPBSP-settings-sidebar-style5:hover,
+#DOPBSP-settings-sidebar-style1.dopbsp-selected,
+#DOPBSP-settings-sidebar-style2.dopbsp-selected,
+#DOPBSP-settings-sidebar-style3.dopbsp-selected,
+#DOPBSP-settings-sidebar-style4.dopbsp-selected,
+#DOPBSP-settings-sidebar-style5.dopbsp-selected{
+    background-color: #ff6300;
+}
+
+#DOPBSP-settings-sidebar-style1{
+    background-position: -30px -280px;
+}
+
+#DOPBSP-settings-sidebar-style2{
+    background-position: -60px -280px;
+}
+
+#DOPBSP-settings-sidebar-style3{
+    background-position: -90px -280px;
+}
+
+#DOPBSP-settings-sidebar-style4{
+    background-position: -120px -280px;
+}
+
+#DOPBSP-settings-sidebar-style5{
+    background-position: -150px -280px;
+}
+/*
+ * ***************************************************************************** End sidebar style.
+ */
+
+/*
+ * ***************************************************************************** Begin users table.
+ */
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content table.dopbsp-users-table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content table.dopbsp-users-table col.dopbsp-column1{
+    width: 40px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content table.dopbsp-users-table col.dopbsp-column2{
+    width: 62px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content table.dopbsp-users-table col.dopbsp-column5{
+    width: 110px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content table.dopbsp-users-table col.dopbsp-column6,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content table.dopbsp-users-table col.dopbsp-column7,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content table.dopbsp-users-table col.dopbsp-column8{
+    width: 95px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content table.dopbsp-users-table th{
+    background: #eeeeee;
+    border: 1px solid #cccccc;
+    color: #464646;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 9px 9px 10px 9px;
+    text-align: left;
+    word-break: normal;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content table.dopbsp-users-table tr:hover td{
+    background: #ddeefa;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content table.dopbsp-users-table td{
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    color: #acacac;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+    padding: 9px;
+    vertical-align: top;
+    word-break: break-all;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content table.dopbsp-users-table td .dopbsp-input-wrapper{
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content table.dopbsp-users-table td input[type="checkbox"]{
+    margin: 1px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content table.dopbsp-users-table td img{
+    border: 1px solid #e6e6e6;
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 1px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-phone{
+    width: 60px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-phone .dopselect-select{
+    background-color: #f1f2f5;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-phone .dopselect-selection{
+    width: 20px;
+    text-transform: uppercase;
+    color: #464646;
+} 
+
+.DOPBSP-admin .dopbsp-main .dopbsp-phone .dopselect-icon{
+    color: #464646;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-phone-input{
+    width: 111px !important;
+    border-left: 0px !important;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-phone.dopbsp-add{
+    background-image: url(../images/sprite.png);
+    background-position: -165px -125px !important;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-phone-wrapper{
+    width: 250px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-phone-wrapper.dopbsp-last{
+    margin-bottom: 0;
+}
+
+#DOPBSP-google-calendar-sync {
+    color: #fff;
+    text-align: center;
+    background: #9cbc72;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    cursor: pointer;
+    padding: 11px;
+    margin-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    float: left;
+}
+
+#DOPBSP-google-calendar-sync:hover{
+    background: #ff6300;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+
+/*
+ * ***************************************************************************** Begin retina.
+ */
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi){ 
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item.dopbsp-settings .dopbsp-icon,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item.dopbsp-calendars .dopbsp-icon,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item.dopbsp-notifications .dopbsp-icon,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item.dopbsp-payments .dopbsp-icon,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item.dopbsp-users .dopbsp-icon,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item.dopbsp-search .dopbsp-icon,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-settings-item.dopbsp-licences .dopbsp-icon,
+    #DOPBSP-settings-sidebar_style1,
+    #DOPBSP-settings-sidebar_style2,
+    #DOPBSP-settings-sidebar_style3,
+    #DOPBSP-settings-sidebar_style4,
+    #DOPBSP-settings-sidebar_style5{
+        background-image: url('../images/sprite-retina.png') !important;
+        background-size: 600px 500px !important;
+    }
+}
+/*
+ * ***************************************************************************** End retina.
+ */
+/*
+ * ***************************************************************************** End settings.
+ */

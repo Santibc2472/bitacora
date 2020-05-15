@@ -1,0 +1,229 @@
+/*
+ * Title                   : DOT Framework
+ * File                    : framework/assets/gui/css/select.css
+ * Author                  : Dot on Paper
+ * Copyright               : © 2017 Dot on Paper
+ * Website                 : https://www.dotonpaper.net
+ * Description             : DOT select stylesheet.
+ */
+
+/*
+ * ***************************************************************************** Begin single select.
+ */
+.dot-select.dot-select-single{
+    height: 36px;
+    margin: 0;
+    width: 100%;
+}
+
+.dot-select.dot-select-single .dot-select-select{
+    background: #ffffff;
+    border: 1px solid #c9c9c9;
+    box-sizing: content-box;
+    cursor: pointer;
+    overflow: hidden;
+    height: 34px;
+}
+
+.dot-select.dot-select-single .dot-select-select .dot-select-selection{
+    color: #acacac;
+    float: left;
+    font-size: 13px;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    padding: 0 0 0 10px;
+    width: calc(100% - 44px);
+    word-break: break-all;
+    transition: color 300ms linear;
+}
+
+.dot-select.dot-select-single .dot-select-select .dot-select-icon{
+    color: #c9c9c9;
+    float: right;
+    line-height: 34px;
+    height: 34px;
+    text-align: center;
+    width: 34px;
+    transition: color 300ms linear;
+}
+
+.dot-select.dot-select-single .dot-select-select:hover .dot-select-icon{
+    color: #464646;
+}
+
+/*
+ * Options
+ */
+.dot-select.dot-select-single .dot-select-list{
+    background: #ffffff;
+    border: 1px solid #464646;
+    box-sizing: content-box;
+    display: none;
+    list-style: none;
+    margin: 2px 0 0 0 !important;
+    max-height: 216px;
+    padding: 11px 0;
+    position: absolute;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+    width: calc(100% - 2px);
+    z-index: 10000;
+}
+
+.dot-select.dot-select-single .dot-select-list-item{
+    background: #ffffff;
+    color: #acacac;
+    cursor: pointer;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    list-style: none;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 10px;
+    width: calc(100% - 20px);
+    word-break: break-all;
+    transition: background-color 300ms linear, color 300ms linear;
+}
+
+.dot-select.dot-select-single .dot-select-list-item:hover,
+.dot-select.dot-select-single .dot-select-list-item.dot-select-selected{
+    background: #464646;
+    color: #ffffff;
+    width: 100%;
+}
+/*
+ * ***************************************************************************** End single select.
+ */
+
+/*
+ * ***************************************************************************** Begin multiple select.
+ */
+.dot-select.dot-select-multiple{
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+/*
+ * Options
+ */
+.dot-select.dot-select-multiple .dot-select-list{
+    background: #ffffff;
+    border: 1px solid #c9c9c9;
+    list-style: none;
+    margin: 0 !important;
+    max-height: 96px;
+    overflow-y: scroll !important;
+    padding: 11px;
+}
+
+.dot-select.dot-select-multiple .dot-select-list-item{
+    list-style: none;
+    margin: 0 !important;
+    overflow: hidden;
+}
+
+/*
+ * Checkboxes
+ */
+.dot-select.dot-select-multiple .dot-select-checkbox{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #ffffff;
+    border: 1px solid #acacac;
+    border-radius: 0;
+    box-shadow: none;
+    cursor: pointer;
+    float: left;
+    height: auto;
+    margin: 3px 10px 3px 0;
+    outline: none !important;
+    padding: 8px !important;
+    position: relative;
+    width: auto;
+}
+
+.dot-select.dot-select-multiple .dot-select-checkbox:hover{
+    border: 1px solid #464646;
+    color: #464646;
+}
+
+.dot-select.dot-select-multiple .dot-select-checkbox:checked:before,
+.dot-select.dot-select-multiple .dot-select-checkbox:checked:after{
+    background: #464646;
+    border: 1px solid #464646;
+    border-radius: 0;
+    color: #464646;
+    content: ' ' !important;
+    font-size: 16px !important;
+    left: -1px !important;
+    height: 16px !important;
+    line-height: 16px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute !important;
+    top: -1px !important;
+    width: 16px !important;
+}
+
+.dot-select.dot-select-multiple .dot-select-checkbox:disabled{
+    opacity: 0.5;
+}
+
+/*
+ * Labels
+ */
+.dot-select.dot-select-multiple .dot-select-label{
+    color: #acacac;
+    display: block;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    margin: 0;
+    width: auto;
+    text-decoration: none !important;
+    transition: color 300ms linear;
+}
+
+.dot-select.dot-select-multiple .dot-select-label:hover{
+    color: #464646;
+}
+/*
+ * ***************************************************************************** End multiple select.
+ */
+
+/*
+ * ***************************************************************************** Begin disabled.
+ */
+.dot-select.dot-select-disabled{
+    opacity: 0.5;
+}
+
+.dot-select.dot-select-single.dot-select-disabled .dot-select-select{
+    cursor: default;
+}
+
+.dot-select.dot-select-multiple.dot-select-disabled .dot-select-list{
+    overflow: hidden;
+}
+
+.dot-select.dot-select-multiple.dot-select-disabled .dot-select-checkbox:hover{
+    border: 1px solid #acacac;
+    color: #acacac;
+    cursor: default;
+}
+
+.dot-select.dot-select-multiple.dot-select-disabled .dot-select-label{
+    cursor: default;
+}
+
+.dot-select.dot-select-multiple.dot-select-disabled .dot-select-label:hover{
+    color: #acacac;
+}
+/*
+ * ***************************************************************************** End disabled.
+ */

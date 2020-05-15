@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.6
+* File                    : assets/gui/css/backend-locations.css
+* File Version            : 1.0
+* Created / Last Modified : 09 February 2016
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Back end locations stylesheet.
+*/
+
+/*
+ * ***************************************************************************** Begin locations.
+ */
+#DOPBSP-location-address, 
+#DOPBSP-location-address_alt{
+    width:340px;
+}
+
+/*
+ * Map
+ */
+#DOPBSP-location-address-map{
+    height: 500px;
+    margin: 0 0 20px 0;
+    padding: 0px;
+    width: 100%;
+}
+
+/*
+ * Hints
+ */
+#DOPBSP-location-address-hints{
+    background: #ffffff;
+    display: none;
+    margin: -9px 0 0 150px;
+    position: absolute;
+    width: 340px;
+    z-index: 1000;
+}
+
+#DOPBSP-location-address-hints li{
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-bottom: none;
+    color: #666666;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+    padding: 9px 9px 10px 39px;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+#DOPBSP-location-address-hints li:last-child{
+    border: 1px solid #e6e6e6;
+    padding: 9px 9px 9px 39px;
+}
+
+#DOPBSP-location-address-hints li:hover{
+    background-color: #fafafa; 
+}
+
+#DOPBSP-location-address-hints li .dopbsp-icon{
+    background-image: url('../images/sprite.png');
+    background-position: -236px -276px;
+    display: block;
+    left: 1px;
+    height: 38px;
+    margin: -9px 0 0 0;
+    position: absolute;
+    width: 38px;
+}
+
+/*
+ * Loader
+ */
+#DOPBSP-location-address-hints li.dopbsp-loader-wrapper{
+    padding: 9px;
+}
+
+#DOPBSP-location-address-hints li.dopbsp-loader-wrapper .dopbsp-loader-content{
+    background: url('../images/sprite.png') 0 -40px;
+    display: block;
+    height: 40px;
+    width: 40px;
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: dopbsp-loader-address-hints; 
+    -webkit-animation-timing-function: linear;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-animation-duration: 1s; 
+    -moz-animation-name: dopbsp-loader-address-hints; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    animation-duration: 1s; 
+    animation-name: dopbsp-loader-address-hints; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition-property: -moz-transform;
+    transition-duration: 1s;
+}
+
+@-webkit-keyframes dopbsp-loader-address-hints{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes dopbsp-loader-address-hints{
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@keyframes dopbsp-loader-address-hints{
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+/*
+ * ***************************************************************************** Begin retina.
+ */
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi){
+    #DOPBSP-location-address-hints li .dopbsp-icon{
+        background-image: url('../images/sprite-retina.png') !important;
+        background-size: 800px 500px !important;
+    }
+}
+/*
+ * ***************************************************************************** End retina.
+ */
+/*
+ * ***************************************************************************** End locations.
+ */

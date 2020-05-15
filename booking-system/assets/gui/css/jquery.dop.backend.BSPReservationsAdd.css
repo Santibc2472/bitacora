@@ -1,0 +1,1358 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.1
+* File                    : assets/gui/css/jquery.dop.backend.BSPReservationsAdd.css
+* File Version            : 1.0.7
+* Created / Last Modified : 26 August 2015
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Back end add reservations jQuery plugin stylesheet.
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+.DOPBSPReservationsAdd-wrapper{
+    margin: 20px 0;
+    min-width: 240px;
+    overflow: hidden;
+}
+
+/*
+ * ***************************************************************************** Container
+ */
+.DOPBSPReservationsAdd-container{
+    background: none;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.DOPBSPReservationsAdd-strong{
+    font-weight: bold !important;
+}
+
+.DOPBSPReservationsAdd-left{
+    float: left !important;
+}
+
+.DOPBSPReservationsAdd-right{
+    float: right !important;
+}
+
+.DOPBSPReservationsAdd-hidden{
+    display: none;
+}
+
+.DOPBSPReservationsAdd-clear{
+    clear: both;
+}
+
+/*
+ * ***************************************************************************** Begin navigation.
+ */
+.DOPBSPReservationsAdd-navigation{
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    margin: 0 0 5px 0;
+    padding: 0;
+    position: relative;
+}
+
+.DOPBSPReservationsAdd-navigation .dopbsp-add-btn,
+.DOPBSPReservationsAdd-navigation .dopbsp-next-btn,
+.DOPBSPReservationsAdd-navigation .dopbsp-previous-btn,
+.DOPBSPReservationsAdd-navigation .dopbsp-remove-btn{
+    background-color: #c9c9c9;
+    background-image:url('../images/sprite.png');
+    display: block;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 40px;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;
+}
+
+.DOPBSPReservationsAdd-navigation .dopbsp-add-btn:hover,
+.DOPBSPReservationsAdd-navigation .dopbsp-next-btn:hover,
+.DOPBSPReservationsAdd-navigation .dopbsp-previous-btn:hover,
+.DOPBSPReservationsAdd-navigation .dopbsp-remove-btn:hover{
+    background-color: #464646;
+}
+
+.DOPBSPReservationsAdd-navigation .dopbsp-add-btn{
+    background-position: 0 -80px;
+    left: 9px;
+    top: 9px;
+}
+
+.DOPBSPReservationsAdd-navigation .dopbsp-remove-btn{
+    background-position: -40px -80px;
+    display: none;
+    left: 51px;
+    top: 9px;
+}
+
+.DOPBSPReservationsAdd-navigation .dopbsp-remove-btn.dopbsp-no-add{
+    left: 9px;
+}
+
+.DOPBSPReservationsAdd-navigation .dopbsp-previous-btn{
+    background-position: -80px -80px;
+    display: none;
+    right: 51px;
+    top: 9px;
+}
+
+.DOPBSPReservationsAdd-navigation .dopbsp-next-btn{
+    background-position: -120px -80px;
+    right: 9px;
+    top: 9px;
+}
+
+.DOPBSPReservationsAdd-navigation .dopbsp-add-btn .dopbsp-info,
+.DOPBSPReservationsAdd-navigation .dopbsp-next-btn .dopbsp-info,
+.DOPBSPReservationsAdd-navigation .dopbsp-previous-btn .dopbsp-info,
+.DOPBSPReservationsAdd-navigation .dopbsp-remove-btn .dopbsp-info{
+    background-color: #252525;
+    color: #ffffff;
+    display: none;
+    font-family: 'Open Sans' !important;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    max-width: 230px;
+    margin: 42px 0 0 0;
+    padding: 10px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1000000;
+}
+
+.DOPBSPReservationsAdd-navigation .dopbsp-next-btn .dopbsp-info,
+.DOPBSPReservationsAdd-navigation .dopbsp-previous-btn .dopbsp-info{
+    right: 0;
+}
+
+.DOPBSPReservationsAdd-navigation .dopbsp-add-btn:hover .dopbsp-info,
+.DOPBSPReservationsAdd-navigation .dopbsp-next-btn:hover .dopbsp-info,
+.DOPBSPReservationsAdd-navigation .dopbsp-previous-btn:hover .dopbsp-info,
+.DOPBSPReservationsAdd-navigation .dopbsp-remove-btn:hover .dopbsp-info{
+    display: block;
+}
+
+.DOPBSPReservationsAdd-navigation .dopbsp-month-year{
+    color: #464646;
+    font-family: 'Open Sans' !important;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 0;
+    padding: 9px 9px 10px 9px;
+    text-align: center;
+}
+
+.DOPBSPReservationsAdd-navigation .dopbsp-month-year.dopbsp-style-small{
+    padding: 59px 9px 10px 9px;
+    text-align: left;
+}
+
+.DOPBSPReservationsAdd-navigation .dopbsp-week{
+    margin: 0;
+    overflow: hidden;
+    padding: 0 4px 9px 4px;
+}
+
+.DOPBSPReservationsAdd-navigation .dopbsp-week .dopbsp-day{
+    color: #898989;
+    display: block;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px;
+    line-height: 20px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/*
+ * ***************************************************************************** End navigation.
+ */
+
+/*
+ * ***************************************************************************** Begin calendar.
+ */
+.DOPBSPReservationsAdd-calendar{
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+
+.DOPBSPReservationsAdd-month{
+    border: 1px solid #cccccc;
+    background: #eeeeee;
+    margin: 5px 0 0 0;
+    overflow: hidden;
+    padding: 9px 0 9px 5px;
+}
+
+.DOPBSPReservationsAdd-month-year{
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    color: #464646;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 38px;
+    height: 38px;
+    margin: 20px 0 5px 0;
+    overflow: hidden;
+    padding: 0 0 0 9px;
+    text-align: left;
+}
+
+/*
+ * ***************************************************************** Begin days.
+ */
+.DOPBSPReservationsAdd-day{
+    clear: none !important;
+    float: left;;
+    margin:  0 0 2px 0;
+    padding: 0;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-left, 
+.DOPBSPReservationsAdd-day .dopbsp-bind-right{
+    float: left;
+    opacity: 0;
+    width: 1px;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-left.dopbsp-enabled,
+.DOPBSPReservationsAdd-day .dopbsp-bind-left.dopbsp-extended,  
+.DOPBSPReservationsAdd-day .dopbsp-bind-right.dopbsp-enabled,  
+.DOPBSPReservationsAdd-day .dopbsp-bind-right.dopbsp-extended{
+    opacity: 1;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-left .dopbsp-head, 
+.DOPBSPReservationsAdd-day .dopbsp-bind-right .dopbsp-head{
+    background-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-left: none !important;
+    border-right: none !important;
+    height: 17px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 1px !important;
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-style-small .dopbsp-bind-left .dopbsp-head{
+    height: 31px;
+} 
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-left .dopbsp-body, 
+.DOPBSPReservationsAdd-day .dopbsp-bind-right .dopbsp-body{
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    line-height: 19px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 1px !important;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle{
+    float: left;
+    overflow: hidden;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle .dopbsp-head{
+    background-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    display: block !important;
+    height: 17px !important;
+    margin: 0 !important;
+    padding: 0 0 0 4px !important;
+    position: relative !important;
+    width: auto !important;
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-style-small .dopbsp-bind-middle .dopbsp-head{
+    height: 31px !important;
+} 
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group1 .dopbsp-head{
+    border-right: none !important;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group2 .dopbsp-head,
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group3.dopbsp-extended .dopbsp-head{
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group0.dopbsp-extended .dopbsp-head,
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group1.dopbsp-extended .dopbsp-head,
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group3 .dopbsp-head{
+    border-left: none !important;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle .dopbsp-head .dopbsp-day{
+    color: #ffffff;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    line-height: 17px !important;
+    margin: 0;
+    padding: 0;
+    position: relative !important;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle .dopbsp-head .dopbsp-co{
+    background: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-right: none;
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    height: 17px;
+    left: -1px;
+    margin: 0 !important;
+    padding: 0px 0px 0px 1px !important;
+    position: absolute !important;
+    top: -1px;
+    width: 50% !important;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle .dopbsp-head .dopbsp-ci{
+    background-color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-left: none;
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    height: 17px;
+    right: -1px;
+    margin: 0 !important;
+    position: absolute !important;
+    top: -1px;
+    width: 50% !important;
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-style-small .dopbsp-bind-middle .dopbsp-head .dopbsp-co,
+.DOPBSPReservationsAdd-day.dopbsp-style-small .dopbsp-bind-middle .dopbsp-head .dopbsp-ci{
+    height: 31px !important;
+} 
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group2 .dopbsp-head .dopbsp-co{
+    border-left-color: transparent !important;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group3.dopbsp-extended .dopbsp-head .dopbsp-co{
+    border-left-color: transparent !important;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group0.dopbsp-extended .dopbsp-head .dopbsp-co,
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group1.dopbsp-extended .dopbsp-head .dopbsp-co,
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group1 .dopbsp-head .dopbsp-ci,
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group2 .dopbsp-head .dopbsp-ci{
+    border-right-color: transparent !important;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle .dopbsp-head .dopbsp-info{
+    background-color: transparent;
+    background-image: url('../images/sprite.png');
+    background-position: -162px -102px;
+    cursor: pointer;
+    float: right;
+    height: 17px;
+    margin: 0 0 0 1px;
+    position: relative;
+    width: 17px;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle .dopbsp-head .dopbsp-info:hover{
+    background-color: #464646;
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-style-small .dopbsp-bind-middle .dopbsp-head .dopbsp-info{
+    display: none !important;
+} 
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle .dopbsp-body{
+    background-color: #ffffff !important;
+    border: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-top: none !important;
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    color: #222222 !important;
+    display: block;
+    float: none !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    line-height: 19px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    text-align: left !important;
+    vertical-align: middle !important;
+    width: auto !important;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle .dopbsp-body .dopbsp-co{
+    background: transparent;
+    border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-right: none;
+    border-top: none;
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    left: -1px;
+    height: inherit !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute !important;
+    top: 0;
+    width: 50% !important;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle .dopbsp-body .dopbsp-ci{
+    background: transparent;
+    border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-left: none;
+    border-top: none;
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    height: inherit !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute !important;
+    right: -1px;
+    top: 0;
+    width: 50% !important;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group1 .dopbsp-body{
+    border-right-color: transparent !important;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group0.dopbsp-extended .dopbsp-body,
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group1.dopbsp-extended .dopbsp-body,
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group3 .dopbsp-body{
+    border-left-color: transparent !important;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group2 .dopbsp-body,
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group3.dopbsp-extended .dopbsp-body{
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group0.dopbsp-extended .dopbsp-body .dopbsp-co,
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group1.dopbsp-extended .dopbsp-body .dopbsp-co,
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group2 .dopbsp-body .dopbsp-co,
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group3 .dopbsp-body .dopbsp-co{
+    border-left: none !important;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group1 .dopbsp-body .dopbsp-ci,
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group2 .dopbsp-body .dopbsp-ci,
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle.dopbsp-group3.dopbsp-extended .dopbsp-body .dopbsp-ci{
+    border-right-color: transparent !important;
+    border-right: transparent !important;
+}
+
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle .dopbsp-body .dopbsp-old-price{
+    color: #acacac;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 300;
+    line-height: 19px !important;
+    margin: 0 !important;
+    padding: 0 0 0 5px !important;
+    text-decoration: line-through;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle .dopbsp-body .dopbsp-price{
+    color: #464646;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    line-height: 19px !important;
+    margin: 0 !important;
+    padding: 0 0 0 5px !important;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle .dopbsp-body .dopbsp-available{
+    color: #acacac;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 300;
+    line-height: 19px !important;
+    padding: 0 0 0 5px;
+    width: 100%;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle .dopbsp-body .dopbsp-info-body{
+    color: #acacac;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 11px !important;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 20px !important;
+    height: 20px;
+    overflow: hidden;
+    padding: 0 0 0 5px;
+    width: auto;
+    word-break:break-all;
+}
+
+.DOPBSPReservationsAdd-day .dopbsp-bind-middle .dopbsp-body .dopbsp-info-body .dopbsp-info-body-mask{
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1);
+    font-style: normal;
+    height: 20px;
+    padding: 0 2px 0 0;
+    position: absolute;
+    right: 0;
+    width: 70%;
+    text-align: right;
+    z-index: 100;
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-style-small .dopbsp-body{
+    display: none !important;
+}
+/*
+ * Last month day.
+ */
+.DOPBSPReservationsAdd-day.dopbsp-last-month{
+    opacity: 0.5;
+}
+
+/* 
+ * Past day.
+ */
+.DOPBSPReservationsAdd-day.dopbsp-past-day{
+    opacity: 0.25;
+}
+
+/*
+ * Current month day.
+ */
+.DOPBSPReservationsAdd-day.dopbsp-curr-month{
+}
+
+/*
+ * Next month day.
+ */
+.DOPBSPReservationsAdd-day.dopbsp-next-month{
+    opacity: 0.5;
+}
+
+/*
+ * Available day.
+ */
+.DOPBSPReservationsAdd-day.dopbsp-available .dopbsp-head,
+.DOPBSPReservationsAdd-day .dopbsp-head .dopbsp-co.dopbsp-available,
+.DOPBSPReservationsAdd-day .dopbsp-head .dopbsp-ci.dopbsp-available,
+.DOPBSPReservationsAdd-day .dopbsp-bind-left.dopbsp-extended.dopbsp-available .dopbsp-head{
+    background-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+    border-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-available .dopbsp-body,
+.DOPBSPReservationsAdd-day .dopbsp-body .dopbsp-co.dopbsp-available,
+.DOPBSPReservationsAdd-day .dopbsp-body .dopbsp-ci.dopbsp-available,
+.DOPBSPReservationsAdd-day .dopbsp-bind-left.dopbsp-extended.dopbsp-available .dopbsp-body{
+    border-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-available .dopbsp-head .dopbsp-day,
+.DOPBSPReservationsAdd-day .dopbsp-head .dopbsp-co.dopbsp-available,
+.DOPBSPReservationsAdd-day .dopbsp-head .dopbsp-ci.dopbsp-available,
+.DOPBSPReservationsAdd-day .dopbsp-body .dopbsp-co.dopbsp-available,
+.DOPBSPReservationsAdd-day .dopbsp-body .dopbsp-ci.dopbsp-available{
+    cursor: pointer;
+}
+
+/*
+ * Booked day.
+ */
+.DOPBSPReservationsAdd-day.dopbsp-booked .dopbsp-head,
+.DOPBSPReservationsAdd-day .dopbsp-head .dopbsp-co.dopbsp-booked,
+.DOPBSPReservationsAdd-day .dopbsp-head .dopbsp-ci.dopbsp-booked{
+    background-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+    border-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-booked .dopbsp-body,
+.DOPBSPReservationsAdd-day .dopbsp-body .dopbsp-co.dopbsp-booked,
+.DOPBSPReservationsAdd-day .dopbsp-body .dopbsp-ci.dopbsp-booked{
+    border-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+/*
+ * Special day.
+ */
+.DOPBSPReservationsAdd-day.dopbsp-special .dopbsp-head,
+.DOPBSPReservationsAdd-day .dopbsp-head .dopbsp-co.dopbsp-special,
+.DOPBSPReservationsAdd-day .dopbsp-head .dopbsp-ci.dopbsp-special,
+.DOPBSPReservationsAdd-day .dopbsp-bind-left.dopbsp-extended.dopbsp-special .dopbsp-head{
+    background-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+    border-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-special .dopbsp-body,
+.DOPBSPReservationsAdd-day .dopbsp-body .dopbsp-co.dopbsp-special,
+.DOPBSPReservationsAdd-day .dopbsp-body .dopbsp-ci.dopbsp-special,
+.DOPBSPReservationsAdd-day .dopbsp-bind-left.dopbsp-extended.dopbsp-special .dopbsp-body{
+    border-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-special .dopbsp-head .dopbsp-day,
+.DOPBSPReservationsAdd-day .dopbsp-head .dopbsp-co.dopbsp-special,
+.DOPBSPReservationsAdd-day .dopbsp-head .dopbsp-ci.dopbsp-special,
+.DOPBSPReservationsAdd-day .dopbsp-body .dopbsp-co.dopbsp-special,
+.DOPBSPReservationsAdd-day .dopbsp-body .dopbsp-ci.dopbsp-special{
+    cursor: pointer;
+}
+
+/*
+ * Unavailable day.
+ */
+.DOPBSPReservationsAdd-day.dopbsp-unavailable .dopbsp-head,
+.DOPBSPReservationsAdd-day .dopbsp-head .dopbsp-co.dopbsp-unavailable,
+.DOPBSPReservationsAdd-day .dopbsp-head .dopbsp-ci.dopbsp-unavailable{
+    background-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+    border-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-unavailable .dopbsp-body,
+.DOPBSPReservationsAdd-day .dopbsp-body .dopbsp-co.dopbsp-unavailable,
+.DOPBSPReservationsAdd-day .dopbsp-body .dopbsp-ci.dopbsp-unavailable{
+    border-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+/*
+ * Selected day.
+ */
+.DOPBSPReservationsAdd-day.dopbsp-selected .dopbsp-head,
+.DOPBSPReservationsAdd-day.dopbsp-selected .dopbsp-head .dopbsp-co,
+.DOPBSPReservationsAdd-day.dopbsp-selected .dopbsp-head .dopbsp-ci,
+.DOPBSPReservationsAdd-day.dopbsp-selected .dopbsp-bind-left.dopbsp-extended .dopbsp-head{
+    background-color: #464646 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+    border-color: #464646 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-selected .dopbsp-body,
+.DOPBSPReservationsAdd-day.dopbsp-selected .dopbsp-body .dopbsp-co,
+.DOPBSPReservationsAdd-day.dopbsp-selected .dopbsp-body .dopbsp-ci,
+.DOPBSPReservationsAdd-day.dopbsp-selected .dopbsp-bind-left.dopbsp-extended .dopbsp-body{
+    border-color: #464646 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-first .dopbsp-head .dopbsp-co.dopbsp-none,
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-last .dopbsp-head .dopbsp-ci.dopbsp-none{
+    background-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-first .dopbsp-body .dopbsp-co.dopbsp-none,
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-last .dopbsp-body .dopbsp-ci.dopbsp-none{
+    border-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-first .dopbsp-head .dopbsp-co.dopbsp-available,
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-last .dopbsp-head .dopbsp-ci.dopbsp-available,
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-first .dopbsp-bind-left.dopbsp-available.dopbsp-extended .dopbsp-head,
+.DOPBSPReservationsAdd-day.dopbsp-available.dopbsp-selected.dopbsp-last .dopbsp-bind-right .dopbsp-head{
+    background-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+    border-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-first .dopbsp-body .dopbsp-co.dopbsp-available,
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-last .dopbsp-body .dopbsp-ci.dopbsp-available,
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-first .dopbsp-bind-left.dopbsp-available.dopbsp-extended .dopbsp-body,
+.DOPBSPReservationsAdd-day.dopbsp-available.dopbsp-selected.dopbsp-last .dopbsp-bind-right .dopbsp-body{
+    border-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-first .dopbsp-head .dopbsp-co.dopbsp-booked,
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-last .dopbsp-head .dopbsp-ci.dopbsp-booked{
+    background-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+    border-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-first .dopbsp-body .dopbsp-co.dopbsp-booked,
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-last .dopbsp-body .dopbsp-ci.dopbsp-booked{
+    border-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-first .dopbsp-head .dopbsp-co.dopbsp-special,
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-last .dopbsp-head .dopbsp-ci.dopbsp-special,
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-first .dopbsp-bind-left.dopbsp-special.dopbsp-extended .dopbsp-head,
+.DOPBSPReservationsAdd-day.dopbsp-special.dopbsp-selected.dopbsp-last .dopbsp-bind-right .dopbsp-head{
+    background-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+    border-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-first .dopbsp-body .dopbsp-co.dopbsp-special,
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-last .dopbsp-body .dopbsp-ci.dopbsp-special,
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-first .dopbsp-bind-left.dopbsp-special.dopbsp-extended .dopbsp-body,
+.DOPBSPReservationsAdd-day.dopbsp-special.dopbsp-selected.dopbsp-last .dopbsp-bind-right .dopbsp-body{
+    border-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-first .dopbsp-head .dopbsp-co.dopbsp-unavailable,
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-last .dopbsp-head .dopbsp-ci.dopbsp-unavailable{
+    background-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+    border-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-first .dopbsp-body .dopbsp-co.dopbsp-unavailable,
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-last .dopbsp-body .dopbsp-ci.dopbsp-unavailable{
+    border-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-selected.dopbsp-first .dopbsp-extended .dopbsp-body .dopbsp-co{
+    border-left-color: transparent !important;
+}
+
+/*
+ * Mask day.
+ */
+.DOPBSPReservationsAdd-day.dopbsp-mask{
+    cursor: default;
+    opacity: 0;
+}
+
+/*
+ * Hide day.
+ */
+.DOPBSPReservationsAdd-day.dopbsp-hide{
+    display: none;
+}
+
+/*
+ * Cursor.
+ */
+.DOPBSPReservationsAdd-day.dopbsp-cursor-pointer{
+    cursor: pointer !important;
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-no-cursor-pointer
+.DOPBSPReservationsAdd-day.dopbsp-no-cursor-pointer .dopbsp-head .dopbsp-co,
+.DOPBSPReservationsAdd-day.dopbsp-no-cursor-pointer .dopbsp-head .dopbsp-ci,
+.DOPBSPReservationsAdd-day.dopbsp-no-cursor-pointer .dopbsp-body .dopbsp-co,
+.DOPBSPReservationsAdd-day.dopbsp-no-cursor-pointer .dopbsp-body .dopbsp-ci{
+    cursor: default !important;
+}
+
+/*
+ * Grouped days - first column.
+ */
+.DOPBSPReservationsAdd-day.dopbsp-first-column .dopbsp-bind-left{
+    opacity: 0 !important;
+}
+
+/*
+ * Grouped days - last column.
+ */
+.DOPBSPReservationsAdd-day.dopbsp-last-column .dopbsp-bind-middle.dopbsp-group1 .dopbsp-head .dopbsp-ci,
+.DOPBSPReservationsAdd-day.dopbsp-last-column .dopbsp-bind-middle.dopbsp-group2 .dopbsp-head .dopbsp-ci{
+    right: 0px !important;
+}
+
+.DOPBSPReservationsAdd-day.dopbsp-last-column .dopbsp-bind-right{
+    opacity: 0 !important;
+}
+/*
+ * ******************************************************************* End days.
+ */ 
+
+/*
+ * **************************************************************** Begin hours.
+ */ 
+.DOPBSPReservationsAdd-hours{
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    border-top: none;
+    display: none;
+    padding: 5px 5px 4px 5px;
+}
+
+.DOPBSPReservationsAdd-hour{
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    text-align: left;
+}
+
+.DOPBSPReservationsAdd-hour .dopbsp-bind-top, 
+.DOPBSPReservationsAdd-hour .dopbsp-bind-bottom{
+    background-color: #ffffff;
+    border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-bottom: none;
+    border-top: none;
+    height: 1px;
+    opacity: 0;
+}
+
+.DOPBSPReservationsAdd-hour .dopbsp-bind-top .dopbsp-hour, 
+.DOPBSPReservationsAdd-hour .dopbsp-bind-bottom .dopbsp-hour{
+    background: #ffffff;
+    color: #ffffff;
+    float: left;
+    line-height: 1px !important;
+    padding: 0 5px;
+}
+
+.DOPBSPReservationsAdd-hour .dopbsp-bind-top.dopbsp-enabled, 
+.DOPBSPReservationsAdd-hour .dopbsp-bind-bottom.dopbsp-enabled{
+    opacity: 1;
+}
+
+.DOPBSPReservationsAdd-hour .dopbsp-bind-top.dopbsp-enabled .dopbsp-hour, 
+.DOPBSPReservationsAdd-hour .dopbsp-bind-bottom.dopbsp-enabled .dopbsp-hour{
+    background-color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+}
+
+.DOPBSPReservationsAdd-hour .dopbsp-bind-middle{    
+    background-color: #ffffff;
+    border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    height: 16px;
+    line-height: 16px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.DOPBSPReservationsAdd-hour .dopbsp-bind-middle.dopbsp-group1{
+    border-bottom: none;
+}
+
+.DOPBSPReservationsAdd-hour .dopbsp-bind-middle.dopbsp-group2{
+    border-bottom: none;
+    border-top: none;
+}
+
+.DOPBSPReservationsAdd-hour .dopbsp-bind-middle.dopbsp-group3{
+    border-top: none;
+}
+
+.DOPBSPReservationsAdd-hour .dopbsp-bind-middle .dopbsp-hour{    
+    background-color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    color: #ffffff;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    line-height: 16px !important;
+    padding: 0 5px 0 4px;
+}
+
+.DOPBSPReservationsAdd-hour .dopbsp-bind-middle .dopbsp-price, 
+.DOPBSPReservationsAdd-hour .dopbsp-bind-middle .dopbsp-price-promo{
+    color: #464646;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    padding: 0 0 0 10px !important;
+}
+
+.DOPBSPReservationsAdd-hour .dopbsp-bind-middle .dopbsp-old-price{
+    color: #acacac;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    padding: 0 0 0 5px !important;
+    text-decoration: line-through;
+}
+
+.DOPBSPReservationsAdd-hour .dopbsp-bind-middle .dopbsp-available{
+    color: #acacac;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 11px !important;
+    line-height: 16px !important;
+    padding: 0 10px !important;
+}
+
+.DOPBSPReservationsAdd-hour .dopbsp-bind-middle .dopbsp-info-body{
+    color: #acacac;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 11px !important;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 16px !important;
+    height: 16px;
+    overflow: hidden;
+    padding: 0 0 0 5px;
+    width: 60px;
+    word-break: break-all;
+}
+
+.DOPBSPReservationsAdd-hour .dopbsp-bind-middle .dopbsp-info-body .dopbsp-info-body-mask{
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1);
+    float: right;
+    font-style: normal;
+    height: 16px;
+    padding: 0 2px 0 0;
+    width: 10px;
+    text-align: right;
+    z-index: 100;
+}
+
+.DOPBSPReservationsAdd-hour .dopbsp-bind-middle .dopbsp-info{
+    background-color: #cccccc;
+    background-image: url('../images/sprite.png');
+    background-position: -162px -102px;
+    float: right;
+    height: 16px;
+    margin: 0;
+    width: 16px;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+.DOPBSPReservationsAdd-hour .dopbsp-bind-middle .dopbsp-info:hover{
+    background-color: #464646 !important;
+}
+
+/*
+ * Available hour.
+ */
+.DOPBSPReservationsAdd-hour.dopbsp-available .dopbsp-hour,
+.DOPBSPReservationsAdd-hour.dopbsp-available .dopbsp-bind-middle .dopbsp-info,
+.DOPBSPReservationsAdd-hour.dopbsp-available .dopbsp-bind-middle .dopbsp-notes{    
+    background-color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-available .dopbsp-bind-middle{    
+    border-color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-available .dopbsp-bind-top{    
+    border-color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-available .dopbsp-bind-top .dopbsp-hour{    
+    color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-available .dopbsp-bind-bottom{    
+    border-color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-available .dopbsp-bind-bottom .dopbsp-hour{    
+    color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-available .dopbsp-bind-top.dopbsp-enabled .dopbsp-hour,
+.DOPBSPReservationsAdd-hour.dopbsp-available .dopbsp-bind-bottom.dopbsp-enabled .dopbsp-hour{
+    background-color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+    color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+/*
+ * Booked hour.
+ */
+.DOPBSPReservationsAdd-hour.dopbsp-booked .dopbsp-hour,
+.DOPBSPReservationsAdd-hour.dopbsp-booked .dopbsp-bind-middle .dopbsp-info,
+.DOPBSPReservationsAdd-hour.dopbsp-booked .dopbsp-bind-middle .dopbsp-notes{    
+    background-color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-booked .dopbsp-bind-middle{    
+    border-color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-booked .dopbsp-bind-top{    
+    border-color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-booked .dopbsp-bind-top .dopbsp-hour{    
+    color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-booked .dopbsp-bind-bottom{    
+    border-color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-booked .dopbsp-bind-bottom .dopbsp-hour{    
+    color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-booked .dopbsp-bind-top.dopbsp-enabled .dopbsp-hour,
+.DOPBSPReservationsAdd-hour.dopbsp-booked .dopbsp-bind-bottom.dopbsp-enabled .dopbsp-hour{
+    background-color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+    color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+/*
+ * Special hour.
+ */
+.DOPBSPReservationsAdd-hour.dopbsp-special .dopbsp-hour,
+.DOPBSPReservationsAdd-hour.dopbsp-special .dopbsp-bind-middle .dopbsp-info,
+.DOPBSPReservationsAdd-hour.dopbsp-special .dopbsp-bind-middle .dopbsp-notes{    
+    background-color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-special .dopbsp-bind-middle{    
+    border-color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-special .dopbsp-bind-top{    
+    border-color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-special .dopbsp-bind-top .dopbsp-hour{    
+    color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-special .dopbsp-bind-bottom{    
+    border-color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-special .dopbsp-bind-bottom .dopbsp-hour{    
+    color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-special .dopbsp-bind-top.dopbsp-enabled .dopbsp-hour,
+.DOPBSPReservationsAdd-hour.dopbsp-special .dopbsp-bind-bottom.dopbsp-enabled .dopbsp-hour{
+    background-color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+    color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+/*
+ * Unavailable hour.
+ */
+.DOPBSPReservationsAdd-hour.dopbsp-unavailable .dopbsp-hour,
+.DOPBSPReservationsAdd-hour.dopbsp-unavailable .dopbsp-bind-middle .dopbsp-info,
+.DOPBSPReservationsAdd-hour.dopbsp-unavailable .dopbsp-bind-middle .dopbsp-notes{
+    background-color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-unavailable .dopbsp-bind-middle{    
+    border-color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-unavailable .dopbsp-bind-top{    
+    border-color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-unavailable .dopbsp-bind-top .dopbsp-hour{    
+    color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-unavailable .dopbsp-bind-bottom{    
+    border-color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-unavailable .dopbsp-bind-bottom .dopbsp-hour{    
+    color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-unavailable .dopbsp-bind-top.dopbsp-enabled .dopbsp-hour,
+.DOPBSPReservationsAdd-hour.dopbsp-unavailable .dopbsp-bind-bottom.dopbsp-enabled .dopbsp-hour{
+    background-color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+    color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+/*
+ * Selected hour.
+ */
+.DOPBSPReservationsAdd-hour.dopbsp-selected .dopbsp-bind-middle{    
+    border-color: #464646; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-selected .dopbsp-bind-middle .dopbsp-hour{    
+    background: #464646; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-selected .dopbsp-bind-top{    
+    border-color: #464646; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-selected .dopbsp-bind-top .dopbsp-hour{    
+    color: #464646; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-selected .dopbsp-bind-bottom{    
+    border-color: #464646; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-selected .dopbsp-bind-bottom .dopbsp-hour{    
+    color: #464646; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-selected .dopbsp-bind-top .dopbsp-hour,
+.DOPBSPReservationsAdd-hour.dopbsp-selected .dopbsp-bind-bottom .dopbsp-hour,
+.DOPBSPReservationsAdd-hour.dopbsp-selected .dopbsp-bind-top.dopbsp-enabled .dopbsp-hour,
+.DOPBSPReservationsAdd-hour.dopbsp-selected .dopbsp-bind-bottom.dopbsp-enabled .dopbsp-hour{ 
+    background-color: #464646; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+    color: #464646; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-selected .dopbsp-bind-middle .dopbsp-info{
+    background-color: #464646; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+/*
+ * Past hour.
+ */
+.DOPBSPReservationsAdd-hour.dopbsp-past-hour{  
+    cursor: default;
+    opacity: 0.25;
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-past-hour .dopbsp-bind-middle .dopbsp-notes{
+    display: none;
+}
+
+.DOPBSPReservationsAdd-hour.dopbsp-past-hour .dopbsp-bind-middle .dopbsp-info{
+    display: none;
+}
+/*
+ * ****************************************************************** End hours.
+ */
+/*
+ * ***************************************************************************** End calendar.
+ */
+
+/*
+ * ***************************************************************************** Begin sidebar.
+ */
+/*
+ * ************************************************************* Begin messages.
+ */
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-message{
+    background: #464646;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-message.dopbsp-success{
+    background: #9cbc72;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-message.dopbsp-error{
+    background: #f1705c;
+}
+/*
+ * *************************************************************** End messages.
+ */
+
+/*
+ * ***************************************************************** Begin cart.
+ */
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-cart-wrapper{
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-cart-wrapper .dopbsp-cart{
+    border: none;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    table-layout: fixed !important;
+    width: 100% !important;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-cart-wrapper .dopbsp-cart td{
+    border: none !important;
+    display: table-cell;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15px;
+    overflow: hidden;
+    padding: 2px 0 3px 0 !important;
+    text-align: left;
+    vertical-align: top;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-label{
+    color: #424242;
+    font-weight: bold;
+    padding: 2px 0 3px 10px !important;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-value{
+    background: none;
+    color: #666666;
+    padding: 2px 10px 3px 0 !important;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-value.dopbsp-price{
+    font-weight: bold;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-value.dopbsp-info{
+    font-style: italic;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-value .dopbsp-info-rule{
+    font-size: 12px;
+    font-style: normal;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-value .dopbsp-info-price{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-cart-wrapper .dopbsp-cart tr.dopbsp-separator td{
+    background: none;
+    border: none !important;
+    height: 20px;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-cart-wrapper .dopbsp-cart tr.dopbsp-separator td.dopbsp-label{
+    padding: 0 0 0 10px !important; 
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-cart-wrapper .dopbsp-cart tr.dopbsp-separator td.dopbsp-value{
+    padding: 0 10px 0 0 !important; 
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-cart-wrapper .dopbsp-cart tr.dopbsp-separator td .dopbsp-line{
+    border-bottom: 1px solid #cccccc;
+    height: 0;
+    padding: 19px 0 0 0;
+    margin: 0 0 20px 0;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-total td.dopbsp-label{
+    background: #464646;
+    color: #fcfcfc;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 20px 0 20px 10px !important;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-total td.dopbsp-value{
+    background: #464646;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 20px 10px 20px 0 !important;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-deposit td.dopbsp-label{
+    background: #464646;
+    border-bottom: 1px solid #cccccc !important;
+    color: #fcfcfc;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 10px 0 9px 10px !important;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-deposit td.dopbsp-value{
+    background: #464646;
+    border-bottom: 1px solid #cccccc !important;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 10px 10px 9px 0 !important;
+}
+/*
+ * ******************************************************************* End cart.
+ */
+/*
+ * ***************************************************************************** End sidebar.
+ */
+
+/*
+ * ***************************************************************************** Begin tooltip.
+ */
+.DOPBSPReservationsAdd-tooltip{
+    background: #ffffff;
+    border: 1px solid #464646;
+    color: #acacac;
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    left: 0px;
+    line-height: 20px;
+    max-width: 500px;
+    padding: 9px;
+    position: absolute;
+    top: 0px;
+    z-index: 1000000;
+}
+
+.DOPBSPReservationsAdd-tooltip.dopbsp-text{
+    padding: 19px 9px;
+}
+/*
+ * ***************************************************************************** End tooltip.
+ */
+
+/*
+ * ***************************************************************************** Begin retina.
+ */
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi){
+    .DOPBSPReservationsAdd-navigation .dopbsp-add-btn,
+    .DOPBSPReservationsAdd-navigation .dopbsp-next-btn,
+    .DOPBSPReservationsAdd-navigation .dopbsp-previous-btn,
+    .DOPBSPReservationsAdd-navigation .dopbsp-remove-btn,
+    .DOPBSPReservationsAdd-day .dopbsp-bind-middle .dopbsp-head .dopbsp-info,
+    .DOPBSPReservationsAdd-hour .dopbsp-bind-middle .dopbsp-info{
+        background-image: url('../images/sprite-retina.png') !important;
+        background-size: 600px 500px !important;
+    }
+}
+/*
+ * ***************************************************************************** End retina.
+ */

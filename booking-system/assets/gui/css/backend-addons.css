@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.1
+* File                    : assets/gui/css/backend-addons.css
+* File Version            : 1.0.1
+* Created / Last Modified : 26 August 2015
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Back end addons stylesheet.
+*/
+
+/*
+ * ***************************************************************************** Begin addons.
+ */
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper col.dopbsp-column1.dopbsp-addons{
+    width: 375px;
+}
+
+/*
+ * Begin reservations list.
+ */
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-addons-list{
+    display: block;
+    overflow: hidden;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-addons-list li.dopbsp-addon{
+    background-color: #ffffff;
+    border: 1px solid #666666;
+    border-top: 9px solid #666666;
+    display: block; 
+    float: left; 
+    height: 200px;
+    margin: 0px 20px 20px 0px;
+    padding: 70px 19px 0 19px;
+    position: relative; 
+    width: 280px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-addons-list li.dopbsp-addon .dopbsp-price{
+    color: #898989;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-addons-list li.dopbsp-addon h5{
+    color: #464646;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-addons-list li.dopbsp-addon p{
+    color: #898989;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0 0 30px 0;
+    height: 40px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-addons-list li.dopbsp-addon a.dopbsp-get-it{
+    background: #464646;
+    color: #ffffff;
+    display: block;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 20px;
+    text-align: left;
+    text-decoration: none;
+    -webkit-transition: background 300ms linear;
+    -moz-transition: background 300ms linear;
+    -ms-transition: background 300ms linear;
+    -o-transition: background 300ms linear;
+    transition: background 300ms linear;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-addons-list li.dopbsp-addon a.dopbsp-get-it:hover{
+    background: #ff6300;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-addons-list li.dopbsp-no-data{
+    border: none;
+    color: #acacac;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
+    padding: 20px 19px;
+}
+/*
+ * ***************************************************************************** End addons.
+ */

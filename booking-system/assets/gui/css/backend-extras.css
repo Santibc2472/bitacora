@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.1
+* File                    : assets/gui/css/backend-extras.css
+* File Version            : 1.0.6
+* Created / Last Modified : 26 August 2015
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Back end extras stylesheet.
+*/
+
+/*
+ * ***************************************************************************** Begin extras.
+ */
+/*
+ * ************************************************** Begin extra groups header.
+ */
+.DOPBSP-admin .dopbsp-extra-groups-header{
+    border: 1px solid #e6e6e6;
+    border-right: none;
+    border-left: none;
+    height: 38px;
+    margin: 0 -10px 20px -10px;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups-header h3{
+    border: none !important;
+    color: #464646;
+    float: left;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 38px;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups-header .dopbsp-button{
+    background-image: url('../images/sprite.png');
+    background-position: -41px -1px;
+    display: block;
+    height: 38px;
+    margin: 0 10px;
+    width: 38px;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups-header .dopbsp-button .dopbsp-info{
+    margin: 40px 0 0 0;
+}
+/*
+ * **************************************************** End extra groups header.
+ */
+
+/*
+ * ********************************************************* Begin extra groups.
+ */
+.DOPBSP-admin .dopbsp-extra-groups{
+    list-style: none;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-placeholder{
+    border: 1px dashed #ff6300;
+    height: 58px;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper{
+    margin: 0 0 5px 0;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper:last-child{
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-preview-wrapper{
+    background-color: #fafafa;
+    padding: 20px 10px;
+    margin: 0 0 1px 0;
+    position: relative;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-preview-wrapper .dopbsp-preview{
+    float: left;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-preview-wrapper .dopbsp-preview.dopbsp-input-wrapper{
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-preview-wrapper .dopbsp-preview.dopbsp-input-wrapper label{
+    display: block;
+    float: none;
+    font-style: italic;
+    margin: 0;
+    width: 600px;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-preview-wrapper .dopbsp-preview.dopbsp-input-wrapper label .dopbsp-required{
+    color: #f1705c;
+}
+
+/*
+ * Buttons
+ */
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper{
+    bottom: 0px;
+    position: absolute;
+    right: 10px;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button{
+    background-color: #acacac;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button:last-child{
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button.dopbsp-toggle{
+    background-image: url('../images/sprite.png');
+    background-position: 0 -120px;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button.dopbsp-delete{
+    background-image: url('../images/sprite.png');
+    background-position: -80px -120px;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button.dopbsp-handle{
+    background-image: url('../images/sprite.png');
+    background-position: -120px -120px;
+    cursor: move;
+}
+   
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button:hover{
+    background-color: #ff6300;
+}
+
+/*
+ * Settings
+ */
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper{
+    background: #fafafa;
+    display: none;
+    padding: 19px 10px 20px 10px;
+}
+
+/* 
+ * Select options
+ */
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper{
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-button{
+    height: 30px;
+    width: 30px;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-button .dopbsp-info{
+    margin: 32px 0 0 0;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-buttons{
+    margin: 0 0 10px 0;
+    overflow: hidden;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-buttons .dopbsp-button.dopbsp-add{
+    background-image: url('../images/sprite.png');
+    background-position: -165px -125px;
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-items-labels{
+    margin: 0 0 10px 150px;
+    overflow: hidden;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-items-labels li{
+    color: #acacac;
+    float: left;
+    font-weight: 300;
+    margin: 0 5px 0 0;
+    width: 80px;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-items-labels li:first-child{
+    width: 170px;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-items{
+    margin: 0 0 0 150px !important;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-items li{
+    margin: 0 0 5px 0;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-items li:last-child{
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-items li .dopbsp-input-wrapper{
+    margin: 0 0 5px 0;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-items .dopbsp-placeholder{
+    height: 28px;
+    width: 580px;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-items .dopbsp-input-wrapper{
+    margin: 0 0 5px 0;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-items .dopbsp-input-wrapper input[type=text].dopbsp-small,
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-items .dopbsp-input-wrapper .DOPSelect.dopselect-single.dopbsp-small{
+    float: left;
+    margin: 0 0 0 5px;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-items .dopbsp-input-wrapper{
+    margin: 0 0 5px 0;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-items li:last-child .dopbsp-input-wrapper{
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-items .dopbsp-input-wrapper .dopbsp-button.dopbsp-delete{
+    background-image: url('../images/sprite.png');
+    background-position: -85px -125px;
+    margin: 0 0 0 5px;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-items .dopbsp-input-wrapper .dopbsp-button.dopbsp-handle{
+    background-image: url('../images/sprite.png');
+    background-position: -125px -125px;
+    cursor: move;
+    margin: 0 0 0 5px;
+}
+
+/*
+ * Displayed extra group.
+ */
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper.dopbsp-displayed .dopbsp-settings-wrapper{
+    display: block;
+}
+
+.DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper.dopbsp-displayed .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button.dopbsp-toggle{
+    background-position: -40px -120px;
+}
+/*
+ * *********************************************************** End extra groups.
+ */
+
+/*
+ * ***************************************************************************** Begin retina.
+ */
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi){ 
+    .DOPBSP-admin .dopbsp-extra-groups-header .dopbsp-button,
+    .DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button.dopbsp-toggle,
+    .DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button.dopbsp-delete,
+    .DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-preview-wrapper .dopbsp-buttons-wrapper .dopbsp-button.dopbsp-handle,
+    .DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-buttons .dopbsp-button.dopbsp-add,
+    .DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-items .dopbsp-input-wrapper .dopbsp-button.dopbsp-delete,
+    .DOPBSP-admin .dopbsp-extra-groups .dopbsp-group-wrapper .dopbsp-settings-wrapper .dopbsp-items-wrapper .dopbsp-items .dopbsp-input-wrapper .dopbsp-button.dopbsp-handle{
+        background-image: url('../images/sprite-retina.png') !important;
+        background-size: 600px 500px !important;
+    }
+}
+/*
+ * ***************************************************************************** End retina.
+ */
+/*
+ * ***************************************************************************** End extras.
+ */

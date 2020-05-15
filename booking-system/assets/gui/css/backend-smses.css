@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* File                    : assets/gui/css/backend-smses.css
+* Author                  : PINPOINT.WORLD
+* Copyright               : © 2018 PINPOINT.WORLD
+* Website                 : http://www.pinpoint.world
+* Description             : Back end smses stylesheet.
+*/
+
+/*
+ * ***************************************************************************** Begin SMSes.
+ */
+
+.DOPBSP-admin .dopbsp-input-wrapper textarea.dopbsp-sms{
+    background: #ffffff;
+    border: 1px solid #c9c9c9;
+    color: #acacac;
+    width: 50%;
+    height: 100px;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-book-user,
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-book-with-approval-admin,
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-book-with-approval-user,
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-paypal-admin,
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-paypal-user,
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-approved,
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-canceled,
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-rejected{
+    display: none;
+}
+/*
+ * ***************************************************************************** End SMSes.
+ */

@@ -1,0 +1,390 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.6
+* File                    : assets/gui/css/backend-pro.css
+* File Version            : 1.1.1
+* Created / Last Modified : 20 February 2016
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Back end coupons stylesheet.
+*/
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+/*
+ * ***************************************************************************** Begin dashboard.
+ */
+#DOPBSP-get-started ul li a .dopbsp-pro,
+#DOPBSP-more-actions ul li a .dopbsp-pro{
+    background-color: #448aff;
+    border-radius: 5px;
+    color: #ffffff;
+    display: block;
+    float: right;
+    font-family: 'Josefin Sans';
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    margin: 0 -8px 0 0;
+    max-width: 50px;
+    padding: 6px 6px 2px 6px !important;
+    white-space: normal;
+    z-index: 1000000;
+}
+
+/*
+ * Buttons info.
+ */
+.DOPBSP-admin .dopbsp-main .dopbsp-button .dopbsp-info.dopbsp-pro{
+    background-color: #448aff;
+}
+
+/*
+ * ***************************************************************************** Begin features.
+ */
+#DOPBSP-get-features-all{
+    width:100%;
+}
+
+#DOPBSP-get-features-all .doptable.features.features{
+    border-collapse: collapse;
+    border-right: none;
+    border-top: none;
+    margin: 0 0 40px 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+#DOPBSP-get-features-all .doptable.features colgroup col{
+    width: 120px;
+}
+
+#DOPBSP-get-features-all .doptable.features colgroup col:first-child{
+    width: auto;
+}
+
+#DOPBSP-get-features-all .doptable.features tr th{
+    background: #666666;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+}
+
+#DOPBSP-get-features-all .doptable.features tr th:first-child{
+    background: #898989; 
+    font-weight: 300;
+    text-align: left;
+}
+
+#DOPBSP-get-features-all .doptable.features tr th:last-child{
+    background: #464646;
+    color: #ff6300;
+    font-size: 18px;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td{
+    background: #edf2f4;
+    border: none;
+    padding: 20px 10px 0 10px;
+    vertical-align: top;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td:first-child{
+    background: #f3f7f9;
+    padding: 20px 20px 0 20px;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td:last-child{
+    background: #e6ebed;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td h5,
+#DOPBSP-get-features-all .doptable.features tr td h6{
+    color: #252525;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td h6{
+    font-size: 16px;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td a.buy,
+#DOPBSP-get-features-all .doptable.features tr td a.download{
+    background-color: #689f38;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #ffffff;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 30px 0;
+    max-width: 100px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td a.buy{
+    background-color: #ff6300;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td a.buy:hover{background: rgb(226,88,0); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UyNTgwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZTYzMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(226, 88, 0, 1) 0%, rgba(254, 99, 0, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(226, 88, 0, 1)), color-stop(100%, rgba(254, 99, 0, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(226,88,0,1) 0%,rgba(254, 99, 0, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(226, 88, 0, 1) 0%,rgba(254, 99, 0, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(226, 88, 0, 1) 0%,rgba(254, 99, 0, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(226, 88, 0, 1) 0%,rgba(254, 99, 0, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e25800', endColorstr='#fe6300', GradientType=0); /* IE6-8 */
+}
+
+#DOPBSP-get-features-all .doptable.features tr td a.download:hover{
+    background: rgb(92,140,49); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVjOGMzMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2ODllMzgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(92, 140, 49, 1) 0%, rgba(104, 158, 56, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(92, 140, 49, 1)), color-stop(100%, rgba(104, 158, 56, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(92, 140, 49, 1) 0%, rgba(104, 158, 56, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(92, 140, 49, 1) 0%, rgba(104, 158, 56, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(92, 140, 49, 1) 0%, rgba(104, 158, 56, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(92, 140, 49, 1) 0%, rgba(104, 158, 56, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5c8c31', endColorstr='#689e38', GradientType=0); /* IE6-8 */
+}
+
+#DOPBSP-get-features-all .doptable.features tr td .doplist{
+    margin: 0 0 20px 0;
+}
+
+/*
+ * Green
+ */
+#DOPBSP-get-features-all .doptable.features tr td h5.green{
+    background: transparent url('../images/line-green-top.png') top left no-repeat;
+    color: #252525;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 0 20px 36px;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td .doplist.green li{
+    background: transparent url('../images/line-green-middle.png') top left no-repeat;
+    color: #464646;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    list-style: none;
+    padding: 0 0 20px 36px;
+    margin:0px !important;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td .doplist.green li:last-child{
+    background: transparent url('../images/line-green-bottom.png') top left no-repeat;
+}
+
+/*
+ * Blue
+ */
+#DOPBSP-get-features-all .doptable.features tr td h5.blue{
+    background: transparent url('../images/line-blue-top.png') top left no-repeat;
+    color: #252525;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 0 20px 36px;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td .doplist.blue li{
+    background: transparent url('../images/line-blue-middle.png') top left no-repeat;
+    color: #464646;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    list-style: none;
+    padding: 0 0 20px 36px;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td .doplist.blue li:last-child{
+    background: transparent url('../images/line-blue-bottom.png') top left no-repeat;
+}
+
+/*
+ * Red
+ */
+#DOPBSP-get-features-all .doptable.features tr td h5.red{
+    background: transparent url('../images/line-red-top.png') top left no-repeat;
+    color: #252525;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 0 20px 36px;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td .doplist.red li{
+    background: transparent url('../images/line-red-middle.png') top left no-repeat;
+    color: #464646;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    list-style: none;
+    padding: 0 0 20px 36px;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td .doplist.red li:last-child{
+    background: transparent url('../images/line-red-bottom.png') top left no-repeat;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td .icon-limited,
+#DOPBSP-get-features-all .doptable.features tr td .icon-unavailable,
+#DOPBSP-get-features-all .doptable.features tr td .icon-available,
+#DOPBSP-get-features-all .doptable.features tr td .icon-infinite{
+    background-image: url('../images/sprite.png');
+    background-position: -40px -400px;
+    background-repeat: no-repeat;
+    display: block;
+    height: 40px;
+    margin: auto;
+    position: relative;
+    width: 40px;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td .icon-limited{
+    background-position: -80px -400px;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td .icon-unavailable{
+    background-position: -40px -400px;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td .icon-available{
+    background-position: 0 -400px;
+}
+
+#DOPBSP-get-features-all .doptable.features tr td .icon-infinite{
+    background-position: 0 -400px;
+}
+
+/*
+ * ***************************************************************************** Responsive
+ */
+@media screen and (max-width: 550px){
+    #DOPBSP-get-features-all .doptable.features tr th{
+        padding: 20px 10px;
+    }
+    
+    #DOPBSP-get-features-all .doptable.features tr td h5.green,
+    #DOPBSP-get-features-all .doptable.features tr td h5.blue,
+    #DOPBSP-get-features-all .doptable.features tr td h5.red{
+        background: none;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px 0 20px 0;
+        
+    }
+    
+    #DOPBSP-get-features-all .doptable.features tr td .doplist{
+        display: none;
+    }
+}
+
+/*
+ * ***************************************************************************** Retina.
+ */
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi){
+    #DOPBSP-get-features-all .doptable.features tr td .icon-limited,
+    #DOPBSP-get-features-all .doptable.features tr td .icon-unavailable,
+    #DOPBSP-get-features-all .doptable.features tr td .icon-available,
+    #DOPBSP-get-features-all .doptable.features tr td .icon-infinite{
+        background-image: url('../images/sprite-retina.png') !important;
+        background-size: 3200px 930px !important;
+    }
+    
+    /*
+     * Green
+     */
+    #DOPBSP-get-features-all .doptable.features tr td h5.green{
+        background: transparent url('../images/line-green-top-retina.png') top left no-repeat;
+        background-size: 16px 700px !important;
+    }
+
+    #DOPBSP-get-features-all .doptable.features tr td .doplist.green li{
+        background: transparent url('../images/line-green-middle-retina.png') top left no-repeat;
+        background-size: 16px 700px !important;
+    }
+
+    #DOPBSP-get-features-all .doptable.features tr td .doplist.green li:last-child{
+        background: transparent url('../images/line-green-bottom-retina.png') top left no-repeat;
+        background-size: 16px 20px !important;
+    }
+
+    /*
+     * Blue
+     */
+    #DOPBSP-get-features-all .doptable.features tr td h5.blue{
+        background: transparent url('../images/line-blue-top-retina.png') top left no-repeat;
+        background-size: 16px 700px !important;
+    }
+
+    #DOPBSP-get-features-all .doptable.features tr td .doplist.blue li{
+        background: transparent url('../images/line-blue-middle-retina.png') top left no-repeat;
+        background-size: 16px 700px !important;
+    }
+
+    #DOPBSP-get-features-all .doptable.features tr td .doplist.blue li:last-child{
+        background: transparent url('../images/line-blue-bottom-retina.png') top left no-repeat;
+        background-size: 16px 20px !important;
+    }
+
+    /*
+     * Red
+     */
+    #DOPBSP-get-features-all .doptable.features tr td h5.red{
+        background: transparent url('../images/line-red-top-retina.png') top left no-repeat;
+        background-size: 16px 700px !important;
+    }
+
+    #DOPBSP-get-features-all .doptable.features tr td .doplist.red li{
+        background: transparent url('../images/line-red-middle-retina.png') top left no-repeat;
+        background-size: 16px 700px !important;
+    }
+
+    #DOPBSP-get-features-all .doptable.features tr td .doplist.red li:last-child{
+        background: transparent url('../images/line-red-bottom-retina.png') top left no-repeat;
+        background-size: 16px 20px !important;
+    }
+}
+/*
+ * ***************************************************************************** End features.
+ */
+/*
+ * ***************************************************************************** End pro.
+ */

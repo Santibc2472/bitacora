@@ -1,0 +1,1912 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.6
+* File                    : assets/gui/css/backend.css
+* File Version            : 1.2
+* Created / Last Modified : 14 February 2016
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Back end stylesheet.
+*/
+
+.DOPBSP-admin{
+    margin: 20px 20px 0 0;
+}
+
+#dopbsp-custom-post-meta .DOPBSP-admin{
+    margin-right: 0px;
+    min-width: 100%;
+}
+
+.dopbsp-left{
+    float: left !important;
+}
+
+.dopbsp-right{
+    float: right !important;
+}
+
+.dopbsp-clear{
+    clear: both;
+}
+
+.dopbsp-hidden{
+    display: none;
+}
+
+.DOPBSP-admin a{
+    color: #ff6300;
+    text-decoration: none;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+
+.DOPBSP-admin a:hover{
+    color: #fdaa29;
+}
+
+.dopbsp-notice{
+    position: relative;
+}
+
+/*
+ * Begin colors.
+ */
+.dopbsp-pending-background{
+    background: #000000 !important;
+}
+
+.dopbsp-approved-background{
+    background: #9cbc72 !important;
+}
+
+.dopbsp-rejected-background{
+    background: #f1705c !important;
+}
+
+.dopbsp-canceled-background{
+    background: #fdaa29 !important;
+}
+
+.dopbsp-expired-background{
+    background: #cccccc !important;
+}
+
+.dopbsp-pending-color{
+    color: #000000 !important;
+}
+
+.dopbsp-approved-color{
+    color: #9cbc72 !important;
+}
+
+.dopbsp-rejected-color{
+    color: #f1705c !important;
+}
+
+.dopbsp-canceled-color{
+    color: #fdaa29 !important;
+}
+
+.dopbsp-expired-color{
+    color: #cccccc !important;
+}
+/*
+ * End colors
+*/
+
+/*
+ * ***************************************************************************** Begin header.
+ */
+.DOPBSP-admin h2{
+    height: 0px !important;
+    line-height: 0px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 0px !important;
+}
+
+.DOPBSP-admin .dopbsp-header{
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    margin: 0 0 10px 0;
+    padding: 9px;
+}
+
+.DOPBSP-admin .dopbsp-header h3{
+    border: none !important;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 25px !important;
+    font-weight: normal !important;
+    line-height: 40px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.DOPBSP-admin .dopbsp-header h3 em{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.DOPBSP-admin .dopbsp-header h3 em.dopbsp-beta{
+    color: #ff6300;
+}
+
+.DOPBSP-admin .dopbsp-header h3 em.dopbsp-soon{
+    color: #666666;
+}
+
+.DOPBSP-admin .dopbsp-header a{
+    color: #ff6300;
+    font-weight: 300;
+    float: right;
+    line-height: 20px;
+    margin: 10px 20px 0 0;
+}
+
+#DOPSelect-DOPBSP-admin-language{
+    float: right;
+    margin: 5px 0 0 20px;
+}
+
+/*
+ * ********************************************************* Begin messages box.
+ */
+#DOPBSP-messages-background{
+    background: #000000;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000000;
+}
+
+#DOPBSP-messages-box{
+    background: #252525;
+    border: none;
+    left: 50%;
+    margin: 0 0 0 -125px;
+    min-height: 40px;
+    padding: 20px 10px;
+    position: fixed;
+    top: -80px;
+    width: 230px;
+    visibility: hidden; 
+    z-index: 10000001;
+    -webkit-transition: margin-top 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -moz-transition: margin-top 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -o-transition: margin-top 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    transition: margin-top 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+#DOPBSP-messages-box .dopbsp-icon-active,
+#DOPBSP-messages-box .dopbsp-icon-success,
+#DOPBSP-messages-box .dopbsp-icon-error{
+    display: none;
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+
+#DOPBSP-messages-box .dopbsp-icon-active{
+    background: url('../images/sprite.png') 0 -40px;
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: dopbsp-loader; 
+    -webkit-animation-timing-function: linear;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-animation-duration: 1s; 
+    -moz-animation-name: dopbsp-loader; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    animation-duration: 1s; 
+    animation-name: dopbsp-loader; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition-property: -moz-transform;
+    transition-duration: 1s;
+}
+
+@-webkit-keyframes dopbsp-loader{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes dopbsp-loader{
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@keyframes dopbsp-loader{
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+#DOPBSP-messages-box .dopbsp-icon-success{
+    background: url('../images/sprite.png') -40px -40px;
+}
+
+#DOPBSP-messages-box .dopbsp-icon-error{
+    background: url('../images/sprite.png') -80px -40px;
+}
+
+#DOPBSP-messages-box .dopbsp-message{
+    color: #e1e1e1;
+    display: table-cell;
+    font-size: 12px;
+    font-weight: 300;
+    height: 40px;
+    line-height: 15px;
+    min-height: 40px;
+    vertical-align: middle;
+    width: 175px;
+}
+
+#DOPBSP-messages-box .dopbsp-close{
+    background-color: #252525;
+    background-image: url('../images/sprite.png');
+    background-position: -160px -40px;
+    border: 1px solid #ffffff;
+    border-right: none;
+    border-top: none;
+    display: none;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+    width: 25px;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+#DOPBSP-messages-box .dopbsp-close:hover{
+    background-color: #ff6300;
+}
+
+#DOPBSP-messages-background.dopbsp-active{
+    display: block;
+}
+
+#DOPBSP-messages-box.dopbsp-active{
+    margin: -40px 0 0 -125px;
+    top: 50%;
+    visibility: visible; 
+}
+
+#DOPBSP-messages-box.dopbsp-active-info .dopbsp-icon-active,
+#DOPBSP-messages-box.dopbsp-active .dopbsp-icon-active{
+    display: block;
+}
+
+#DOPBSP-messages-box.dopbsp-success .dopbsp-icon-success{
+    display: block;
+}
+
+#DOPBSP-messages-box.dopbsp-error .dopbsp-icon-error{
+    display: block;
+}
+
+#DOPBSP-messages-box.dopbsp-active-info,
+#DOPBSP-messages-box.dopbsp-error,
+#DOPBSP-messages-box.dopbsp-success{
+    top: 33px;
+    visibility: visible; 
+}
+
+#DOPBSP-messages-box.dopbsp-error .dopbsp-close,
+#DOPBSP-messages-box.dopbsp-success .dopbsp-close{
+    display: block;
+}
+/*
+ * *********************************************************** End messages box.
+ */
+
+/*
+ * ***************************************************** Begin confirmation box.
+ */
+#DOPBSP-confirmation-box{
+    background: #252525;
+    border: none;
+    left: 50%;
+    margin: 0 0 0 -125px;
+    min-height: 40px;
+    padding: 20px 10px;
+    position: fixed;
+    top: -120px;
+    width: 230px;
+    visibility: hidden;
+    z-index: 10000001;
+    -webkit-transition: margin-top 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -moz-transition: margin-top 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -o-transition: margin-top 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    transition: margin-top 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+#DOPBSP-confirmation-box .dopbsp-icon{
+    background: url('../images/sprite.png') -120px -40px;
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+
+#DOPBSP-confirmation-box .dopbsp-message{
+    color: #e1e1e1;
+    display: table-cell;
+    font-size: 12px;
+    font-weight: 300;
+    height: 40px;
+    line-height: 15px;
+    min-height: 40px;
+    vertical-align: middle;
+    width: 190px;
+}
+
+#DOPBSP-confirmation-box .dopbsp-buttons{
+    background: #ffffff;
+    margin: 20px -10px -20px -10px;
+    overflow: hidden;
+    width: 250px;
+}
+
+#DOPBSP-confirmation-box .dopbsp-buttons a{
+    background: #252525;
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    height: 39px;
+    line-height: 39px;
+    margin: 1px 0 0 0;
+    text-align: center;
+    text-decoration: none;
+    width: 124.5px;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;
+}
+
+#DOPBSP-confirmation-box .dopbsp-buttons a.dopbsp-button-yes{
+    float: left;
+}
+
+#DOPBSP-confirmation-box .dopbsp-buttons a.dopbsp-button-no{
+    float: right;
+}
+
+#DOPBSP-confirmation-box .dopbsp-buttons a:hover{
+    background: #ff6300;
+}
+
+#DOPBSP-confirmation-box.dopbsp-active{
+    margin: -60px 0 0 -125px;
+    top: 50%;
+    visibility: visible; 
+}
+/*
+ * ******************************************************* End confirmation box.
+ */
+
+/*
+ * Begin go top.
+ */
+#DOPBSP-go-top{
+    background-color: #252525;
+    background-image: url('../images/sprite.png');
+    background-position: -200px -40px;
+    bottom: 40px;
+    display: none;
+    height: 40px;
+    position: fixed;
+    right: 20px;
+    text-decoration: none;
+    width: 40px;
+    z-index: 10000001;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+#DOPBSP-go-top:hover{
+    background-color: #ff6300;
+}
+/*
+ * End go top.
+ */
+/*
+ * ***************************************************************************** End header.
+ */
+
+/*
+ * ***************************************************************************** Begin content.
+ */
+.DOPBSP-admin .dopbsp-main{
+}
+
+/*
+ * Section
+ */
+.DOPBSP-admin .dopbsp-main section.dopbsp-content-wrapper{
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    padding: 19px 9px;
+}
+
+.DOPBSP-admin .dopbsp-main section.dopbsp-content-wrapper h3{
+    border: none !important;
+    color: #464646;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 18px !important;
+    line-height: 40px !important;
+    margin: 0 0 20px 0 !important;
+    padding: 0 !important;
+}
+
+.DOPBSP-admin .dopbsp-main section.dopbsp-content-wrapper h4{
+    border: none !important;
+    color: #666666;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 20px !important;
+    margin: 0 0 20px 0 !important;
+    padding: 20px 0 0 0 !important;
+}
+
+.DOPBSP-admin .dopbsp-main section.dopbsp-content-wrapper p{
+    color: #666666;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0 0 20px 0 !important;
+    padding: 0 !important;
+}
+
+.DOPBSP-admin .dopbsp-main section.dopbsp-content-wrapper p:last-child{
+    margin: 0 !important;
+}
+
+/*
+ * Begin box headers.
+ */
+.DOPBSP-admin .dopbsp-main section.dopbsp-content-wrapper .dopbsp-box-header{
+    border: 1px solid #e6e6e6;
+    border-right: none;
+    border-left: none;
+    height: 38px;
+    margin: -20px -10px 20px -10px;
+    overflow: hidden;
+}
+
+.DOPBSP-admin .dopbsp-main section.dopbsp-content-wrapper .dopbsp-box-header h3{
+    border: none !important;
+    color: #464646 !important;
+    float: left;
+    font-size: 15px !important;
+    font-weight: normal !important;
+    line-height: 38px !important;
+    margin: 0 0 0 10px !important;
+    padding: 0 !important;
+}
+
+.DOPBSP-admin .dopbsp-main section.dopbsp-content-wrapper .dopbsp-box-header .dopbsp-button{
+    float: right;
+    height: 38px;
+    margin: 0 10px 0 0;
+    width: 38px;
+}
+
+.DOPBSP-admin .dopbsp-main section.dopbsp-content-wrapper .dopbsp-box-header.dopbsp-display .dopbsp-button{
+    background-image: url('../images/sprite.png');
+    background-position: -1px -121px;
+}
+
+.DOPBSP-admin .dopbsp-main section.dopbsp-content-wrapper .dopbsp-box-header.dopbsp-hide .dopbsp-button{
+    background-image: url('../images/sprite.png');
+    background-position: -41px -121px;
+}
+
+.DOPBSP-admin .dopbsp-main section.dopbsp-content-wrapper .dopbsp-box-header.dopbsp-display{
+    margin: -20px -10px -20px -10px;
+}
+
+.DOPBSP-admin .dopbsp-main section.dopbsp-content-wrapper .dopbsp-box-header.dopbsp-hide{
+    margin: -20px -10px 20px -10px;
+}
+/*
+ * End box headers.
+ */
+
+/*
+ * Begin box wrappers.
+ */
+.DOPBSP-admin .dopbsp-main section.dopbsp-content-wrapper .dopbsp-box-wrapper{
+    margin: 0;
+    overflow: hidden;
+}
+/*
+ * End box wrappers.
+ */
+
+/*
+ * Table
+ */
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper{
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper col.dopbsp-column1{
+    width: 250px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper col.dopbsp-separator{
+    width: 10px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper col.dopbsp-column2.dopbsp-calendar{
+    width: 620px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column{
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header{
+    border-bottom: 1px solid #e6e6e6;
+    height: 40px;
+    overflow: hidden;
+    padding: 19px 4px 19px 9px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-button{
+    background-color: #c9c9c9;
+    border: none;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: block;
+    float: left;
+    height: 40px;
+    margin: 0 5px 0 0;
+    padding: 0;
+    width: 40px;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-help{
+    background: #c9c9c9 url('../images/sprite.png') 0 0;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-right{
+    margin: 0 0 0 5px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-add{
+    background-image: url('../images/sprite.png');
+    background-position: -40px 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-duplicate{
+    background-image: url('../images/duplicate.png');
+    background-position: 11px 11px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-calendar{
+    background-image: url('../images/sprite.png');
+    background-position: -80px 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-event{
+    background-image: url('../images/sprite.png');
+    background-position: -120px 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-staff{
+    background-image: url('../images/sprite.png');
+    background-position: -160px 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-settings{
+    background-image: url('../images/sprite.png');
+    background-position: -200px 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-notifications{
+    background-image: url('../images/sprite.png');
+    background-position: -240px 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-payments{
+    background-image: url('../images/sprite.png');
+    background-position: -280px 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-users{
+    background-image: url('../images/sprite.png');
+    background-position: -320px 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-search{
+    background-image: url('../images/sprite.png');
+    background-position: -400px 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-delete{
+    background-image: url('../images/sprite.png');
+    background-position: -440px 0;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-button .dopbsp-info{
+    background-color: #252525;
+    color: #ffffff;
+    display: none;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    max-width: 230px;
+    margin: 42px 0 0 0;
+    padding: 10px;
+    position: absolute;
+    white-space: normal;
+    z-index: 1000000;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-help.dopbsp-right .dopbsp-info{
+    margin: 42px 0 0 -210px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-button .dopbsp-info.dopbsp-help{
+    padding: 20px 10px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-button:hover,
+.DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-selected{
+    background-color: #ff6300;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-button:hover .dopbsp-info{
+    display: block;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content{
+    line-height: 20px;
+    overflow: hidden;
+    padding: 20px 9px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content hr{
+    background: #c9c9c9;
+    border: none !important;
+    height: 1px;
+    margin: 0 -10px 19px -10px;
+}
+
+/*
+ * *********************************************************** Begin items list.
+ */
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content ul{
+    margin: 0 0 20px 0;
+    overflow: hidden;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content ul:last-child{
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-item{
+    border: 1px solid #c9c9c9;
+    cursor: pointer;
+    margin: 0 0 5px 0;
+    -webkit-transition: border-color 300ms linear;
+    -moz-transition: border-color 300ms linear;
+    -o-transition: border-color 300ms linear;
+    transition: border-color 300ms linear;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-item:last-child{
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-item .dopbsp-header{
+    background: #c9c9c9;
+    border-bottom: 1px solid #c9c9c9;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    height: 17px;
+    margin: 0;
+    padding: 0 9px;
+    -webkit-transition: background-color 300ms linear, border-color 300ms linear;
+    -moz-transition: background-color 300ms linear, border-color 300ms linear;
+    -o-transition: background-color 300ms linear, border-color 300ms linear;
+    transition: background-color 300ms linear, border-color 300ms linear;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-item .dopbsp-header .dopbsp-id{
+    color: #464646;
+    display: block;
+    float: left;
+    font-size: 11px;
+    line-height: 15px;
+    height: 15px;
+    margin: 1px 10px 0 0;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-item .dopbsp-header .dopbsp-header-item{
+    display: block;
+    float: left;
+    font-size: 11px;
+    line-height: 15px;
+    height: 15px;
+    margin: 1px 2px 0 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-item .dopbsp-header .dopbsp-header-item img,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-item .dopbsp-header .dopbsp-header-item .dopbsp-text{
+    color: #ffffff;
+    float: left;
+    display: block;
+    line-height: 15px;
+    height: 15px;
+    min-width: 15px;
+    text-align: center;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-item .dopbsp-header .dopbsp-header-item.dopbsp-avatar{
+    background-color: #ffffff;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-item .dopbsp-header .dopbsp-header-item .dopbsp-info{
+    background-color: #252525;
+    color: #ffffff;
+    display: none;
+    font-size: 12px;
+    line-height: 20px;
+    max-width: 230px;
+    margin: 16px 0 0 0;
+    padding: 10px;
+    position: absolute;
+    white-space: normal;
+    z-index: 1000000;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-item .dopbsp-header .dopbsp-header-item:hover .dopbsp-info{
+    display: block;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-item .dopbsp-name{
+    color: #acacac;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 0 9px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-item:hover,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-item.dopbsp-selected{
+    border: 1px solid #464646;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-item:hover .dopbsp-header,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-item.dopbsp-selected .dopbsp-header{
+    background: #464646;
+    border-bottom: 1px solid #464646;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-item:hover .dopbsp-header .dopbsp-id,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-item.dopbsp-selected .dopbsp-header .dopbsp-id{
+    color: #ffffff;
+}
+
+.DOPBSP-admin .dopbsp-no-data{
+    color: #acacac;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
+}
+/*
+ * ************************************************************* End items list.
+ */
+
+/*
+ * ************************************************ Begin items list pagination.
+ */
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-pagination-item{
+    background-color: #c9c9c9;
+    color: #ffffff;
+    cursor: pointer;
+    float: left;
+    line-height: 30px;
+    height: 30px;
+    margin: 0 1px 0 0;
+    text-align: center;
+    width: 30px;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-pagination-item.dopbsp-selected,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-pagination-item:hover{
+    background-color: #ff6300;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-pagination-item.dopbsp-prev,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-pagination-item.dopbsp-next{
+    background-image: url('../images/sprite.png') !important;
+    width: 37px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-pagination-item.dopbsp-prev{
+    background-position: -91px -350px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-pagination-item.dopbsp-next{
+    background-position: -131px -350px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-pagination-item:last-child{
+    margin: 0;
+}
+/*
+ * ************************************************** End items list pagination.
+ */
+
+/*
+ * *********************************************************** Begin info table.
+ */
+.DOPBSP-admin .dopbsp-main .dopbsp-info-table{
+    border: 1px solid #c9c9c9;
+    border-top: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-info-table col.dopbsp-quarter{
+    width: 25%;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-info-table col.dopbsp-half{
+    width: 50%;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-info-table th{
+    background-color: #acacac;
+    border: 1px solid #c9c9c9;
+    border-bottom: none;
+    border-top: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0 !important;
+    overflow: hidden;
+    padding: 10px 5px 9px 5px !important;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-info-table tr.dopbsp-odd td{
+    background-color: #ffffff;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-info-table tr.dopbsp-even td{
+    background-color: #e6e6e6;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-info-table td{
+    border: 1px solid #c9c9c9;
+    border-bottom: none;
+    border-top: none;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0 !important;
+    padding: 10px 9px !important;
+    text-align: left;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-info-table td:first-child{
+    text-align: left;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-info-table td .dopbsp-icon{
+    background-image: url('../images/sprite.png');
+    background-position: -120px -400px;
+    display: block;
+    float: left;
+    height: 40px;
+    margin: -10px 10px -10px -10px;
+    width: 40px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-info-table td .dopbsp-icon.dopbsp-success{
+    background-position: 0 -400px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-info-table td .dopbsp-icon.dopbsp-error{
+    background-position: -40px -400px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-info-table td .dopbsp-icon.dopbsp-warning{
+    background-position: -80px -400px;
+}
+/*
+ * ************************************************************* End info table.
+ */
+
+.DOPBSP-admin .dopbsp-button{
+    margin: 12px 0 0 10px;
+}
+
+#DOPBSP-calendar{
+    width: 600px;    
+}
+/*
+ * ***************************************************************************** End content.
+ */
+
+/*
+ * ***************************************************************************** Begin form inputs.
+ */
+/*
+ * Begin inputs headers.
+ */
+.DOPBSP-admin .dopbsp-inputs-header{
+    border: 1px solid #e6e6e6;
+    border-right: none;
+    border-left: none;
+    height: 38px;
+    margin: 0 -10px 20px -10px;
+    overflow: hidden;
+}
+
+.DOPBSP-admin .dopbsp-inputs-header h3{
+    border: none !important;
+    color: #464646;
+    float: left;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 38px;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+.DOPBSP-admin .dopbsp-inputs-header .dopbsp-button{
+    float: right;
+    height: 38px;
+    margin: 0 10px 0 0;
+    width: 38px;
+}
+
+.DOPBSP-admin .dopbsp-inputs-header.dopbsp-display .dopbsp-button{
+    background-image: url('../images/sprite.png');
+    background-position: -1px -121px;
+}
+
+.DOPBSP-admin .dopbsp-inputs-header.dopbsp-hide .dopbsp-button{
+    background-image: url('../images/sprite.png');
+    background-position: -41px -121px;
+}
+
+.DOPBSP-admin .dopbsp-inputs-header .dopbsp-button.dopbsp-check-all{
+    background-image: url('../images/sprite.png');
+    background-position: -201px -121px;
+    margin: 0 5px 0 0 !important;
+}
+
+.DOPBSP-admin .dopbsp-inputs-header .dopbsp-button.dopbsp-uncheck-all{
+    background-image: url('../images/sprite.png');
+    background-position: -241px -121px;
+    margin: 0 5px 0 0 !important;
+}
+
+.DOPBSP-admin .dopbsp-inputs-header.dopbsp-display.dopbsp-last{
+    margin: 0 -10px;
+}
+
+.DOPBSP-admin .dopbsp-inputs-header.dopbsp-hide.dopbsp-last{
+    margin: 0 -10px 20px -10px;
+}
+
+.DOPBSP-admin .dopbsp-inputs-header .dopbsp-button-text{
+    background: #464646;
+    color: #ffffff;
+    float: right;
+    font-size: 12px;
+    font-weight: 300;
+    height: 38px;
+    line-height: 38px;
+    margin: 0 1px 0 0;
+    text-align: center;
+    width: 100px;
+    -webkit-transition: background 300ms linear;
+    -moz-transition: background 300ms linear;
+    -o-transition: background 300ms linear;
+    transition: background 300ms linear;
+}
+
+.DOPBSP-admin .dopbsp-inputs-header .dopbsp-button-text:hover{
+    background: #ff6300;
+}
+
+.DOPBSP-admin .dopbsp-inputs-header .dopbsp-button-text:active,
+.DOPBSP-admin .dopbsp-inputs-header .dopbsp-button-text:focus{
+    outline: none;
+}
+
+/*
+ * Inside inputs wrapper.
+ */ 
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-inputs-header{
+    background: #e6e6e6;
+    margin: 0 0 10px 0;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-inputs-header h3{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-inputs-header.dopbsp-hide,
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-inputs-header.dopbsp-last,
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-inputs-header .dopbsp-button{
+    margin: 0;
+}
+/*
+ * End inputs headers.
+ */
+
+/*
+ * Begin inputs wrappers.
+ */
+.DOPBSP-admin .dopbsp-inputs-wrapper{
+    margin: 0 0 40px 0;
+    overflow: hidden;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper em{
+    border: none;
+    color: #acacac;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper{
+    margin: 0 0 10px 0;
+    overflow: hidden;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-left{
+    margin: 0 30px 10px 0;
+    overflow: hidden;
+}
+
+.DOPBSP-admin .dopbsp-checkboxes-wrapper{
+    float: left;
+    overflow: hidden;
+    width: 170px;
+}
+
+.DOPBSP-admin .dopbsp-inputs-wrapper.dopbsp-last,
+.DOPBSP-admin .dopbsp-input-wrapper.dopbsp-last{
+    margin-bottom: 0;
+}
+
+/*
+ * Inside inputs wrapper.
+ */ 
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-inputs-wrapper{
+    margin: 0 0 10px 0;
+}
+.DOPBSP-admin .dopbsp-inputs-wrapper .dopbsp-inputs-wrapper.dopbsp-last{
+    margin: 0;
+}
+/*
+ * End inputs wrappers.
+ */
+
+/*
+ * Begin label.
+ */
+.DOPBSP-admin .dopbsp-input-wrapper label{
+    color: #acacac;
+    float: left;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 5px 0 0 0;
+    width: 150px;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper label.dopbsp-for-checkboxes,
+.DOPBSP-admin .dopbsp-input-wrapper label.dopbsp-for-radios{
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper label.dopbsp-for-checkbox,
+.DOPBSP-admin .dopbsp-input-wrapper label.dopbsp-for-radio{
+    margin: 0;
+    width: auto;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper label.dopbsp-for-checkbox-with-width{
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper label.dopbsp-for-switch{
+    cursor: default;
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper label .dopbsp-required{
+    color: #f1705c;
+}
+/*
+ * End label.
+ */
+
+/* 
+ * Begin text/passowrd.
+ */
+.DOPBSP-admin .dopbsp-input-wrapper input[type=text],
+.DOPBSP-admin .dopbsp-input-wrapper input[type=password]{
+    background: #ffffff;
+    border: 1px solid #c9c9c9;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #acacac;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+    padding: 4px 9px;
+    width: 170px;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper input[type=text].dopbsp-small,
+.DOPBSP-admin .dopbsp-input-wrapper input[type=password].dopbsp-small{
+    width: 80px;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper input[type=text]:focus,
+.DOPBSP-admin .dopbsp-input-wrapper input[type=password]:focus{
+    border: 1px solid #c9c9c9;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper input[type=text]:disabled,
+.DOPBSP-admin .dopbsp-input-wrapper input[type=password]:disabled{
+    opacity: 0.5;
+}
+
+/*
+ * Date
+ */
+.DOPBSP-admin .dopbsp-input-wrapper input[type=text].dopbsp-date{
+    background-image: url('../images/sprite.png');
+    background-position: -5px -207px;
+    margin: 0 0 5px 0;
+    padding: 4px 9px 4px 34px;
+}
+
+/*
+ * Time lapse.
+ */
+.DOPBSP-admin .dopbsp-input-wrapper input[type=text].dopbsp-time-lapse{
+    background-image: url('../images/sprite.png');
+    background-position: -5px -246px;
+    padding: 4px 9px 4px 34px;
+    width: 80px;
+}
+/*
+ * End text.
+ */
+
+/*
+ * Begin textarea.
+ */
+.DOPBSP-admin .dopbsp-input-wrapper textarea{
+    background: #ffffff;
+    border: 1px solid #c9c9c9;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #acacac;
+    display: block;
+    float: left;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+    overflow-wrap: normal;
+    outline: none;
+    padding: 4px 9px;
+    resize: vertical;
+    width: 170px;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper textarea:focus{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper textarea:disabled{
+    opacity: 0.5;
+}
+/*
+ * End textarea.
+ */
+
+/*
+ * Begin checkbox & radio.
+ */
+.DOPBSP-admin .dopbsp-input-wrapper input[type=checkbox],
+.DOPBSP-admin .dopbsp-input-wrapper input[type=radio]{
+    -webkit-appearance: none !important;
+    background: #ffffff;
+    border: 1px solid #c9c9c9 !important;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    border-radius: 32px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    float: left;
+    height: auto;
+    margin: 1px 5px 1px 0;
+    padding: 8px !important;
+    position: relative;
+    width: auto;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper input[type=checkbox]{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper input[type=checkbox]:hover,
+.DOPBSP-admin .dopbsp-input-wrapper input[type=radio]:hover{
+    border: 1px solid #ff6300 !important;
+    color: #ff6300 !important;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper input[type=checkbox]:checked:before,
+.DOPBSP-admin .dopbsp-input-wrapper input[type=checkbox]:checked:after,
+.DOPBSP-admin .dopbsp-input-wrapper input[type=radio]:checked:before,
+.DOPBSP-admin .dopbsp-input-wrapper input[type=radio]:checked:after{
+    background: #ff6300 !important;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    border-radius: 32px;
+    border: 1px solid #ff6300 !important;
+    color: #ff6300 !important;
+    content: ' ' !important;
+    font-size: 16px !important;
+    left: -1px !important;
+    height: 16px !important;
+    line-height: 16px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute !important;
+    top: -1px !important;
+    width: 16px !important;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper input[type=checkbox]:checked:before,
+.DOPBSP-admin .dopbsp-input-wrapper input[type=checkbox]:checked:after{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper input[type=checkbox]:disabled,
+.DOPBSP-admin .dopbsp-input-wrapper input[type=checkbox]:disabled:hover,
+.DOPBSP-admin .dopbsp-input-wrapper input[type=radio]:disabled,
+.DOPBSP-admin .dopbsp-input-wrapper input[type=radio]:disabled:hover{
+    border: 1px solid #c9c9c9 !important;
+    cursor: default !important;
+    opacity: 0.5;
+}
+/*
+ * End checkbox.
+ */
+
+/*
+ * Begin select.
+ */
+.DOPSelect.dopselect-single{
+    float: left;
+}
+
+.DOPSelect.dopselect-single.dopbsp-small{
+    width: 80px;
+}
+
+.DOPSelect.dopselect-single.dopbsp-small .dopselect-select .dopselect-selection{
+    width: 40px;
+}
+
+/*
+ * Hour
+ */
+.DOPSelect.dopselect-single.dopbsp-hour{
+    width: 100px;
+}
+
+.DOPSelect.dopselect-single.dopbsp-hour .dopselect-select .dopselect-selection{
+    background-image: url('../images/sprite.png');
+    background-position: -5px -246px;
+    padding: 0 0 0 30px;
+    width: 40px;
+}
+
+.DOPSelect.dopselect-single.dopbsp-hour ul{
+    width: 98px;
+}
+
+.DOPSelect.dopselect-single.dopbsp-hour ul li{
+    width: 70px;
+}
+
+/*
+ * Options.
+ */
+.DOPSelect.dopselect-single.dopbsp-small ul{
+    width: 78px;
+}
+
+.DOPSelect.dopselect-single.dopbsp-small ul li{
+    width: 60px;
+}
+/*
+ * End select.
+ */
+
+/*
+ * Begin button/submit.
+ */
+.DOPBSP-admin input[type=button],
+.DOPBSP-admin input[type=submit]{
+    background: #464646;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #ffffff;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 0 5px 0 0;
+    padding: 0 20px;
+    -webkit-transition: background 300ms linear;
+    -moz-transition: background 300ms linear;
+    -o-transition: background 300ms linear;
+    transition: background 300ms linear;
+}
+
+.DOPBSP-admin input[type=button].dopbsp-right,
+.DOPBSP-admin input[type=submit].dopbsp-right{
+    margin: 0 0 0 5px;
+}
+
+.DOPBSP-admin input[type=button]:hover,
+.DOPBSP-admin input[type=button]:focus,
+.DOPBSP-admin input[type=submit]:hover,
+.DOPBSP-admin input[type=submit]:focus{
+    background: #ff6300;
+    outline: none;
+}
+
+.DOPBSP-admin input[type=button]:disabled,
+.DOPBSP-admin input[type=submit]:disabled{
+    opacity: 0.5;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper input[type=button],
+.DOPBSP-admin .dopbsp-input-wrapper input[type=submit]{
+    width: 170px;
+}
+/*
+ * End button.
+ */
+
+/*
+ * Begin switch.
+ */
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-switch{
+    float: left;
+    height: 20px;
+    position: relative;
+    width: 100px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select: none;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-switch .dopbsp-switch-checkbox{
+    display: none !important;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-switch .dopbsp-switch-label{
+    border: 1px solid #f1705c;
+    cursor: pointer;
+    display: block;
+    height: 18px;
+    margin: 0 !important;
+    overflow: hidden;
+    width: 98px !important;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-switch .dopbsp-switch-inner{
+    margin-left: -100%;
+    width: 200%;
+    -webkit-transition: margin 0.3s ease-in 0s;
+    -moz-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-switch .dopbsp-switch-inner:before,
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-switch .dopbsp-switch-inner:after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #acacac;
+    float: left;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+    height: 18px;
+    padding: 0 10px;
+    width: 50%;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-switch .dopbsp-switch-inner:before{
+    text-align: left;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-switch .dopbsp-switch-inner:after{
+    text-align: right;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-switch .dopbsp-switch-switch{
+    background: #f1705c;
+    bottom: 0;
+    height: 20px;
+    margin: 0;
+    padding: 0 !important;
+    position: absolute;
+    right: 80px;
+    top: 0;
+    width: 20px;
+    -webkit-transition: all 0.3s ease-in 0s;
+    -moz-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s; 
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-switch .dopbsp-switch-checkbox:checked+.dopbsp-switch-label .dopbsp-switch-inner{
+    margin-left: 0;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-switch .dopbsp-switch-checkbox:checked+.dopbsp-switch-label{
+    border-color: #9cbc72;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-switch .dopbsp-switch-checkbox:checked+.dopbsp-switch-label .dopbsp-switch-switch{
+    background: #9cbc72;
+    right: 0; 
+}
+/*
+ * End switch.
+ */
+
+/*
+ * Begin input list.
+ */
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-input-list{
+    list-style: none;
+    overflow: hidden;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-input-list li{
+    border: 1px solid #acacac;
+    float: left;
+    height: 28px;
+    margin: 0 10px 5px 0;
+    width: 298px;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-input-list li.dopbsp-selected{
+    border: 1px solid #666666;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-input-list li label{
+    color: #666666;
+    line-height: 28px;
+    height: 28px;
+    margin: 00;
+    overflow: hidden;
+    width: 275px;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-input-list li label .dopbsp-id{
+    background-color: #acacac;
+    color: #ffffff;
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 10px 0 0;
+    padding: 0 0 0 9px;
+    width: 65px;
+    -webkit-transition: background-color 300ms linear !important;
+    -moz-transition: background-color 300ms linear !important;
+    -o-transition: background-color 300ms linear !important;
+    transition: background-color 300ms linear !important;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-input-list li.dopbsp-selected label .dopbsp-id{
+    background-color: #666666;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-input-list li input[type=checkbox]{
+    float: right;
+    margin: 5px 5px 5px 0;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-input-list li.dopbsp-no-data{
+    border: none;
+    float: none;
+    height: auto;
+    margin: 0;
+    width: auto;
+}
+/*
+ * End input list.
+ */
+
+/*
+ * Begin licence status.
+ */
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-licence-status{
+    float: left;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 5px 0 0 0;
+    padding: 0;
+    width: 150px;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-licence-status.dopbsp-activated{
+    color: #9cbc72;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-licence-status.dopbsp-deactivated{
+    color: #f1705c;
+}
+/*
+ * End licence status.
+ */
+
+/*
+ * Begin help.
+ */
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-button.dopbsp-help,
+.DOPBSP-admin .dopbsp-main section.dopbsp-content-wrapper .dopbsp-box-wrapper .dopbsp-button.dopbsp-help{
+    background-position: 0 -280px;
+    height: 30px;
+    margin: 0 0 0 5px;
+    width: 30px;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-button.dopbsp-help.dopbsp-switch-help{
+    background-position: -5px -285px;
+    height: 20px;
+    margin: 0 0 0 5px;
+    width: 20px;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-button.dopbsp-help .dopbsp-info,
+.DOPBSP-admin .dopbsp-main section.dopbsp-content-wrapper .dopbsp-box-wrapper .dopbsp-button.dopbsp-help .dopbsp-info{
+    margin: 32px 0 0 0;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-button.dopbsp-help.dopbsp-switch-help .dopbsp-info{
+    margin: 22px 0 0 0;
+}
+/*
+ * End help.
+ */
+
+/*
+ * Begin warning info.
+ */
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-button.dopbsp-warning-info{
+    background: #f1705c url('../images/sprite.png');
+    background-position: -210px -280px;
+    display: none;
+    height: 30px;
+    margin: 0 0 0 5px;
+    width: 30px;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-button.dopbsp-warning-info.dopbsp-checkbox-warning-info{
+    background-position: -215px -285px;
+    height: 20px;
+    margin: 0 0 0 5px;
+    width: 20px;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-button.dopbsp-warning-info .dopbsp-info{
+    background-color: #f1705c;
+    margin: 32px 0 0 -175px;
+    max-width: 185px;
+    width: 185px;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-button.dopbsp-warning-info.dopbsp-checkbox-warning-info .dopbsp-info{
+    margin: 32px 0 0 -175px;
+}
+/*
+ * End warning info.
+ */
+/*
+ * ***************************************************************************** End form inputs.
+ */
+
+/*
+ * ***************************************************************************** Begin jQuery UI datepicker.
+ */
+.DOPBSP-admin-datepicker.ui-datepicker{
+    background: #ffffff !important;
+    border: 1px solid #464646 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    width: 218px !important;
+}
+
+/*
+ * jQuery UI datepicker header.
+ */
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-header{
+    background: #464646 !important;
+    border: none;
+    border-bottom: 1px solid #464646 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+}
+
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next,
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev{
+    background-color: #464646 !important;
+    background-image: url('../images/sprite.png') !important;
+    border: none !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    cursor: pointer !important;
+    height: 38px !important;
+    left: auto !important;
+    position: relative !important;
+    right: auto !important;
+    top: auto !important;
+    width: 38px !important;
+    -webkit-transition: background-color 300ms linear !important;
+    -moz-transition: background-color 300ms linear !important;
+    -o-transition: background-color 300ms linear !important;
+    transition: background-color 300ms linear !important;
+}
+
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next:hover,
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev:hover{
+    background-color: #acacac !important;
+}
+
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next.ui-state-disabled,
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev.ui-state-disabled{
+    display: none !important;
+}
+
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next{
+    background-position: -241px -81px !important;
+    float: right !important;
+}
+
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev{
+    background-position: -201px -81px !important;
+    float: left !important;
+}
+
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next .ui-icon,
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev .ui-icon{
+    display: none !important;
+}
+
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-title,
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-month,
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-year{
+    color: #ffffff !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+    line-height: 38px !important;
+    text-align: center !important;
+}
+
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-title{
+    margin: 0 38px !important;
+}
+
+/*
+ * jQuery UI datepicker calendar.
+ */
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-calendar{
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    margin: 0 !important;
+    table-layout: fixed !important;
+    width: 100% !important;
+}
+
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-calendar th{
+    background: #acacac !important;
+    border: 1px solid #c9c9c9 !important;
+    border-top: none !important;
+    color: #ffffff !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 300 !important;
+    line-height: 18px !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-calendar td{
+    border: 1px solid #c9c9c9 !important;
+    padding: 0 !important;
+}
+
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-calendar td.ui-datepicker-other-month{
+    background: #eeeeee !important;
+    line-height: 17px !important;
+}
+
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-calendar .ui-state-disabled span,
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-calendar a{
+    background: #ffffff !important;
+    border: 0 !important;
+    color: #acacac !important;
+    display: block !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 300 !important;
+    line-height: 19px !important;
+    padding: 0 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+}
+
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-calendar a{
+    color: #464646 !important;
+}
+
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-calendar a.ui-state-active,
+.DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-calendar a:hover{
+    border: 1px solid #464646 !important;
+    line-height: 17px !important;
+}
+
+/*
+ * ***************************************************************************** Begin responsive.
+ */
+.DOPBSP-admin.dopbsp-notebook .dopbsp-notebook-hidden,
+.DOPBSP-admin.dopbsp-tablet .dopbsp-tablet-hidden,
+.DOPBSP-admin.dopbsp-phone .dopbsp-phone-hidden,
+.DOPBSP-admin.dopbsp-responsive-hidden .dopbsp-responsive-hidden{
+    display: none;
+}
+
+.DOPBSP-admin.dopbsp-tablet,
+.DOPBSP-admin.dopbsp-phone{
+    margin: 10px 10px 0 0;
+}
+/*
+ * ***************************************************************************** End responsive.
+ */
+
+/*
+ * ***************************************************************************** Begin retina.
+ */
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi){
+    #DOPBSP-messages-box .dopbsp-icon-active,
+    #DOPBSP-messages-box .dopbsp-icon-success,
+    #DOPBSP-messages-box .dopbsp-icon-error,
+    #DOPBSP-messages-box .dopbsp-close,
+    #DOPBSP-confirmation-box .dopbsp-icon,
+    #DOPBSP-go-top,
+    .DOPBSP-admin .dopbsp-main section.dopbsp-content-wrapper .dopbsp-box-header.dopbsp-display .dopbsp-button,
+    .DOPBSP-admin .dopbsp-main section.dopbsp-content-wrapper .dopbsp-box-header.dopbsp-hide .dopbsp-button,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-add,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-calendar,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-settings,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-notifications,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-payments,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-users,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-search,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-header .dopbsp-button.dopbsp-delete,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-pagination-item.dopbsp-prev,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-pagination-item.dopbsp-next,
+    .DOPBSP-admin .dopbsp-inputs-header.dopbsp-display .dopbsp-button,
+    .DOPBSP-admin .dopbsp-inputs-header.dopbsp-hide .dopbsp-button,
+    .DOPSelect.dopselect-single.dopbsp-hour .dopselect-select .dopselect-selection,
+    .DOPBSP-admin .dopbsp-input-wrapper .dopbsp-button.dopbsp-warning-info,
+    .DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next,
+    .DOPBSP-admin-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev{
+        background-image: url('../images/sprite-retina.png') !important;
+        background-size: 600px 500px !important;
+    }
+}
+/*
+ * ***************************************************************************** End retina.
+ */
+/*
+ * ***************************************************************************** End jQuery UI datepicker.
+ */

@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.1
+* File                    : assets/gui/css/backend-tools.css
+* File Version            : 1.0.3
+* Created / Last Modified : 26 August 2015
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Back end settings stylesheet.
+*/
+
+/*
+ * ***************************************************************************** Begin tools.
+*/
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-tools-item{
+    background: #c9c9c9;
+    cursor: pointer;
+    height: 38px;
+    margin: 0 0 2px 0;
+    overflow: hidden;
+    width: 230px;
+    -webkit-transition: background 300ms linear;
+    -moz-transition: background 300ms linear;
+    -o-transition: background 300ms linear;
+    transition: background 300ms linear;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-tools-item:hover,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-tools-item.dopbsp-selected{
+    background: #ff6300;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-tools-item .dopbsp-icon{
+    background-image: url('../images/sprite.png');
+    border-right: 1px solid #f3f1f1; 
+    float: left;
+    height: 38px;
+    width: 38px;
+}
+    
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-tools-item.dopbsp-repair-database-text .dopbsp-icon{
+    background-position: -481px -1px;
+}
+    
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-tools-item.dopbsp-repair-calendars-settings .dopbsp-icon{
+    background-position: -521px -1px;
+}
+    
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-tools-item.dopbsp-repair-search-settings .dopbsp-icon{
+    background-position: -561px -1px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-tools-item:hover .dopbsp-icon,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-tools-item.dopbsp-selected .dopbsp-icon{
+    border-right: 1px solid #ffffff;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-tools-item .dopbsp-title{
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 300;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    padding: 0 0 0 10px;
+    width: 181px;
+    word-break: break-all;
+}
+
+/*
+ * ***************************************************************************** Begin retina.
+ */
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi){ 
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-tools-item.dopbsp-repair-database-text .dopbsp-icon,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-tools-item.dopbsp-repair-calendars-settings .dopbsp-icon,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-column .dopbsp-column-content .dopbsp-tools-item.dopbsp-repair-search-settings .dopbsp-icon{
+        background-image: url('../images/sprite-retina.png') !important;
+        background-size: 600px 500px !important;
+    }
+}
+/*
+ * ***************************************************************************** End retina.
+ */
+/*
+ * ***************************************************************************** End tools.
+ */

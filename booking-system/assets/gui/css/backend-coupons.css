@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.1
+* File                    : assets/gui/css/backend-coupons.css
+* File Version            : 1.0.4
+* Created / Last Modified : 26 August 2015
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Back end coupons stylesheet.
+*/
+
+/*
+ * ***************************************************************************** Begin coupons.
+ */
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-button.dopbsp-generate-code{
+    background-image: url('../images/sprite.png') !important;
+    background-position: -180px -280px;
+    height: 30px;
+    margin: 0 0 0 5px;
+    width: 30px;
+}
+
+.DOPBSP-admin .dopbsp-input-wrapper .dopbsp-button.dopbsp-generate-code .dopbsp-info{
+    margin: 32px 0 0 0;
+}
+
+/*
+ * ***************************************************************************** Begin retina.
+ */
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi){ 
+    .DOPBSP-admin .dopbsp-input-wrapper .dopbsp-button.dopbsp-generate-code{
+        background-image: url('../images/sprite-retina.png') !important;
+        background-size: 600px 500px !important;
+    }
+}
+/*
+ * ***************************************************************************** End retina.
+ */
+/*
+ * ***************************************************************************** End coupons.
+ */

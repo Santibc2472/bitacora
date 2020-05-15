@@ -1,0 +1,259 @@
+/*
+ * Title                   : DOP Pinpoint Framework (World)
+ * File                    : framework/assets/gui/css/pinpoint-businesses.php
+ * Author                  : Dot on Paper
+ * Copyright               : © 2016 Dot on Paper
+ * Website                 : http://www.dotonpaper.net
+ * Description             : Pinpoint businesses stylesheet.
+ */
+
+@font-face{
+    font-family: 'Pinpoint Businesses';
+    src: url('../fonts/pinpoint-businesses.eot?7eeexy');
+    src: url('../fonts/pinpoint-businesses.eot?7eeexy#iefix') format('embedded-opentype'),
+         url('../fonts/pinpoint-businesses.ttf?7eeexy') format('truetype'),
+         url('../fonts/pinpoint-businesses.woff?7eeexy') format('woff'),
+         url('../fonts/pinpoint-businesses.svg?7eeexy#pinpoint-businesses') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+[class^='business-'], 
+[class*=' business-']{
+    /* 
+     * Use !important to prevent issues with browser extensions that change fonts.
+     */
+    font-family: 'Pinpoint Businesses' !important;
+    font-style: normal;
+    text-transform: none;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    speak: none;
+
+    /* 
+     * Better font rendering. 
+     */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.business-apartment:before{
+    content: '\e900';
+}
+
+.business-baby-sitter:before{
+    content: '\e901';
+}
+
+.business-bar:before{
+    content: '\e902';
+}
+
+.business-basketball-court:before{
+    content: '\e903';
+}
+
+.business-beauty-salon:before{
+    content: '\e904';
+}
+
+.business-bikes:before{
+    content: '\e905';
+}
+
+.business-boat:before{
+    content: '\e906';
+}
+
+.business-business:before{
+    content: '\e907';
+}
+
+.business-camping-gear:before{
+    content: '\e908';
+}
+
+.business-camping:before{
+    content: '\e909';
+}
+
+.business-cars:before{
+    content: '\e90a';
+}
+
+.business-chef:before{
+    content: '\e90b';
+}
+
+.business-cinema:before{
+    content: '\e90c';
+}
+
+.business-clothes:before{
+    content: '\e90d';
+}
+
+.business-club:before{
+    content: '\e90e';
+}
+
+.business-costumes:before{
+    content: '\e90f';
+}
+
+.business-dance-instructor:before{
+    content: '\e910';
+}
+
+.business-dentist:before{
+    content: '\e911';
+}
+
+.business-designer-handbags:before{
+    content: '\e912';
+}
+
+.business-doctor:before{
+    content: '\e913';
+}
+
+.business-esthetician:before{
+    content: '\e914';
+}
+
+.business-fishing:before{
+    content: '\e915';
+}
+
+.business-football-court:before{
+    content: '\e916';
+}
+
+.business-gadgets:before{
+    content: '\e917';
+}
+
+.business-games:before{
+    content: '\e918';
+}
+
+.business-golf:before{
+    content: '\e919';
+}
+
+.business-hairdresser:before{
+    content: '\e91a';
+}
+
+.business-health-club:before{
+    content: '\e91b';
+}
+
+.business-hospital:before{
+    content: '\e91c';
+}
+
+.business-hotel:before{
+    content: '\e91d';
+}
+
+.business-hunting:before{
+    content: '\e91e';
+}
+
+.business-lawyer:before{
+    content: '\e91f';
+}
+
+.business-library:before{
+    content: '\e920';
+}
+
+.business-massage:before{
+    content: '\e921';
+}
+
+.business-music-band:before{
+    content: '\e922';
+}
+
+.business-nails-salon:before{
+    content: '\e923';
+}
+
+.business-party-supplies:before{
+    content: '\e924';
+}
+
+.business-personal-trainer:before{
+    content: '\e925';
+}
+
+.business-pet-care:before{
+    content: '\e926';
+}
+
+.business-photo-equipment:before{
+    content: '\e927';
+}
+
+.business-photographer:before{
+    content: '\e928';
+}
+
+.business-pillates-instructor:before{
+    content: '\e929';
+}
+
+.business-plane-tickets:before{
+    content: '\e92a';
+}
+
+.business-planes:before{
+    content: '\e92b';
+}
+
+.business-restaurant:before{
+    content: '\e92c';
+}
+
+.business-shoes:before{
+    content: '\e92d';
+}
+
+.business-snow-equipment:before{
+    content: '\e92e';
+}
+
+.business-spa:before{
+    content: '\e92f';
+}
+
+.business-sports-coach:before{
+    content: '\e930';
+}
+
+.business-taxies:before{
+    content: '\e931';
+}
+
+.business-tenis-court:before{
+    content: '\e932';
+}
+
+.business-theatre:before{
+    content: '\e933';
+}
+
+.business-villa:before{
+    content: '\e934';
+}
+
+.business-weapons:before{
+    content: '\e935';
+}
+
+.business-working-tools:before{
+    content: '\e936';
+}

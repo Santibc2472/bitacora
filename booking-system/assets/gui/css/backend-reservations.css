@@ -1,0 +1,440 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.1
+* File                    : assets/gui/css/backend-reservations.css
+* File Version            : 1.0.8
+* Created / Last Modified : 25 August 2015
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Back end reservations stylesheet.
+*/
+
+/*
+ * ***************************************************************************** Begin reservations.
+ */
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper col.dopbsp-column1.dopbsp-reservations{
+    width: 375px;
+}
+
+/*
+ * Begin filters.
+ */
+
+/*
+ * Buttons.
+ */
+.DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-reservations-add-button,
+.DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-reservations-calendar-button,
+.DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-reservations-list-button{
+    background-image: url('../images/sprite.png');
+    height: 30px;
+    width: 30px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-reservations-add-button .dopbsp-info,
+.DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-reservations-calendar-button .dopbsp-info,
+.DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-reservations-list-button .dopbsp-info{
+    margin: 32px 0 0 0;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-reservations-add-button{
+    background-position: 0 -350px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-reservations-calendar-button{
+    background-position: -30px -350px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-reservations-list-button{
+    background-position: -60px -350px;
+}
+
+.DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-reservations-add-button.dopbsp-disabled,
+.DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-reservations-calendar-button.dopbsp-disabled,
+.DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-reservations-list-button.dopbsp-disabled{
+    background-color: #c9c9c9;
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#DOPBSP-reservations-print{
+    color: #fff;
+    width: 40px;
+    text-align: center;
+    background: #9cbc72;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    cursor: pointer;
+    padding: 11px;
+    margin-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    float: left;
+}
+
+#DOPBSP-reservations-print:hover{
+    background: #ff6300;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+/*
+ * Statuses
+ */
+#DOPBSP-reservations-pending-label{
+    color: #000000 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your PENDING color. */
+}
+
+#DOPBSP-reservations-approved-label{
+    color: #9cbc72 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your APPROVED color. */
+}
+
+#DOPBSP-reservations-rejected-label{
+    color: #f1705c !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your REJECTED color. */
+}
+
+#DOPBSP-reservations-canceled-label{
+    color: #fdaa29 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your CANCELED color. */
+}
+
+#DOPBSP-reservations-expired-label{
+    color: #56a8e7 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your EXPIRED color. */
+}
+/*
+ * End filters.
+ */
+
+/*
+ * Reservations calendar.
+ */
+.DOPBSP-admin .dopbsp-reservations-calendar{
+    border-bottom: 1px solid #e3e3e3;
+    border-top: 1px solid #e3e3e3;
+}
+
+#DOPBSP-Calendar-reservations{
+    margin: 10px;
+}
+
+/*
+ * Begin reservations list.
+ */
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list{
+    margin: -20px -10px !important;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li{
+    border-bottom: 4px solid #464646;
+    margin: 0;
+    padding: 0;
+}
+
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li.dopbsp-no-data{
+    border: none;
+    color: #acacac;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
+    padding: 20px 19px;
+}
+
+/*
+ * *************************************************** Begin reservation header.
+ */
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head{
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+    margin: 0;
+    overflow: hidden;
+    padding: 10px 9px 9px 9px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-icon{
+    background: url('../images/sprite.png');
+    float: left;
+    height: 40px;
+    margin: 0 20px 0 0;
+    width: 40px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-icon.dopbsp-pending{
+    background-position: 0 -310px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-icon.dopbsp-approved{
+    background-position: -40px -310px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-icon.dopbsp-rejected{
+    background-position: -80px -310px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-icon.dopbsp-canceled{
+    background-position: -120px -310px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-icon.dopbsp-expired{
+    background-position: -160px -310px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-title{
+    color: #666666;
+    float: left;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-title strong{
+    color: #464646;
+    font-weight: bold;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-title .dopbsp-pending{
+    color: #000000 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your PENDING color. */
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-title .dopbsp-approved{
+    color: #9cbc72 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your APPROVED color. */
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-title .dopbsp-rejected{
+    color: #f1705c !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your REJECTED color. */
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-title .dopbsp-canceled{
+    color: #fdaa29 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your CANCELED color. */
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-title .dopbsp-expired{
+    color: #56a8e7 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your EXPIRED color. */
+}
+
+/*
+ * Buttons
+ */
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-buttons-wrapper{
+    float: right;
+    padding: 5px 0 0 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-buttons-wrapper .dopbsp-button-approve,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-buttons-wrapper .dopbsp-button-reject,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-buttons-wrapper .dopbsp-button-cancel,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-buttons-wrapper .dopbsp-button-delete{
+    color: #ffffff;
+    display: block;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0 0 0 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 80px;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-buttons-wrapper .dopbsp-button-approve{
+    background: #9cbc72 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your APPROVED color. */
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-buttons-wrapper .dopbsp-button-reject{
+    background: #f1705c !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your REJECTED color. */
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-buttons-wrapper .dopbsp-button-cancel{
+    background: #fdaa29 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your CANCELED color. */
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-buttons-wrapper .dopbsp-button-delete{
+    background: #fd4c29 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DELETE color. */
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-buttons-wrapper .dopbsp-button-approve:hover,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-buttons-wrapper .dopbsp-button-reject:hover,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-buttons-wrapper .dopbsp-button-cancel:hover,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-buttons-wrapper .dopbsp-button-delete:hover{
+    background: #ff6300 !important;
+}
+/*
+ * ***************************************************** End reservation header.
+ */
+
+/*
+ * ************************************************** Begin reservation content.
+ */
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body{
+    margin: 0;
+    padding: 16px 9px 0 19px; 
+}
+
+/*
+ * Data module.
+ */
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module{
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    float: left;
+    margin: 0 10px 20px 0;
+    width: 348px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-head{
+    background: #e6e6e6;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 19px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-head h3{
+    background: #e6e6e6;
+    border: none !important;
+    color: #464646;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 0;
+    padding: 4px 0 5px 0 !important;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-head span{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: #fff;
+    width: 40px;
+    text-align: center;
+    background: #fdaa29;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-head span:hover{
+    background: #ff6300;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-body{
+    padding: 20px 19px 14px 19px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-body em{
+    color: #acacac;
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field{
+    overflow: hidden;
+    margin: 0 0 5px 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field em{
+    margin: 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field label{
+    color: #898989;
+    float: left;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    padding: 0 10px 0 0;
+    width: 120px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field .dopbsp-data-value{
+    color: #666666;
+    float: left;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 0;
+    width: 180px;
+    word-break: break-all;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field .dopbsp-data-value a{
+    color: #ff6300;
+    text-decoration: none;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field .dopbsp-data-value a:hover{
+    text-decoration: underline;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field .dopbsp-data-value .dopbsp-info-price{
+    font-weight: bold;
+}
+
+/*
+ * Price field.
+ */
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field.dopbsp-price label,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field.dopbsp-price-total label{
+    color: #252525;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field.dopbsp-price .dopbsp-data-value,
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field.dopbsp-price-total .dopbsp-data-value{
+    color: #252525;
+    font-weight: bold;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field.dopbsp-price-total .dopbsp-data-value{
+    color: #ff6300;
+}
+
+/*
+ * No data field.
+ */
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-body .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field.dopbsp-no-data .dopbsp-data-value{
+    color: #acacac;
+    font-style: italic;
+}
+/*
+ * **************************************************** End reservation content.
+ */
+
+/*
+ * ***************************************************************************** Begin retina.
+ */
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi){ 
+    .DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-reservations-add-button,
+    .DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-reservations-calendar-button,
+    .DOPBSP-admin .dopbsp-main .dopbsp-button.dopbsp-reservations-list-button,
+    .DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-reservations-list li .dopbsp-reservation-head .dopbsp-icon{
+        background-image: url('../images/sprite-retina.png') !important;
+        background-size: 800px 500px !important;
+    }
+}
+/*
+ * ***************************************************************************** End retina.
+ */
+/*
+ * ***************************************************************************** End reservations.
+ */

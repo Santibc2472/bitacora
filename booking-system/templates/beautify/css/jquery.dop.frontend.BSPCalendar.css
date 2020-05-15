@@ -1,0 +1,2588 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.3
+* File                    : templates/beautify/css/jquery.dop.frontend.BSPCalendar.css
+* File Version            : 1.0
+* Created / Last Modified : 17 December 2015
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Front end calendar jQuery plugin stylesheet for Beautify theme.
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+.DOPBSPCalendar-wrapper{
+     -webkit-box-sizing: content-box; 
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 20px 0;
+    min-width: 240px;
+}
+
+.DOPBSPCalendar-wrapper .dopbsp-loader{
+    background: url('../images/loader.gif') no-repeat center center;
+    background-color: #f7f6f9;
+    border: 1px solid #f7f6f9;
+    height: 38px;
+}
+
+/*
+ * ***************************************************************************** Container
+ */
+.DOPBSPCalendar-container{
+    background: #f7f6f9;
+    -webkit-box-shadow: 0 0 10px 2px rgba(3, 3, 3, 0.1);
+    box-shadow: 0 0 10px 2px rgba(3, 3, 3, 0.1);
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.DOPBSPCalendar-strong{
+    font-weight: bold !important;
+}
+
+.DOPBSPCalendar-left{
+    float: left !important;
+}
+
+.DOPBSPCalendar-right{
+    float: right !important;
+}
+
+.DOPBSPCalendar-hidden{
+    display: none !important;
+}
+
+.DOPBSPCalendar-clear{
+    clear: both;
+}
+
+/*
+ * ***************************************************************************** Begin navigation.
+ */
+.DOPBSPCalendar-navigation{
+    background-color: #f7f6f9;
+    border: 1px solid #f7f6f9;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.DOPBSPCalendar-navigation .dopbsp-add-btn,
+.DOPBSPCalendar-navigation .dopbsp-next-btn,
+.DOPBSPCalendar-navigation .dopbsp-previous-btn,
+.DOPBSPCalendar-navigation .dopbsp-remove-btn{
+    background-color: #e5ddff;
+    background-image:url('../images/sprite.png');
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    display: block;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 20px;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;
+}
+
+.DOPBSPCalendar-navigation .dopbsp-add-btn:hover,
+.DOPBSPCalendar-navigation .dopbsp-next-btn:hover,
+.DOPBSPCalendar-navigation .dopbsp-previous-btn:hover,
+.DOPBSPCalendar-navigation .dopbsp-remove-btn:hover{
+    background-color: #9d8fd1;
+}
+
+.DOPBSPCalendar-navigation .dopbsp-add-btn{
+    background-position: -10px -10px;
+    left: 19px;
+    top: 19px;
+}
+
+.DOPBSPCalendar-navigation.dopbsp-style-small .dopbsp-add-btn{
+    left: 9px;
+}
+
+.DOPBSPCalendar-navigation .dopbsp-remove-btn{
+    background-position: -50px -10px;
+    display: none;
+    left: 49px;
+    top: 19px;
+}
+
+.DOPBSPCalendar-navigation.dopbsp-style-small .dopbsp-remove-btn{
+    left: 39px;
+}
+
+.DOPBSPCalendar-navigation .dopbsp-remove-btn.dopbsp-no-add{
+    left: 19px;
+}
+
+.DOPBSPCalendar-navigation.dopbsp-style-small .dopbsp-remove-btn.dopbsp-no-add{
+    left: 9px;
+}
+
+.DOPBSPCalendar-navigation .dopbsp-previous-btn{
+    background-position: -90px -10px;
+    display: none;
+    right: 49px;
+    top: 19px;
+}
+
+.DOPBSPCalendar-navigation.dopbsp-style-small .dopbsp-previous-btn{
+    right: 39px;
+}
+
+.DOPBSPCalendar-navigation .dopbsp-next-btn{
+    background-position: -130px -10px;
+    right: 19px;
+    top: 19px;
+}
+
+.DOPBSPCalendar-navigation.dopbsp-style-small .dopbsp-next-btn{
+    right: 9px;
+}
+
+.DOPBSPCalendar-navigation .dopbsp-add-btn .dopbsp-info,
+.DOPBSPCalendar-navigation .dopbsp-next-btn .dopbsp-info,
+.DOPBSPCalendar-navigation .dopbsp-previous-btn .dopbsp-info,
+.DOPBSPCalendar-navigation .dopbsp-remove-btn .dopbsp-info{
+    background-color: #9d8fd1;
+    color: #ffffff;
+    display: none;
+    font-family: 'Open Sans' !important;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    max-width: 230px;
+    margin: 22px 0 0 0;
+    padding: 10px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1000000;
+}
+
+.DOPBSPCalendar-navigation .dopbsp-next-btn .dopbsp-info,
+.DOPBSPCalendar-navigation .dopbsp-previous-btn .dopbsp-info{
+    right: 0;
+}
+
+.DOPBSPCalendar-navigation .dopbsp-add-btn:hover .dopbsp-info,
+.DOPBSPCalendar-navigation .dopbsp-next-btn:hover .dopbsp-info,
+.DOPBSPCalendar-navigation .dopbsp-previous-btn:hover .dopbsp-info,
+.DOPBSPCalendar-navigation .dopbsp-remove-btn:hover .dopbsp-info{
+    display: block;
+}
+
+.DOPBSPCalendar-navigation .dopbsp-month-year{
+    color: #252525;
+    font-family: 'Open Sans' !important;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0;
+    padding: 9px;
+    text-align: center;
+}
+
+.DOPBSPCalendar-navigation.dopbsp-style-small .dopbsp-month-year{
+    padding: 49px 9px 9px 9px;
+    text-align: left;
+}
+
+.DOPBSPCalendar-navigation .dopbsp-week{
+    margin: 0;
+    overflow: hidden;
+    padding: 0 4px;
+}
+
+.DOPBSPCalendar-navigation .dopbsp-week .dopbsp-day{
+    color: #666666;
+    display: block;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px;
+    line-height: 20px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/*
+ * ***************************************************************************** End navigation.
+ */
+
+/*
+ * ***************************************************************************** Begin calendar.
+ */
+.DOPBSPCalendar-calendar{
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+
+.DOPBSPCalendar-month{
+    border: 1px solid #f7f6f9;
+    background: #f7f6f9;
+    margin: 0;
+    overflow: hidden;
+    padding: 4px 0 4px 5px;
+}
+
+.DOPBSPCalendar-month-year{
+    background-color: #f7f6f9;
+    border: 1px solid #f7f6f9;
+    color: #252525;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 38px;
+    height: 38px;
+    margin: 20px 0 5px 0;
+    overflow: hidden;
+    padding: 0 0 0 9px;
+    text-align: left;
+}
+
+/*
+ * ***************************************************************** Begin days.
+ */
+.DOPBSPCalendar-day{
+    clear: none !important;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-left, 
+.DOPBSPCalendar-day .dopbsp-bind-right{
+    float: left;
+    opacity: 0;
+    width: 1px;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-left.dopbsp-enabled,
+.DOPBSPCalendar-day .dopbsp-bind-left.dopbsp-extended,  
+.DOPBSPCalendar-day .dopbsp-bind-right.dopbsp-enabled,  
+.DOPBSPCalendar-day .dopbsp-bind-right.dopbsp-extended{
+    opacity: 1;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-left .dopbsp-head, 
+.DOPBSPCalendar-day .dopbsp-bind-right .dopbsp-head{
+    background-color: #ffffff !important;
+    border: none !important;
+    border-top: 5px solid #9d8fd1 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    height: 15px !important;
+    margin: 0 !important;
+    padding: 5px 0 0 0 !important;
+    width: 1px !important;
+}
+
+.DOPBSPCalendar-day.dopbsp-style-small .dopbsp-bind-left .dopbsp-head{
+    height: 25px !important;
+} 
+
+.DOPBSPCalendar-day .dopbsp-bind-left .dopbsp-body, 
+.DOPBSPCalendar-day .dopbsp-bind-right .dopbsp-body{
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #ffffff !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    line-height: 15px !important;
+    margin: 0 !important;
+    padding: 0 0 4px 0 !important;
+    width: 1px !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle{
+    float: left;
+    overflow: hidden;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-head{
+    background-color: #ffffff !important;
+    border: none !important;
+    border-top: 5px solid #9d8fd1 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    display: block !important;
+    height: 15px !important;
+    margin: 0 !important;
+    padding: 5px 0 0 5px !important;
+    position: relative !important;
+    width: auto !important;
+}
+
+.DOPBSPCalendar-day.dopbsp-style-small .dopbsp-bind-middle .dopbsp-head{
+    height: 25px !important;
+    padding: 5px 0 0 0 !important;
+} 
+
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group1 .dopbsp-head{
+    border-right: none !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group2 .dopbsp-head,
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group3.dopbsp-extended .dopbsp-head{
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group0.dopbsp-extended .dopbsp-head,
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group1.dopbsp-extended .dopbsp-head,
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group3 .dopbsp-head{
+    border-left: none !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-head .dopbsp-day{
+    color: #252525;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    line-height: 15px !important;
+    margin: 0;
+    padding: 0;
+    position: relative !important;
+}
+
+.DOPBSPCalendar-day.dopbsp-style-small .dopbsp-bind-middle .dopbsp-head .dopbsp-day{
+    text-align: center;
+    width: 100%;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-head .dopbsp-co{
+    background: #ffffff;
+    border: none;
+    border-top: 5px solid #9d8fd1; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    height: 20px;
+    left: -1px;
+    margin: 0 !important;
+    padding: 0px 0px 0px 1px !important;
+    position: absolute !important;
+    top: -5px;
+    width: 50% !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-head .dopbsp-ci{
+    background-color: #ffffff;
+    border: none;
+    border-top: 5px solid #9d8fd1; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    height: 20px;
+    right: -1px;
+    margin: 0 !important;
+    position: absolute !important;
+    top: -5px;
+    width: 50% !important;
+}
+
+.DOPBSPCalendar-day.dopbsp-style-small .dopbsp-bind-middle .dopbsp-head .dopbsp-co,
+.DOPBSPCalendar-day.dopbsp-style-small .dopbsp-bind-middle .dopbsp-head .dopbsp-ci{
+    height: 25px !important;
+} 
+
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group2 .dopbsp-head .dopbsp-co{
+    border-left-color: transparent !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group3.dopbsp-extended .dopbsp-head .dopbsp-co{
+    border-left-color: transparent !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group0.dopbsp-extended .dopbsp-head .dopbsp-co,
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group1.dopbsp-extended .dopbsp-head .dopbsp-co,
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group1 .dopbsp-head .dopbsp-ci,
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group2 .dopbsp-head .dopbsp-ci{
+    border-right-color: transparent !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group1.dopbsp-extended .dopbsp-head .dopbsp-ci{
+    border-left: none !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-head .dopbsp-info{
+    background-color: #e5ddff;
+    background-image: url('../images/sprite.png');
+    background-position: -163px -3px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    float: right;
+    height: 15px;
+    margin: 0 5px 0 0;
+    position: relative;
+    width: 15px;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-head .dopbsp-info:hover{
+    background-color: #9d8fd1;
+}
+
+.DOPBSPCalendar-day.dopbsp-style-small .dopbsp-bind-middle .dopbsp-head .dopbsp-info{
+    display: none !important;
+} 
+
+.DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body{
+    background-color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+    border-top: none !important;
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    color: #666666 !important;
+    display: block;
+    float: none !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    line-height: 15px !important;
+    margin: 0 !important;
+    padding: 0 0 4px 0 !important;
+    position: relative !important;
+    text-align: left !important;
+    vertical-align: middle !important;
+    width: auto !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-co{
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-right: none;
+    border-top: none;
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    left: -1px;
+    height: inherit !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute !important;
+    top: 0;
+    width: 50% !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-ci{
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-left: none;
+    border-top: none;
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    height: inherit !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute !important;
+    right: -1px;
+    top: 0;
+    width: 50% !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group1 .dopbsp-body{
+    border-right-color: transparent !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group0.dopbsp-extended .dopbsp-body,
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group1.dopbsp-extended .dopbsp-body,
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group3 .dopbsp-body{
+    border-left-color: transparent !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group2 .dopbsp-body,
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group3.dopbsp-extended .dopbsp-body{
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group0.dopbsp-extended .dopbsp-body .dopbsp-co,
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group1.dopbsp-extended .dopbsp-body .dopbsp-co,
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group2 .dopbsp-body .dopbsp-co,
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group3 .dopbsp-body .dopbsp-co{
+    border-left: none !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group1 .dopbsp-body .dopbsp-ci,
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group2 .dopbsp-body .dopbsp-ci,
+.DOPBSPCalendar-day .dopbsp-bind-middle.dopbsp-group3.dopbsp-extended .dopbsp-body .dopbsp-ci{
+    border-right-color: transparent !important;
+    border-right: transparent !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-old-price{
+    color: #666666;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 300;
+    line-height: 15px !important;
+    margin: 0 !important;
+    padding: 0 0 0 5px !important;
+    text-decoration: line-through;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-price{
+    color: #666666;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    line-height: 15px !important;
+    margin: 0 !important;
+    padding: 0 0 0 5px !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-available{
+    color: #666666;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 300;
+    line-height: 15px !important;
+    padding: 0 0 0 5px;
+    width: 100%;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-info-body{
+    color: #666666;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 15px !important;
+    height: 20px;
+    overflow: hidden;
+    padding: 0 0 0 5px;
+    width: auto;
+    word-break:break-all;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-info-body .dopbsp-info-body-mask{
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1);
+    font-style: normal;
+    height: 20px;
+    padding: 0 2px 0 0;
+    position: absolute;
+    right: 0;
+    width: 70%;
+    text-align: right;
+    z-index: 100;
+}
+
+.DOPBSPCalendar-day.dopbsp-style-small .dopbsp-body{
+    display: none !important;
+}
+
+/*
+ * Last month day.
+ */
+.DOPBSPCalendar-day.dopbsp-last-month{
+    opacity: 0.5;
+}
+
+/* 
+ * Past day.
+ */
+.DOPBSPCalendar-day.dopbsp-past-day{
+    opacity: 0.25;
+}
+
+/*
+ * Current month day.
+ */
+.DOPBSPCalendar-day.dopbsp-curr-month{
+}
+
+/*
+ * Next month day.
+ */
+.DOPBSPCalendar-day.dopbsp-next-month{
+    opacity: 0.5;
+}
+
+/*
+ * Available day.
+ */
+.DOPBSPCalendar-day.dopbsp-available .dopbsp-head,
+.DOPBSPCalendar-day .dopbsp-head .dopbsp-co.dopbsp-available,
+.DOPBSPCalendar-day .dopbsp-head .dopbsp-ci.dopbsp-available,
+.DOPBSPCalendar-day .dopbsp-bind-left.dopbsp-extended.dopbsp-available .dopbsp-head{
+    background-color: #ffffff !important;
+    border-color: #81c990 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPCalendar-day.dopbsp-available .dopbsp-body,
+.DOPBSPCalendar-day .dopbsp-body .dopbsp-co.dopbsp-available,
+.DOPBSPCalendar-day .dopbsp-body .dopbsp-ci.dopbsp-available,
+.DOPBSPCalendar-day .dopbsp-bind-left.dopbsp-extended.dopbsp-available .dopbsp-body{
+    border-color: #ffffff !important;
+}
+
+.DOPBSPCalendar-day.dopbsp-available .dopbsp-head .dopbsp-day,
+.DOPBSPCalendar-day .dopbsp-head .dopbsp-co.dopbsp-available,
+.DOPBSPCalendar-day .dopbsp-head .dopbsp-ci.dopbsp-available,
+.DOPBSPCalendar-day .dopbsp-body .dopbsp-co.dopbsp-available,
+.DOPBSPCalendar-day .dopbsp-body .dopbsp-ci.dopbsp-available{
+    cursor: pointer;
+}
+
+/*
+ * Booked day.
+ */
+.DOPBSPCalendar-day.dopbsp-booked .dopbsp-head,
+.DOPBSPCalendar-day .dopbsp-head .dopbsp-co.dopbsp-booked,
+.DOPBSPCalendar-day .dopbsp-head .dopbsp-ci.dopbsp-booked{
+    background-color: #ffffff !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+    border-top-color: #e295b3 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPCalendar-day.dopbsp-booked .dopbsp-body,
+.DOPBSPCalendar-day .dopbsp-body .dopbsp-co.dopbsp-booked,
+.DOPBSPCalendar-day .dopbsp-body .dopbsp-ci.dopbsp-booked{
+    border-color: #ffffff !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+/*
+ * Special day.
+ */
+.DOPBSPCalendar-day.dopbsp-special .dopbsp-head,
+.DOPBSPCalendar-day .dopbsp-head .dopbsp-co.dopbsp-special,
+.DOPBSPCalendar-day .dopbsp-head .dopbsp-ci.dopbsp-special,
+.DOPBSPCalendar-day .dopbsp-bind-left.dopbsp-extended.dopbsp-special .dopbsp-head{
+    background-color: #ffffff !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+    border-color: #9d8fd1 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPCalendar-day.dopbsp-special .dopbsp-body,
+.DOPBSPCalendar-day .dopbsp-body .dopbsp-co.dopbsp-special,
+.DOPBSPCalendar-day .dopbsp-body .dopbsp-ci.dopbsp-special,
+.DOPBSPCalendar-day .dopbsp-bind-left.dopbsp-extended.dopbsp-special .dopbsp-body{
+    border-color: #ffffff !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPCalendar-day.dopbsp-special .dopbsp-head .dopbsp-day,
+.DOPBSPCalendar-day .dopbsp-head .dopbsp-co.dopbsp-special,
+.DOPBSPCalendar-day .dopbsp-head .dopbsp-ci.dopbsp-special,
+.DOPBSPCalendar-day .dopbsp-body .dopbsp-co.dopbsp-special,
+.DOPBSPCalendar-day .dopbsp-body .dopbsp-ci.dopbsp-special{
+    cursor: pointer;
+}
+
+/*
+ * Unavailable day.
+ */
+.DOPBSPCalendar-day.dopbsp-unavailable .dopbsp-head,
+.DOPBSPCalendar-day .dopbsp-head .dopbsp-co.dopbsp-unavailable,
+.DOPBSPCalendar-day .dopbsp-head .dopbsp-ci.dopbsp-unavailable{
+    background-color: #ffffff !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+    border-color: #9d8fd1 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPCalendar-day.dopbsp-unavailable .dopbsp-body,
+.DOPBSPCalendar-day .dopbsp-body .dopbsp-co.dopbsp-unavailable,
+.DOPBSPCalendar-day .dopbsp-body .dopbsp-ci.dopbsp-unavailable{
+    border-color: #ffffff !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+/*
+ * Selected day.
+ */
+.DOPBSPCalendar-day.dopbsp-selected .dopbsp-head,
+.DOPBSPCalendar-day.dopbsp-selected .dopbsp-head .dopbsp-co,
+.DOPBSPCalendar-day.dopbsp-selected .dopbsp-head .dopbsp-ci,
+.DOPBSPCalendar-day.dopbsp-selected .dopbsp-bind-left.dopbsp-extended .dopbsp-head{
+    background-color: #ffffff !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+    border-color: #252525 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPCalendar-day.dopbsp-selected .dopbsp-body,
+.DOPBSPCalendar-day.dopbsp-selected .dopbsp-body .dopbsp-co,
+.DOPBSPCalendar-day.dopbsp-selected .dopbsp-body .dopbsp-ci,
+.DOPBSPCalendar-day.dopbsp-selected .dopbsp-bind-left.dopbsp-extended .dopbsp-body{
+    border-color: #ffffff !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-head .dopbsp-co.dopbsp-none,
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-last .dopbsp-head .dopbsp-ci.dopbsp-none{
+    background-color: #ffffff !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-color: #9d8fd1 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+}
+
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-body .dopbsp-co.dopbsp-none,
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-last .dopbsp-body .dopbsp-ci.dopbsp-none{
+    border-color: #ffffff !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+}
+
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-head .dopbsp-co.dopbsp-available,
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-last .dopbsp-head .dopbsp-ci.dopbsp-available,
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-bind-left.dopbsp-available.dopbsp-extended .dopbsp-head,
+.DOPBSPCalendar-day.dopbsp-available.dopbsp-selected.dopbsp-last .dopbsp-bind-right .dopbsp-head{
+    background-color: #ffffff !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+    border-color: #81c990 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-body .dopbsp-co.dopbsp-available,
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-last .dopbsp-body .dopbsp-ci.dopbsp-available,
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-bind-left.dopbsp-available.dopbsp-extended .dopbsp-body,
+.DOPBSPCalendar-day.dopbsp-available.dopbsp-selected.dopbsp-last .dopbsp-bind-right .dopbsp-body{
+    border-color: #ffffff !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-head .dopbsp-co.dopbsp-booked,
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-last .dopbsp-head .dopbsp-ci.dopbsp-booked{
+    background-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+    border-color: #e295b3 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-body .dopbsp-co.dopbsp-booked,
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-last .dopbsp-body .dopbsp-ci.dopbsp-booked{
+    border-color: #ffffff !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-head .dopbsp-co.dopbsp-special,
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-last .dopbsp-head .dopbsp-ci.dopbsp-special,
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-bind-left.dopbsp-special.dopbsp-extended .dopbsp-head,
+.DOPBSPCalendar-day.dopbsp-special.dopbsp-selected.dopbsp-last .dopbsp-bind-right .dopbsp-head{
+    background-color: #ffffff !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+    border-color: #9d8fd1 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-body .dopbsp-co.dopbsp-special,
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-last .dopbsp-body .dopbsp-ci.dopbsp-special,
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-bind-left.dopbsp-special.dopbsp-extended .dopbsp-body,
+.DOPBSPCalendar-day.dopbsp-special.dopbsp-selected.dopbsp-last .dopbsp-bind-right .dopbsp-body{
+    border-color: #ffffff !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-head .dopbsp-co.dopbsp-unavailable,
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-last .dopbsp-head .dopbsp-ci.dopbsp-unavailable{
+    background-color: #ffffff !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+    border-color: #9d8fd1 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-body .dopbsp-co.dopbsp-unavailable,
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-last .dopbsp-body .dopbsp-ci.dopbsp-unavailable{
+    border-color: #ffffff !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-extended .dopbsp-body .dopbsp-co{
+    border-left-color: transparent !important;
+}
+
+/*
+ * Mask day.
+ */
+.DOPBSPCalendar-day.dopbsp-mask{
+    cursor: default;
+    opacity: 0;
+}
+
+/*
+ * Hide day.
+ */
+.DOPBSPCalendar-day.dopbsp-hide{
+    display: none;
+}
+
+/*
+ * Cursor.
+ */
+.DOPBSPCalendar-day.dopbsp-cursor-pointer{
+    cursor: pointer !important;
+}
+
+.DOPBSPCalendar-day.dopbsp-no-cursor-pointer
+.DOPBSPCalendar-day.dopbsp-no-cursor-pointer .dopbsp-head .dopbsp-co,
+.DOPBSPCalendar-day.dopbsp-no-cursor-pointer .dopbsp-head .dopbsp-ci,
+.DOPBSPCalendar-day.dopbsp-no-cursor-pointer .dopbsp-body .dopbsp-co,
+.DOPBSPCalendar-day.dopbsp-no-cursor-pointer .dopbsp-body .dopbsp-ci{
+    cursor: default !important;
+}
+
+/*
+ * Grouped days - first column.
+ */
+.DOPBSPCalendar-day.dopbsp-first-column .dopbsp-bind-left{
+    opacity: 0 !important;
+}
+
+/*
+ * Grouped days - last column.
+ */
+.DOPBSPCalendar-day.dopbsp-last-column .dopbsp-bind-middle.dopbsp-group1 .dopbsp-head .dopbsp-ci,
+.DOPBSPCalendar-day.dopbsp-last-column .dopbsp-bind-middle.dopbsp-group2 .dopbsp-head .dopbsp-ci{
+    right: 0px !important;
+}
+
+.DOPBSPCalendar-day.dopbsp-last-column .dopbsp-bind-right{
+    opacity: 0 !important;
+}
+/*
+ * ******************************************************************* End days.
+ */ 
+
+/*
+ * **************************************************************** Begin hours.
+ */ 
+.DOPBSPCalendar-hours{
+    background-color: #f7f6f9;
+    border: 1px solid #f7f6f9;
+    border-top: none;
+    display: none;
+    padding: 0 5px 4px 5px;
+}
+
+.DOPBSPCalendar-hour{
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    text-align: left;
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-top, 
+.DOPBSPCalendar-hour .dopbsp-bind-bottom{
+    background-color: #ffffff;
+    border-left: 5px solid #9d8fd2; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-bottom: none;
+    border-top: none;
+    height: 1px;
+    opacity: 0;
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-top .dopbsp-hour, 
+.DOPBSPCalendar-hour .dopbsp-bind-bottom .dopbsp-hour{
+    background: #ffffff;
+    color: #ffffff;
+    float: left;
+    line-height: 1px !important;
+    padding: 0 5px;
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-top.dopbsp-enabled, 
+.DOPBSPCalendar-hour .dopbsp-bind-bottom.dopbsp-enabled{
+    opacity: 1;
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-top.dopbsp-enabled .dopbsp-hour, 
+.DOPBSPCalendar-hour .dopbsp-bind-bottom.dopbsp-enabled .dopbsp-hour{
+    background-color: #9d8fd2; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    color: #9d8fd2; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-middle{    
+    background-color: #ffffff;
+    border-left: 5px solid #9d8fd2; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    height: 18px;
+    line-height: 18px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-middle.dopbsp-group1{
+    border-bottom-color: #ffffff;
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-middle.dopbsp-group2{
+    border-bottom-color: #ffffff;
+    border-top-color: #ffffff;
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-middle.dopbsp-group3{
+    border-top-color: #ffffff;
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-hour{    
+    background-color: #ffffff;
+    color: #252525;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    line-height: 18px !important;
+    padding: 0 5px 0 4px;
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-price, 
+.DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-price-promo{
+    color: #666666;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+    padding: 0 0 0 10px !important;
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-old-price{
+    color: #666666;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+    padding: 0 0 0 5px !important;
+    text-decoration: line-through;
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-available{
+    color: #666666;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+    padding: 0 10px !important;
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-info-body{
+    color: #acacac;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 11px !important;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 18px !important;
+    height: 18px;
+    overflow: hidden;
+    padding: 0 0 0 5px;
+    width: 60px;
+    word-break: break-all;
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-info-body .dopbsp-info-body-mask{
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1);
+    float: right;
+    font-style: normal;
+    height: 18px;
+    padding: 0 2px 0 0;
+    width: 10px;
+    text-align: right;
+    z-index: 100;
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-info{
+    background-color: #e5ddff;
+    background-image: url('../images/sprite.png');
+    background-position: -162px -2px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    float: right;
+    height: 16px;
+    margin: 1px 5px 0 0;
+    width: 16px;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-info:hover{
+    background-color: #9d8fd1 !important;
+}
+
+/*
+ * Available hour.
+ */
+.DOPBSPCalendar-hour.dopbsp-available .dopbsp-bind-middle{    
+    border-color: #81c990; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-available .dopbsp-bind-top{    
+    border-color: #81c990; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-available .dopbsp-bind-top .dopbsp-hour{    
+    color: #ffffff;
+}
+
+.DOPBSPCalendar-hour.dopbsp-available .dopbsp-bind-bottom{    
+    border-color: #81c990; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-available .dopbsp-bind-bottom .dopbsp-hour{    
+    color: #ffffff;
+}
+
+.DOPBSPCalendar-hour.dopbsp-available .dopbsp-bind-top.dopbsp-enabled .dopbsp-hour,
+.DOPBSPCalendar-hour.dopbsp-available .dopbsp-bind-bottom.dopbsp-enabled .dopbsp-hour{
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+/*
+ * Booked hour.
+ */
+.DOPBSPCalendar-hour.dopbsp-booked .dopbsp-bind-middle{    
+    border-color: #e295b3; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-booked .dopbsp-bind-top{    
+    border-color: #e295b3; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-booked .dopbsp-bind-top .dopbsp-hour{    
+    color: #ffffff;
+}
+
+.DOPBSPCalendar-hour.dopbsp-booked .dopbsp-bind-bottom{    
+    border-color: #e295b3; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-booked .dopbsp-bind-bottom .dopbsp-hour{    
+    color: #ffffff;
+}
+
+.DOPBSPCalendar-hour.dopbsp-booked .dopbsp-bind-top.dopbsp-enabled .dopbsp-hour,
+.DOPBSPCalendar-hour.dopbsp-booked .dopbsp-bind-bottom.dopbsp-enabled .dopbsp-hour{
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+/*
+ * Special hour.
+ */
+.DOPBSPCalendar-hour.dopbsp-special .dopbsp-bind-middle{    
+    border-color: #9d8fd1; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-special .dopbsp-bind-top{    
+    border-color: #9d8fd1; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-special .dopbsp-bind-top .dopbsp-hour{    
+    color: #ffffff;
+}
+
+.DOPBSPCalendar-hour.dopbsp-special .dopbsp-bind-bottom{    
+    border-color: #9d8fd1; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-special .dopbsp-bind-bottom .dopbsp-hour{    
+    color: #ffffff;
+}
+
+.DOPBSPCalendar-hour.dopbsp-special .dopbsp-bind-top.dopbsp-enabled .dopbsp-hour,
+.DOPBSPCalendar-hour.dopbsp-special .dopbsp-bind-bottom.dopbsp-enabled .dopbsp-hour{
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+/*
+ * Unavailable hour.
+ */
+.DOPBSPCalendar-hour.dopbsp-unavailable .dopbsp-bind-middle{    
+    border-color: #9d8fd1; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-unavailable .dopbsp-bind-top{    
+    border-color: #9d8fd1; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-unavailable .dopbsp-bind-top .dopbsp-hour{    
+    color: #ffffff;
+}
+
+.DOPBSPCalendar-hour.dopbsp-unavailable .dopbsp-bind-bottom{    
+    border-color: #9d8fd1; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-unavailable .dopbsp-bind-bottom .dopbsp-hour{    
+    color: #ffffff;
+}
+
+.DOPBSPCalendar-hour.dopbsp-unavailable .dopbsp-bind-top.dopbsp-enabled .dopbsp-hour,
+.DOPBSPCalendar-hour.dopbsp-unavailable .dopbsp-bind-bottom.dopbsp-enabled .dopbsp-hour{
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+/*
+ * Selected hour.
+ */
+.DOPBSPCalendar-hour.dopbsp-selected .dopbsp-bind-middle{    
+    border-color: #252525; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-selected .dopbsp-bind-middle .dopbsp-hour{    
+    background: #ffffff;
+}
+
+.DOPBSPCalendar-hour.dopbsp-selected .dopbsp-bind-top{    
+    border-color: #252525; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-selected .dopbsp-bind-top .dopbsp-hour{    
+    color: #ffffff;
+}
+
+.DOPBSPCalendar-hour.dopbsp-selected .dopbsp-bind-bottom{    
+    border-color: #252525; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-selected .dopbsp-bind-bottom .dopbsp-hour{    
+    color: #ffffff;
+}
+
+.DOPBSPCalendar-hour.dopbsp-selected .dopbsp-bind-top .dopbsp-hour,
+.DOPBSPCalendar-hour.dopbsp-selected .dopbsp-bind-bottom .dopbsp-hour,
+.DOPBSPCalendar-hour.dopbsp-selected .dopbsp-bind-top.dopbsp-enabled .dopbsp-hour,
+.DOPBSPCalendar-hour.dopbsp-selected .dopbsp-bind-bottom.dopbsp-enabled .dopbsp-hour{ 
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.DOPBSPCalendar-hour.dopbsp-selected .dopbsp-bind-middle .dopbsp-info{
+    background-color: #252525; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+/*
+ * Past hour.
+ */
+.DOPBSPCalendar-hour.dopbsp-past-hour{  
+    cursor: default;
+    opacity: 0.25;
+}
+
+.DOPBSPCalendar-hour.dopbsp-past-hour .dopbsp-bind-middle .dopbsp-notes{
+    display: none;
+}
+
+.DOPBSPCalendar-hour.dopbsp-past-hour .dopbsp-bind-middle .dopbsp-info{
+    display: none;
+}
+/*
+ * ****************************************************************** End hours.
+ */
+/*
+ * ***************************************************************************** End calendar.
+ */
+
+/*
+ * ***************************************************************************** Begin sidebar.
+ */
+.DOPBSPCalendar-sidebar,
+.DOPBSPCalendar-outer-sidebar{
+    font-family: 'Open Sans', sans-serif !important;
+    overflow: hidden;
+    padding: 0;
+}
+
+.DOPBSPCalendar-sidebar.dopbsp-hidden,
+.DOPBSPCalendar-outer-sidebar.dopbsp-hidden{
+    margin: 0 !important;
+    width: 0 !important;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-sidebar-content,
+.DOPBSPCalendar-outer-sidebar .dopbsp-sidebar-content{
+    border-collapse: collapse;
+    border: none !important;
+    border-spacing: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-sidebar-content .dopbsp-column-separator-style,
+.DOPBSPCalendar-outer-sidebar .dopbsp-sidebar-content .dopbsp-column-separator-style{
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 20px;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-sidebar-content td,
+.DOPBSPCalendar-outer-sidebar .dopbsp-sidebar-content td{
+    border: none !important;
+    float: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    vertical-align: top !important;
+}
+
+/*
+ * ******************************************************* Begin sidebar styles.
+ */
+/*
+ * Style 1
+ */
+.DOPBSPCalendar-sidebar.dopbsp-style1,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style1{
+    float: right;
+    margin: 0 0 0 20px;
+    width: 560px;
+}
+
+.DOPBSPCalendar-sidebar.dopbsp-style1-medium,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style1-medium{
+    padding: 20px 0 0 0;
+    width: 100%;
+}
+
+.DOPBSPCalendar-sidebar.dopbsp-style1 .dopbsp-column2,
+.DOPBSPCalendar-sidebar.dopbsp-style1 .dopbsp-column3,
+
+.DOPBSPCalendar-sidebar.dopbsp-style1-medium .dopbsp-column2,
+.DOPBSPCalendar-sidebar.dopbsp-style1-medium .dopbsp-column3,
+
+.DOPBSPCalendar-outer-sidebar.dopbsp-style1 .dopbsp-column2,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style1 .dopbsp-column3,
+
+.DOPBSPCalendar-outer-sidebar.dopbsp-style1-medium .dopbsp-column2,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style1-medium .dopbsp-column3{
+    display: none;
+}
+
+/*
+ * Style 2
+ */
+.DOPBSPCalendar-sidebar.dopbsp-style2,
+.DOPBSPCalendar-sidebar.dopbsp-style2-medium,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style2,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style2-medium{
+    padding: 20px 0 0 0;
+    width: 100%;
+}
+
+.DOPBSPCalendar-sidebar.dopbsp-style2 col.dopbsp-column1,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style2 col.dopbsp-column1{
+    width: 33%;
+}
+
+.DOPBSPCalendar-sidebar.dopbsp-style2 .dopbsp-column4,
+.DOPBSPCalendar-sidebar.dopbsp-style2 .dopbsp-column5,
+.DOPBSPCalendar-sidebar.dopbsp-style2 .dopbsp-column6,
+
+.DOPBSPCalendar-sidebar.dopbsp-style2-medium .dopbsp-column4,
+.DOPBSPCalendar-sidebar.dopbsp-style2-medium .dopbsp-column5,
+.DOPBSPCalendar-sidebar.dopbsp-style2-medium .dopbsp-column6,
+
+.DOPBSPCalendar-outer-sidebar.dopbsp-style2 .dopbsp-column4,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style2 .dopbsp-column5,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style2 .dopbsp-column6,
+
+.DOPBSPCalendar-outer-sidebar.dopbsp-style2-medium .dopbsp-column4,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style2-medium .dopbsp-column5,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style2-medium .dopbsp-column6{
+    display: block;
+    width: auto;
+}
+
+.DOPBSPCalendar-sidebar.dopbsp-style2-medium .dopbsp-column7,
+.DOPBSPCalendar-sidebar.dopbsp-style2-medium .dopbsp-column8,
+.DOPBSPCalendar-sidebar.dopbsp-style2-medium .dopbsp-column9,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style2-medium .dopbsp-column7,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style2-medium .dopbsp-column8,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style2-medium .dopbsp-column9{
+    display: block;
+}
+
+/*
+ * Style 3
+ */
+.DOPBSPCalendar-sidebar.dopbsp-style3,
+.DOPBSPCalendar-sidebar.dopbsp-style3-medium,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style3,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style3-medium{
+    padding: 20px 0 0 0;
+    width: 100%;
+}
+
+.DOPBSPCalendar-sidebar.dopbsp-style3-medium .dopbsp-column4,
+.DOPBSPCalendar-sidebar.dopbsp-style3-medium .dopbsp-column5,
+.DOPBSPCalendar-sidebar.dopbsp-style3-medium .dopbsp-column6,
+.DOPBSPCalendar-sidebar.dopbsp-style3-medium .dopbsp-column7,
+.DOPBSPCalendar-sidebar.dopbsp-style3-medium .dopbsp-column8,
+.DOPBSPCalendar-sidebar.dopbsp-style3-medium .dopbsp-column9,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style3-medium .dopbsp-column4,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style3-medium .dopbsp-column5,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style3-medium .dopbsp-column6,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style3-medium .dopbsp-column7,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style3-medium .dopbsp-column8,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style3-medium .dopbsp-column9{
+    display: block;
+}
+
+/*
+ * Style 4
+ */
+.DOPBSPCalendar-sidebar.dopbsp-style4,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style4{
+    float: right;
+    margin: 0 0 0 20px;
+    width: 270px;
+}
+
+.DOPBSPCalendar-sidebar.dopbsp-style4-medium,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style4-medium{
+    padding: 20px 0 0 0;
+    width: 100%;
+}
+
+.DOPBSPCalendar-sidebar.dopbsp-style4 .dopbsp-column2,
+.DOPBSPCalendar-sidebar.dopbsp-style4 .dopbsp-column3,
+.DOPBSPCalendar-sidebar.dopbsp-style4 .dopbsp-column5,
+.DOPBSPCalendar-sidebar.dopbsp-style4 .dopbsp-column6,
+
+.DOPBSPCalendar-sidebar.dopbsp-style4-medium .dopbsp-column2,
+.DOPBSPCalendar-sidebar.dopbsp-style4-medium .dopbsp-column3,
+.DOPBSPCalendar-sidebar.dopbsp-style4-medium .dopbsp-column5,
+.DOPBSPCalendar-sidebar.dopbsp-style4-medium .dopbsp-column6,
+
+.DOPBSPCalendar-outer-sidebar.dopbsp-style4 .dopbsp-column2,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style4 .dopbsp-column3,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style4 .dopbsp-column5,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style4 .dopbsp-column6,
+
+.DOPBSPCalendar-outer-sidebar.dopbsp-style4-medium .dopbsp-column2,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style4-medium .dopbsp-column3,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style4-medium .dopbsp-column5,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style4-medium .dopbsp-column6{
+    display: none;
+}
+
+/*
+ * Style 5
+ */
+.DOPBSPCalendar-sidebar.dopbsp-style5,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style5{
+    float: right;
+    margin: 0 0 0 20px;
+}
+
+.DOPBSPCalendar-sidebar.dopbsp-style5-medium,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style5-medium{
+    padding: 20px 0 0 0;
+    width: 100%;
+}
+
+.DOPBSPCalendar-sidebar.dopbsp-style5 .dopbsp-column2,
+.DOPBSPCalendar-sidebar.dopbsp-style5 .dopbsp-column3,
+.DOPBSPCalendar-sidebar.dopbsp-style5 .dopbsp-column5,
+.DOPBSPCalendar-sidebar.dopbsp-style5 .dopbsp-column6,
+
+.DOPBSPCalendar-sidebar.dopbsp-style5-medium .dopbsp-column2,
+.DOPBSPCalendar-sidebar.dopbsp-style5-medium .dopbsp-column3,
+.DOPBSPCalendar-sidebar.dopbsp-style5-medium .dopbsp-column5,
+.DOPBSPCalendar-sidebar.dopbsp-style5-medium .dopbsp-column6,
+
+.DOPBSPCalendar-outer-sidebar.dopbsp-style5 .dopbsp-column2,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style5 .dopbsp-column3,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style5 .dopbsp-column5,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style5 .dopbsp-column6,
+
+.DOPBSPCalendar-outer-sidebar.dopbsp-style5-medium .dopbsp-column2,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style5-medium .dopbsp-column3,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style5-medium .dopbsp-column5,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style5-medium .dopbsp-column6{
+    display: none;
+}
+
+/*
+ * Style mobile.
+ */
+.DOPBSPCalendar-sidebar.dopbsp-style-small,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style-small{
+    padding: 10px 0 0 0;
+    width: 100%;
+}
+
+.DOPBSPCalendar-sidebar.dopbsp-style-small td,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style-small td{
+    display: block;
+}
+
+.DOPBSPCalendar-sidebar.dopbsp-style-small .dopbsp-column-separator-style,
+.DOPBSPCalendar-sidebar.dopbsp-style-small col:last-child,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style-small .dopbsp-column-separator-style,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style-small col:last-child{
+    display: none;
+}
+/*
+ * ********************************************************* End sidebar styles.
+ */
+
+.DOPBSPCalendar-sidebar .dopbsp-module,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module{
+    background: #ffffff;
+    border: 1px solid #e5ddff !important;
+    margin: 0 0 20px 0;
+    padding: 8px 9px 0 9px;
+    min-width: 250px;
+}
+
+.DOPBSPCalendar-sidebar.dopbsp-style-small .dopbsp-module,
+.DOPBSPCalendar-outer-sidebar.dopbsp-style-small .dopbsp-module{
+    margin: 0 0 10px 0;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper{
+    margin: 0 0 10px 0;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper.DOPBSPCalendar-left:first-child,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper.DOPBSPCalendar-left:first-child{
+    margin: 0 10px 10px 0;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper.dopbsp-add-to-cart-wrapper,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper.dopbsp-add-to-cart-wrapper{
+    margin: 0;
+    overflow: hidden;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module h4,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module h4{
+    color: #474747 !important;
+    display: block !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 20px !important;
+    margin: 0 !important;
+    padding: 10px 0 20px !important;
+}
+
+/*
+ * Begin warning info.
+ */
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-warning-info,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-warning-info{
+    float: left;
+    margin: 1px 5px 0 0;
+    z-index: 10000;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-warning-info .dopbsp-icon,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-warning-info .dopbsp-icon{
+    background-color: #f1705c;
+    background-image: url('../images/sprite.png');
+    background-position: -181px -1px;
+    float: right;
+    height: 18px;
+    margin: 0;
+    width: 18px;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-warning-info .dopbsp-message,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-warning-info .dopbsp-message{
+    background-color: #f1705c;
+    color: #ffffff;
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 19px 0 0 0;
+    padding: 5px 10px;
+    position: absolute;
+    width: 230px;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-warning-info:hover .dopbsp-message,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-warning-info:hover .dopbsp-message{
+    display: block;
+}
+
+/*
+ * End warning info.
+ */
+
+/*
+ * Begin label.
+ */
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper label,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper label{
+    color: #acacac;
+    display: block;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper label.dopbsp-for-checkbox,
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper label.dopbsp-for-radio,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper label.dopbsp-for-checkbox,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper label.dopbsp-for-radio{
+    margin: 0;
+    padding: 0 0 0 23px;
+    width: auto;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper label.dopbsp-for-radio,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper label.dopbsp-for-radio{
+    color: #666666 !important;
+    cursor: default;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper label .dopbsp-required,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper label .dopbsp-required{
+    color: #f1705c;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper label,
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper label a,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper label,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper label a{
+    color: #acacac;
+    text-decoration: none !important;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper label:hover,
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper label a:hover,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper label:hover,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper label a:hover{
+    color: #9d8fd1;
+}
+/*
+ * End label.
+ */
+
+/*
+ * Begin text.
+ */
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text],
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text]{
+    -webkit-appearance: none !important;
+    background: #ffffff;
+    border: 1px solid #f5ebff !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #666666;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    height: auto;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 4px 9px;
+    width: 230px;
+    -webkit-transition: border-color 300ms linear;
+    -moz-transition: border-color 300ms linear;
+    -o-transition: border-color 300ms linear;
+    transition: border-color 300ms linear;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text]:focus,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text]:focus{
+    border: 1px solid #9d8fd1 !important;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text]:disabled,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text]:disabled{
+    opacity: 0.5;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPCalendar-check-in-view,
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPCalendar-check-out-view,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPCalendar-check-in-view,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPCalendar-check-out-view{
+    background: #ffffff url('../images/sprite.png') -5px -116px;
+    padding: 4px 9px 4px 34px !important;
+    width: 205px;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].dopbsp-small,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].dopbsp-small{
+    width: 115px !important;
+}
+/*
+ * End text.
+ */
+
+/*
+ * Begin textarea.
+ */
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper textarea,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper textarea{
+    -webkit-appearance: none !important;
+    background: #ffffff;
+    border: 1px solid #f5ebff !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #666666;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0;
+    min-width: 230px;
+    overflow-wrap: normal;
+    outline: none;
+    padding: 4px 9px 3px 9px;
+    resize: vertical;
+    width: 90%;
+    -webkit-transition: border-color 300ms linear;
+    -moz-transition: border-color 300ms linear;
+    -o-transition: border-color 300ms linear;
+    transition: border-color 300ms linear;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper textarea:focus,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper textarea:focus{
+    border: 1px solid #9d8fd1 !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper textarea:disabled,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper textarea:disabled{
+    opacity: 0.5;
+}
+/*
+ * End textarea.
+ */
+
+/*
+ * Begin checkbox & radio.
+ */
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox],
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio],
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox],
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]{
+    -webkit-appearance: none !important;
+    background: #ffffff;
+    border: 1px solid #f5ebff !important;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+    float: left;
+    height: auto;
+    margin: 1px 5px 1px 0;
+    outline: none !important;
+    padding: 8px !important;
+    position: relative;
+    width: auto;
+    -webkit-transition: border-color 300ms linear;
+    -moz-transition: border-color 300ms linear;
+    -o-transition: border-color 300ms linear;
+    transition: border-color 300ms linear;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox],
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:hover,
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:hover,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:hover,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:hover{
+    border: 1px solid #9d8fd1 !important;
+    color: #9d8fd1;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:checked,
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:checked{
+    border: 1px solid #9d8fd1 !important;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:checked:before,
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:checked:after,
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:checked:before,
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:checked:after,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:checked:before,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:checked:after,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:checked:before,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:checked:after{
+    background: #9d8fd1 !important;
+    border: 1px solid #9d8fd1 !important;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    color: #9d8fd1 !important;
+    content: ' ' !important;
+    font-size: 16px !important;
+    left: 3px !important;
+    height: 10px !important;
+    line-height: 16px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute !important;
+    top: 3px !important;
+    width: 10px !important;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:checked:before,
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:checked:after,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:checked:before,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:checked:after{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:disabled,
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:disabled,
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:disabled:hover,
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:disabled:hover,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:disabled,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:disabled,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:disabled:hover,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:disabled:hover{
+    border: 1px solid #f5ebff !important;
+    cursor: default;
+    opacity: 0.5;
+}
+/*
+ * End checkbox & radio.
+ */
+
+/*
+ * Begin list.
+ */
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper ul.multiple-select,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper ul.multiple-select{
+    background: #ffffff;
+    border: 1px solid #f5ebff !important;
+    list-style: none;
+    margin: 0 !important;
+    max-height: 80px;
+    overflow-y: scroll;
+    padding: 9px;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper ul.single,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper ul.single{
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper ul li,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper ul li{
+    margin: 0 !important;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper ul li label,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper ul li label{
+    font-style: normal;
+}
+/*
+ * End list.
+ */
+
+/*
+ * Begin submit/button.
+ */
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=submit],
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button],
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=submit],
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button]{
+    -webkit-appearance: none !important;
+    background: #ffffff;
+    border: 1px solid #9d8fd1;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+     -webkit-box-sizing: content-box; 
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #9d8fd1;
+    cursor: pointer;
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 38px;
+    height: 38px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    -webkit-transition: background 300ms linear, color 300ms linear;
+    -moz-transition: background 300ms linear, color 300ms linear;
+    -o-transition: background 300ms linear, color 300ms linear;
+    transition: background 300ms linear, color 300ms linear;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper.dopbsp-add-to-cart-wrapper input[type=submit],
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper.dopbsp-add-to-cart-wrapper input[type=button],
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper.dopbsp-add-to-cart-wrapper input[type=submit],
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper.dopbsp-add-to-cart-wrapper input[type=button]{
+    margin: 11px 0 10px 0;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=submit]:hover,
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=submit]:focus,
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button]:hover,
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button]:focus,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=submit]:hover,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=submit]:focus,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button]:hover,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button]:focus{
+    background: #9d8fd1;
+    color: #ffffff;
+    outline: none;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=submit]:disabled,
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button]:disabled,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=submit]:disabled,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button]:disabled{
+    opacity: 0.5;
+}
+/*
+ * End submit/button.
+ */
+
+/*
+ * Begin loader.
+ */
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-submit-loader,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-submit-loader{
+    background: url('../images/loader.gif') no-repeat center center;
+    height: 40px;
+}
+/*
+ * End loader.
+ */
+
+/*
+ * *********************************************************** Begin DOP select.
+ */
+.DOPBSPCalendar-sidebar .DOPSelect,
+.DOPBSPCalendar-outer-sidebar .DOPSelect{
+    width: 250px !important;
+}
+
+/*
+ * Single select.
+ */
+.DOPBSPCalendar-sidebar .DOPSelect .dopselect-select,
+.DOPBSPCalendar-outer-sidebar .DOPSelect .dopselect-select{
+    background: #ffffff;
+    border: 1px solid #f5ebff;
+}
+
+.DOPBSPCalendar-sidebar .DOPSelect .dopselect-select .dopselect-selection,
+.DOPBSPCalendar-outer-sidebar .DOPSelect .dopselect-select .dopselect-selection{
+    color: #666666 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    height: 28px !important;
+    line-height: 28px !important;
+    width: 210px !important;
+}
+
+.DOPBSPCalendar-sidebar .DOPSelect .dopselect-select .dopselect-icon,
+.DOPBSPCalendar-outer-sidebar .DOPSelect .dopselect-select .dopselect-icon{
+    color: #f5ebff !important;
+    line-height: 28px !important;
+    height: 28px !important;
+    width: 28px !important;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+
+.DOPBSPCalendar-sidebar .DOPSelect .dopselect-select:hover .dopselect-icon,
+.DOPBSPCalendar-outer-sidebar .DOPSelect .dopselect-select:hover .dopselect-icon{
+    color: #9d8fd1 !important;
+}
+
+.DOPBSPCalendar-sidebar .DOPSelect.dopselect-single ul,
+.DOPBSPCalendar-outer-sidebar .DOPSelect.dopselect-single ul{
+    background: #ffffff !important;
+    border: 1px solid #9d8fd1 !important;
+    width: 248px !important;
+}
+
+.DOPBSPCalendar-sidebar .DOPSelect.dopselect-single ul li,
+.DOPBSPCalendar-outer-sidebar .DOPSelect.dopselect-single ul li{
+    background: #ffffff !important;
+    color: #666666 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    width: 230px !important;
+}
+
+.DOPBSPCalendar-sidebar .DOPSelect.dopselect-single ul li:hover,
+.DOPBSPCalendar-sidebar .DOPSelect.dopselect-single ul li.dopselect-selected,
+.DOPBSPCalendar-outer-sidebar .DOPSelect.dopselect-single ul li:hover,
+.DOPBSPCalendar-outer-sidebar .DOPSelect.dopselect-single ul li.dopselect-selected{
+    background: #9d8fd1 !important;
+    color: #ffffff !important;
+}
+
+/*
+ * Small single select.
+ */
+.DOPBSPCalendar-sidebar .DOPSelect.dopbsp-small,
+.DOPBSPCalendar-outer-sidebar .DOPSelect.dopbsp-small{
+    width: 120px !important;
+}
+
+.DOPBSPCalendar-sidebar .DOPSelect.dopbsp-small.DOPBSPCalendar-left:last-of-type,
+.DOPBSPCalendar-outer-sidebar .DOPSelect.dopbsp-small.DOPBSPCalendar-left:last-of-type{
+    margin: 0 0 0 10px !important;
+}
+
+.DOPBSPCalendar-sidebar .DOPSelect.dopbsp-small .dopselect-select .dopselect-selection,
+.DOPBSPCalendar-outer-sidebar .DOPSelect.dopbsp-small .dopselect-select .dopselect-selection{
+    width: 80px !important;
+}
+
+.DOPBSPCalendar-sidebar .DOPSelect.dopbsp-small ul,
+.DOPBSPCalendar-outer-sidebar .DOPSelect.dopbsp-small ul{
+    width: 118px !important;
+}
+
+.DOPBSPCalendar-sidebar .DOPSelect.dopbsp-small ul li,
+.DOPBSPCalendar-outer-sidebar .DOPSelect.dopbsp-small ul li{
+    width: 110px !important;
+}
+
+/* 
+ * Big select.
+ */
+.DOPBSPCalendar-sidebar .DOPSelect.dopbsp-big,
+.DOPBSPCalendar-outer-sidebar .DOPSelect.dopbsp-big{
+    width: 100% !important;
+}
+
+.DOPBSPCalendar-sidebar .DOPSelect.dopbsp-small .dopselect-select .dopselect-selection,
+.DOPBSPCalendar-outer-sidebar .DOPSelect.dopbsp-small .dopselect-select .dopselect-selection{
+    width: 80px !important;
+}
+
+.DOPBSPCalendar-sidebar .DOPSelect.dopbsp-small ul,
+.DOPBSPCalendar-outer-sidebar .DOPSelect.dopbsp-small ul{
+    width: 118px !important;
+}
+
+.DOPBSPCalendar-sidebar .DOPSelect.dopbsp-small ul li,
+.DOPBSPCalendar-outer-sidebar .DOPSelect.dopbsp-small ul li{
+    width: 110px !important;
+}
+
+/*
+ * Multiple select.
+ */
+.DOPBSPCalendar-sidebar .DOPSelect.dopselect-multiple ul{
+    border: 1px solid #f5ebff !important;
+}
+
+.DOPBSPCalendar-sidebar .DOPSelect.dopselect-multiple ul label{
+    color: #666666;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.DOPBSPCalendar-sidebar .DOPSelect.dopbsp-phone-code{
+    width: 80px !important;
+    float: left;
+}
+
+.DOPBSPCalendar-sidebar .DOPSelect.dopbsp-phone-code .dopselect-select{
+    background-color: #f1f2f5 !important;
+}
+
+.DOPBSPCalendar-sidebar .DOPSelect.dopbsp-phone-code .dopselect-select .dopselect-selection{
+    width: 40px !important;
+    text-transform: uppercase !important;
+    color: #464646 !important;
+} 
+
+.DOPBSPCalendar-sidebar .DOPSelect.dopbsp-phone-code .dopselect-select .dopselect-icon{
+    color: #464646 !important;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-phone-input{
+    width: 150px !important;
+    border-left: 0px !important;
+}
+/*
+ * ************************************************************* End DOP select.
+ */
+
+/*
+ * ************************************************************* Begin messages.
+ */
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-message,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-message{
+    background: #9d8fd1;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0 0 10px 0;
+    padding: 5px 10px;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-message.dopbsp-success,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-message.dopbsp-success{
+    background: #9cbc72;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-message.dopbsp-error,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-message.dopbsp-error{
+    background: #f1705c;
+}
+/*
+ * *************************************************************** End messages.
+ */
+
+/*
+ * ***************************************************************** Begin cart.
+ */
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper{
+    margin: 0 -10px -10px -10px;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart{
+    border: none;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    margin: 0 0 9px 0 !important;
+    table-layout: fixed !important;
+    width: 100% !important;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart td,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart td{
+    border: none !important;
+    display: table-cell;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 15px;
+    overflow: hidden;
+    padding: 2px 0 3px 0 !important;
+    text-align: left;
+    vertical-align: top;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-label,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-label{
+    color: #acacac;
+    font-style: italic;
+    padding: 2px 0 3px 10px !important;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-value,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-value{
+    background: none;
+    color: #666666;
+    font-weight: 600;
+    padding: 2px 10px 3px 0 !important;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-value.dopbsp-price,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-value.dopbsp-price{
+    font-weight: bold;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-value.dopbsp-info,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-value.dopbsp-info{
+    font-style: italic;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-value .dopbsp-info-rule,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-value .dopbsp-info-rule{
+    font-size: 13px;
+    font-style: normal;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-value .dopbsp-info-price,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-value .dopbsp-info-price{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart tr.dopbsp-separator td,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart tr.dopbsp-separator td{
+    background: none;
+    border: none !important;
+    height: 20px;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart tr.dopbsp-separator td.dopbsp-label,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart tr.dopbsp-separator td.dopbsp-label{
+    padding: 0 0 0 10px !important; 
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart tr.dopbsp-separator td.dopbsp-value,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart tr.dopbsp-separator td.dopbsp-value{
+    padding: 0 10px 0 0 !important; 
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart tr.dopbsp-separator td .dopbsp-line,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart tr.dopbsp-separator td .dopbsp-line{
+    border-bottom: 1px solid #e5ddff;
+    height: 0;
+    padding: 19px 0 0 0;
+    margin: 0 0 20px 0;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-total td.dopbsp-label,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-total td.dopbsp-label{
+    background: #9d8fd1;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 20px 0 20px 10px !important;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-total td.dopbsp-value,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-total td.dopbsp-value{
+    background: #9d8fd1;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 20px 10px 20px 0 !important;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-deposit td.dopbsp-label,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-deposit td.dopbsp-label{
+    background: #9d8fd1;
+    border-bottom: 1px solid #e5ddff !important;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 10px 0 9px 10px !important;
+}
+
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-deposit td.dopbsp-value,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-deposit td.dopbsp-value{
+    background: #9d8fd1;
+    border-bottom: 1px solid #e5ddff !important;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 10px 10px 9px 0 !important;
+}
+/*
+ * ******************************************************************* End cart.
+ */
+
+/*
+ * ************************************************* Begin jQuery UI datepicker.
+ */
+.DOPBSPCalendar-datepicker.ui-datepicker{
+    background: #ffffff !important;
+    border: 1px solid #9d8fd1 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 0 !important;
+    width: 248px !important;
+}
+
+/*
+ * jQuery UI datepicker header.
+ */
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header{
+    background: #9d8fd1 !important;
+    border-bottom: 1px solid #9d8fd1 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+}
+
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next,
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev{
+    background-color: #9d8fd1 !important;
+    background-image: url('../images/sprite.png') !important;
+    border: none !important;
+    -webkit-border-radius: 30px !important;
+    -moz-border-radius: 30px !important;
+    border-radius: 30px !important;
+    cursor: pointer !important;
+    height: 30px !important;
+    left: auto !important;
+    position: relative !important;
+    right: auto !important;
+    top: 4px !important;
+    width: 30px !important;
+    -webkit-transition: background-color 300ms linear !important;
+    -moz-transition: background-color 300ms linear !important;
+    -o-transition: background-color 300ms linear !important;
+    transition: background-color 300ms linear !important;
+}
+
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next:hover,
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev:hover{
+    background-color: #474747 !important;
+}
+
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next.ui-state-disabled,
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev.ui-state-disabled{
+    display: none !important;
+}
+
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next{
+    background-position: -285px -5px !important;
+    float: right !important;
+    right: 4px !important;
+}
+
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev{
+    background-position: -245px -5px !important;
+    float: left !important;
+    left: 4px !important;
+}
+
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next .ui-icon,
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev .ui-icon{
+    display: none !important;
+}
+
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-title,
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-month,
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-year{
+    color: #ffffff !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 38px !important;
+    text-align: center !important;
+}
+
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-title{
+    margin: 0 38px !important;
+}
+
+/*
+ * jQuery UI datepicker calendar.
+ */
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-calendar{
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    margin: 0 !important;
+    table-layout: fixed !important;
+    width: 100% !important;
+}
+
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-calendar th{
+    background: #f7f6f9 !important;
+    border: 1px solid #e5ddff !important;
+    border-top: none !important;
+    color: #474747 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: normal !important;
+    line-height: 18px !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-calendar td{
+    border: 1px solid #e5ddff !important;
+    padding: 0 !important;
+}
+
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-calendar td.ui-datepicker-other-month{
+    background: #f7f6f9 !important;
+    line-height: 17px !important;
+}
+
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-calendar .ui-state-disabled span,
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-calendar a{
+    background: #ffffff !important;
+    border: 0 !important;
+    color: #acacac !important;
+    display: block !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 300 !important;
+    line-height: 19px !important;
+    padding: 0 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+}
+
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-calendar a{
+    color: #666666 !important;
+}
+
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-calendar a.ui-state-active{
+    background-color: #9d8fd1 !important;
+    color: #ffffff !important;
+}
+
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-calendar a.ui-state-active,
+.DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-calendar a:hover{
+    border: 1px solid #9d8fd1 !important;
+    line-height: 17px !important;
+}
+/*
+ * *************************************************** End jQuery UI datepicker.
+ */
+/*
+ * ***************************************************************************** End sidebar.
+ */
+
+/*
+ * ***************************************************************************** Begin info message.
+ */
+.DOPBSPCalendar-info-message{
+    border: 1px solid #cccccc;
+    display: none;
+    margin: 20px 0;
+    overflow: hidden;
+    padding: 19px 9px;
+    position: relative;
+}
+
+.DOPBSPCalendar-info-message .dopbsp-icon{
+    background-image:url('../images/sprite.png');
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+
+.DOPBSPCalendar-info-message .dopbsp-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0 80px 0 60px;
+}
+
+.DOPBSPCalendar-info-message .dopbsp-timer{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: 49px;
+    text-align: center;
+    top: 19px;
+    width: 25px;
+}
+
+.DOPBSPCalendar-info-message .dopbsp-close{
+    background-image:url('../images/sprite.png');
+    background-position: -80px -40px;
+    display: block;
+    height: 20px;
+    position: absolute;
+    right: 19px;
+    top: 19px;
+    width: 20px;
+}
+
+/*
+ * Success info message.
+ */
+.DOPBSPCalendar-info-message.dopbsp-success{
+    border: 1px solid #9cbc72;
+}
+
+.DOPBSPCalendar-info-message.dopbsp-success .dopbsp-icon{
+    background-color: #9cbc72;
+    background-position: 0 -40px;
+}
+
+.DOPBSPCalendar-info-message.dopbsp-success .dopbsp-text,
+.DOPBSPCalendar-info-message.dopbsp-success .dopbsp-timer{
+    color: #9cbc72;
+}
+
+.DOPBSPCalendar-info-message.dopbsp-success .dopbsp-close{
+    background-color: #9cbc72;
+}
+
+/*
+ * Error info message.
+ */
+.DOPBSPCalendar-info-message.dopbsp-error{
+    border: 1px solid #dd6464;
+}
+
+.DOPBSPCalendar-info-message.dopbsp-error .dopbsp-icon{
+    background-color: #dd6464;
+    background-position: -40px -40px;
+}
+
+.DOPBSPCalendar-info-message.dopbsp-error .dopbsp-text,
+.DOPBSPCalendar-info-message.dopbsp-error .dopbsp-timer{
+    color: #dd6464;
+}
+
+.DOPBSPCalendar-info-message.dopbsp-error .dopbsp-close{
+    background-color: #dd6464;
+}
+
+.DOPBSPCalendar-info-message .dopbsp-close:hover{
+    background-color: #9d8fd1;
+}
+/*
+ * ***************************************************************************** End info message.
+ */
+
+/*
+ * ***************************************************************************** Begin tooltip.
+ */
+.DOPBSPCalendar-tooltip{
+    background: #f7f6f9;
+    border: 1px solid #9d8fd1;
+    color: #666666;
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    left: 0px;
+    line-height: 20px;
+    max-width: 500px;
+    padding: 9px;
+    position: absolute;
+    top: 0px;
+    z-index: 1000000;
+}
+
+.DOPBSPCalendar-tooltip.dopbsp-text{
+    background: #9d8fd1;
+    border: 1px solid #9d8fd1;
+    color: #ffffff;
+    padding: 19px 9px;
+}
+/*
+ * ***************************************************************************** End tooltip.
+ */
+
+/*
+ * ***************************************************************************** Begin referral text.
+ */
+.DOPBSPCalendar-referral{
+    color: #666666 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+    line-height: 38px !important;
+    text-align: left !important;
+    text-decoration: none !important;
+}
+
+.DOPBSPCalendar-referral a{
+    color: #666666;
+    text-decoration: none !important;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+.DOPBSPCalendar-referral a:hover{
+    color: #9d8fd1;
+    text-decoration: none !important;
+}
+/*
+ * ***************************************************************************** End referral text.
+ */
+
+/*
+ * ***************************************************************************** Begin retina.
+ */
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi){
+    .DOPBSPCalendar-navigation .dopbsp-add-btn,
+    .DOPBSPCalendar-navigation .dopbsp-next-btn,
+    .DOPBSPCalendar-navigation .dopbsp-previous-btn,
+    .DOPBSPCalendar-navigation .dopbsp-remove-btn,
+    .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-head .dopbsp-info,
+    .DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-info,
+    .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-warning-info .dopbsp-icon,
+    .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPCalendar-check-in-view,
+    .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPCalendar-check-out-view,
+    .DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next,
+    .DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev,
+    .DOPBSPCalendar-info-message .dopbsp-icon,
+    .DOPBSPCalendar-info-message .dopbsp-close{
+        background-image: url('../images/sprite-retina.png') !important;
+        background-size: 320px 190px;
+    }
+}
+/*
+ * ***************************************************************************** End retina.
+ */

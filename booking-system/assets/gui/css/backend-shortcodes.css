@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.1
+* File                    : assets/gui/css/backend-shortcodes.css
+* File Version            : 1.0.3
+* Created / Last Modified : 26 August 2015
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Back end shortcodes stylesheet.
+*/
+
+/*
+ * ***************************************************************************** Begin shortcdes.
+ */
+.DOPBSP-window-background{
+    background: #000000;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000000;
+}
+.DOPBSP-window{
+    background: #252525;
+    border: none;
+    left: 50%;
+    margin: 0 0 0 -125px;
+    min-height: 40px;
+    padding: 20px 10px;
+    position: fixed;
+    top: -80px;
+    width: 230px;
+    z-index: 10000001;
+    -webkit-transition: margin-top 300ms ease-out, top 300ms ease-out;
+    -moz-transition: margin-top 300ms ease-out, top 300ms ease-out;
+    -o-transition: margin-top 300ms ease-out, top 300ms ease-out;
+    transition: margin-top 300ms ease-out, top 300ms ease-out;
+}
+.DOPBSP-window .dopbsp-hide{
+    display:none;
+}
+
+.DOPBSP-window a{
+    color:#fff;
+}
+
+.DOPBSP-window-title{
+    color:#ff6300;
+    float:left;
+    font-weight: bold;
+    font-size:18px;
+    text-align: center;
+    margin-bottom: 10px;
+    width:100%;
+}
+
+.DOPBSP-window select{
+    background: #e1e1e1;
+    border:1px solid #e1e1e1;
+    float:left;
+    margin-bottom: 20px;
+    width: 228px;
+}
+
+.DOPBSP-window select:hover{
+    background: #fff;
+}
+
+.DOPBSP-button{
+    background-color: #c9c9c9;
+    border: none;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color:#fff;
+    display: block;
+    float: left;
+    margin: 0 5px 0 0;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;
+}
+
+.DOPBSP-button:hover{
+    background-color: #ff6300;
+}
+
+#DOPBSP-view-mode-container{
+    color: #fff;
+    padding-bottom: 10px;
+}
+/*
+ * ***************************************************************************** End shortcodes.
+ */

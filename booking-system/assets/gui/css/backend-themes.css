@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.1
+* File                    : assets/gui/css/backend-themes.css
+* File Version            : 1.0.1
+* Created / Last Modified : 26 August 2015
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Back end themes stylesheet.
+*/
+
+/*
+ * ***************************************************************************** Begin themes.
+ */
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper col.dopbsp-column1.dopbsp-themes{
+    width: 375px;
+}
+
+/*
+ * Begin reservations list.
+ */
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-themes-list{
+    display: block;
+    overflow: hidden;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-themes-list li.dopbsp-theme{
+    background-color: #ffffff;
+    border: 1px solid #666666;
+    border-top: 9px solid #666666;
+    display: block; 
+    float: left; 
+    height: 370px;
+    margin: 0px 20px 20px 0px;
+    padding: 20px 19px 0 19px;
+    position: relative; 
+    width: 280px;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-themes-list li.dopbsp-theme .dopbsp-thumbnail{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    display: block;
+    margin: 0 0 20px 0;
+    height: 140px;
+    width: auto; 
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-themes-list li.dopbsp-theme .dopbsp-price{
+    color: #898989;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-themes-list li.dopbsp-theme h5{
+    color: #464646;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-themes-list li.dopbsp-theme p{
+    color: #898989;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0 0 30px 0;
+    height: 60px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-themes-list li.dopbsp-theme a.dopbsp-get-it{
+    background: #464646;
+    color: #ffffff;
+    display: block;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 0 20px 0 0;
+    padding: 0 20px;
+    text-align: left;
+    text-decoration: none;
+    -webkit-transition: background 300ms linear;
+    -moz-transition: background 300ms linear;
+    -ms-transition: background 300ms linear;
+    -o-transition: background 300ms linear;
+    transition: background 300ms linear;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-themes-list li.dopbsp-theme a.dopbsp-get-it:hover{
+    background: #ff6300;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-themes-list li.dopbsp-theme a.dopbsp-demo{
+    color: #464646;
+    display: block;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-themes-list li.dopbsp-theme a.dopbsp-demo:hover{
+    color: #ff6300;
+}
+
+.DOPBSP-admin .dopbsp-main table.dopbsp-content-wrapper .dopbsp-themes-list li.dopbsp-no-data{
+    border: none;
+    color: #acacac;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
+    padding: 20px 19px;
+}
+/*
+ * ***************************************************************************** End themes.
+ */

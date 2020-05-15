@@ -1,0 +1,657 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.1
+* File                    : assets/gui/css/jquery.dop.backend.BSPReservationsCalendar.css
+* File Version            : 1.0.4
+* Created / Last Modified : 26 August 2015
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Back end reservations calendar jQuery plugin stylesheet.
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+.DOPBSPReservationsCalendar-wrapper{
+    margin: 20px 0;
+    min-width: 240px;
+    overflow: hidden;
+}
+
+/*
+ * ***************************************************************************** Container
+ */
+.DOPBSPReservationsCalendar-container{
+    background: none;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.DOPBSPReservationsCalendar-strong{
+    font-weight: bold !important;
+}
+
+.DOPBSPReservationsCalendar-left{
+    float: left !important;
+}
+
+.DOPBSPReservationsCalendar-right{
+    float: right !important;
+}
+
+.DOPBSPReservationsCalendar-hidden{
+    display: none;
+}
+
+.DOPBSPReservationsCalendar-clear{
+    clear: both;
+}
+
+/*
+ * ***************************************************************************** Begin navigation.
+ */
+.DOPBSPReservationsCalendar-navigation{
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    margin: 0 0 4px 0;
+    padding: 0;
+    position: relative;
+}
+
+.DOPBSPReservationsCalendar-navigation .dopbsp-add-btn,
+.DOPBSPReservationsCalendar-navigation .dopbsp-next-btn,
+.DOPBSPReservationsCalendar-navigation .dopbsp-previous-btn,
+.DOPBSPReservationsCalendar-navigation .dopbsp-remove-btn{
+    background-color: #c9c9c9;
+    background-image: url('../images/sprite.png');
+    display: block;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 40px;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;
+}
+
+.DOPBSPReservationsCalendar-navigation .dopbsp-add-btn:hover,
+.DOPBSPReservationsCalendar-navigation .dopbsp-next-btn:hover,
+.DOPBSPReservationsCalendar-navigation .dopbsp-previous-btn:hover,
+.DOPBSPReservationsCalendar-navigation .dopbsp-remove-btn:hover{
+    background-color: #464646;
+}
+
+.DOPBSPReservationsCalendar-navigation .dopbsp-add-btn{
+    background-position: 0 -80px;
+    left: 9px;
+    top: 9px;
+}
+
+.DOPBSPReservationsCalendar-navigation .dopbsp-remove-btn{
+    background-position: -40px -80px;
+    display: none;
+    left: 51px;
+    top: 9px;
+}
+
+.DOPBSPReservationsCalendar-navigation .dopbsp-remove-btn.dopbsp-no-add{
+    left: 9px;
+}
+
+.DOPBSPReservationsCalendar-navigation .dopbsp-previous-btn{
+    background-position: -80px -80px;
+    display: none;
+    right: 51px;
+    top: 9px;
+}
+
+.DOPBSPReservationsCalendar-navigation .dopbsp-next-btn{
+    background-position: -120px -80px;
+    right: 9px;
+    top: 9px;
+}
+
+.DOPBSPReservationsCalendar-navigation .dopbsp-add-btn .dopbsp-info,
+.DOPBSPReservationsCalendar-navigation .dopbsp-next-btn .dopbsp-info,
+.DOPBSPReservationsCalendar-navigation .dopbsp-previous-btn .dopbsp-info,
+.DOPBSPReservationsCalendar-navigation .dopbsp-remove-btn .dopbsp-info{
+    background-color: #252525;
+    color: #ffffff;
+    display: none;
+    font-family: 'Open Sans' !important;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    max-width: 230px;
+    margin: 42px 0 0 0;
+    padding: 10px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1000000;
+}
+
+.DOPBSPReservationsCalendar-navigation .dopbsp-next-btn .dopbsp-info,
+.DOPBSPReservationsCalendar-navigation .dopbsp-previous-btn .dopbsp-info{
+    right: 0;
+}
+
+.DOPBSPReservationsCalendar-navigation .dopbsp-add-btn:hover .dopbsp-info,
+.DOPBSPReservationsCalendar-navigation .dopbsp-next-btn:hover .dopbsp-info,
+.DOPBSPReservationsCalendar-navigation .dopbsp-previous-btn:hover .dopbsp-info,
+.DOPBSPReservationsCalendar-navigation .dopbsp-remove-btn:hover .dopbsp-info{
+    display: block;
+}
+
+.DOPBSPReservationsCalendar-navigation .dopbsp-month-year{
+    color: #464646;
+    font-family: 'Open Sans' !important;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 0;
+    padding: 9px 9px 10px 9px;
+    text-align: center;
+}
+
+.DOPBSPReservationsCalendar-navigation .dopbsp-month-year.dopbsp-style-small{
+    padding: 59px 9px 10px 9px;
+    text-align: left;
+}
+
+.DOPBSPReservationsCalendar-navigation .dopbsp-week{
+    margin: 0;
+    overflow: hidden;
+    padding: 0 4px 9px 4px;
+}
+
+.DOPBSPReservationsCalendar-navigation .dopbsp-week .dopbsp-day{
+    color: #898989;
+    display: block;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px;
+    line-height: 20px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/*
+ * ***************************************************************************** End navigation.
+ */
+
+/*
+ * ***************************************************************************** Begin calendar.
+ */
+.DOPBSPReservationsCalendar-calendar{
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+
+.DOPBSPReservationsCalendar-month{
+    border: none;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.DOPBSPReservationsCalendar-month-year{
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    color: #464646;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 38px;
+    height: 38px;
+    margin: 20px 0 5px 0;
+    overflow: hidden;
+    padding: 0 0 0 9px;
+    text-align: left;
+}
+
+/*
+ * ***************************************************************** Begin days.
+ */
+.DOPBSPReservationsCalendar-day{
+    border: 1px solid #cccccc;
+    padding: 0;
+    vertical-align: top;
+}
+
+.DOPBSPReservationsCalendar-day .dopbsp-head{
+    color: #464646;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 29px;
+    margin: 0;
+    padding: 0 10px 0 5%;
+    text-align: left;
+}
+
+.DOPBSPReservationsCalendar-day .dopbsp-body{
+    padding: 0 0 5px 0 !important;
+    width: auto !important;
+}
+
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block{
+    border-bottom: 1px solid transparent;
+    height: 19px;
+}
+
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-left{
+    background: transparent;
+    float: left;
+    height: 19px;
+    width: 3%;
+}
+
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-content{
+    background: transparent;
+    color: #ffffff;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 19px;
+    height: 19px;
+    overflow: hidden;
+    text-align: left;
+    text-indent: 5px;
+    width: 94%;
+    word-break: break-all;
+}
+
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-right{
+    background: transparent;
+    float: left;
+    height: 19px;
+    width: 3%;
+}
+
+/*
+ * Pending reservation.
+ */
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-left.dopbsp-pending,
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-content.dopbsp-pending,
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-right.dopbsp-pending{
+    cursor: pointer;
+    background: #000000 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your PENDING color. */
+}
+
+/*
+ * Approved reservation.
+ */
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-left.dopbsp-approved,
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-content.dopbsp-approved,
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-right.dopbsp-approved{
+    cursor: pointer;
+    background: #9cbc72 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your APPROVED color. */
+}
+
+/* 
+ * Rejected reservation.
+ */
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-left.dopbsp-rejected,
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-content.dopbsp-rejected,
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-right.dopbsp-rejected{
+    cursor: pointer;
+    background: #f1705c !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your REJECTED color. */
+}
+
+/* 
+ * Canceled reservation.
+ */
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-left.dopbsp-canceled,
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-content.dopbsp-canceled,
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-right.dopbsp-canceled{
+    cursor: pointer;
+    background: #fdaa29 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your CANCELED color. */
+}
+
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-right.dopbsp-pending,
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-right.dopbsp-approved,
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-right.dopbsp-rejected,
+.DOPBSPReservationsCalendar-day .dopbsp-body .dopbsp-block .dopbsp-bind-right.dopbsp-canceled{
+    float: right;
+    margin-right: -0.5px;
+    margin-top: -19px;
+    width: 6%;
+}
+
+.DOPBSPReservationsCalendar-day:last-child .dopbsp-body .dopbsp-block .dopbsp-bind-right.dopbsp-pending,
+.DOPBSPReservationsCalendar-day:last-child .dopbsp-body .dopbsp-block .dopbsp-bind-right.dopbsp-approved,
+.DOPBSPReservationsCalendar-day:last-child .dopbsp-body .dopbsp-block .dopbsp-bind-right.dopbsp-rejected,
+.DOPBSPReservationsCalendar-day:last-child .dopbsp-body .dopbsp-block .dopbsp-bind-right.dopbsp-canceled{
+    float: right;
+    margin-right: 0;
+    margin-top: 0;
+    width: 3%;
+}
+
+/*
+ * Last month.
+ */
+.DOPBSPReservationsCalendar-day.dopbsp-last-month{
+    opacity: 0.5;
+}
+
+/* 
+ * Past day.
+ */
+.DOPBSPReservationsCalendar-day.dopbsp-past-day{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHUlEQVQIW2NkAIJPnz795+PjY2SEMUCCjCACJgsA6J4L2bEDqaQAAAAASUVORK5CYII=) repeat;
+}
+
+.DOPBSPReservationsCalendar-day.dopbsp-past-day .dopbsp-head{
+    color: #c8c8c8;
+    font-weight: 300;
+}
+
+/* 
+ * Current month.
+ */
+.DOPBSPReservationsCalendar-day.dopbsp-curr-month{
+}
+
+/* 
+ * Next month.
+ */
+.DOPBSPReservationsCalendar-day.dopbsp-next-month .dopbsp-head{
+    color: #c8c8c8;
+    font-weight: 300;
+}
+
+/* 
+ * Mask day.
+ */
+.DOPBSPReservationsCalendar-day.dopbsp-mask{
+    border: none;
+    cursor: default;
+    opacity: 0;  
+}
+
+/* 
+ * Hide day.
+ */
+.DOPBSPReservationsCalendar-day.dopbsp-hide{
+    display: none;
+}
+/*
+ * ******************************************************************* End days.
+ */ 
+
+/*
+ * ***************************************************************************** End sidebar.
+ */
+
+/*
+ * ***************************************************************************** Begin tooltip.
+ */
+.DOPBSPReservationsCalendar-tooltip{
+    background: #ffffff;
+    border: 1px solid #464646;
+    color: #acacac;
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    left: 0px;
+    line-height: 20px;
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    width: 688px;
+    z-index: 1000000;
+}
+
+/*
+ * Data module.
+ */
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper{
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td{
+    border-right: 1px solid #cccccc;
+    padding: 0;
+    vertical-align: top;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td:last-child{
+    border: none;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module{
+    background: #ffffff;
+    margin: 0 0 10px 0;
+    width: 100%;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-head{
+    padding: 10px 0 0 0;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-head h3{
+    background: #eeeeee;
+    border: none !important;
+    color: #464646;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 0 0 10px 0;
+    padding: 0 10px !important;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body{
+    padding: 0;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body em{
+    color: #acacac;
+    display: block;
+    font-weight: 300;
+    line-height: 15px;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field{
+    overflow: hidden;
+    margin: 0;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field em{
+    margin: 0;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field label{
+    color: #666666;
+    float: left;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 0;
+    padding: 0 5px 0 10px;
+    width: 80px;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field .dopbsp-data-value{
+    color: #666666;
+    float: left;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 15px;
+    padding: 0;
+    width: 125px;
+    word-break: break-all;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field .dopbsp-data-value a{
+    color: #ff6300;
+    text-decoration: none;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field .dopbsp-data-value a:hover{
+    text-decoration: underline;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field .dopbsp-data-value .dopbsp-info-price{
+}
+
+/*
+ * Status field.
+ */
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field.dopbsp-approved .dopbsp-data-value{
+    color: #9cbc72 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your APPROVED color. */
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field.dopbsp-canceled .dopbsp-data-value{
+    color: #fdaa29 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your CANCELED color. */
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field.dopbsp-pending .dopbsp-data-value{
+    color: #000000 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your PENDING color. */
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field.dopbsp-rejected .dopbsp-data-value{
+    color: #f1705c !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your REJECTED color. */
+}
+
+/*
+ * Price field.
+ */
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field.dopbsp-price label,
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field.dopbsp-price-total label{
+    color: #ff6300;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field.dopbsp-price .dopbsp-data-value,
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field.dopbsp-price-total .dopbsp-data-value{
+    color: #ff6300;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field.dopbsp-price-total .dopbsp-data-value{
+    color: #ff6300;
+}
+
+/*
+ * No data field.
+ */
+.DOPBSPReservationsCalendar-tooltip .dopbsp-data-module-wrapper td .dopbsp-data-module .dopbsp-data-body .dopbsp-data-field.dopbsp-no-data .dopbsp-data-value{
+    color: #acacac;
+    font-size: 11px;
+    font-style: italic;
+    padding: 0;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-instructions{
+    border-top: 1px solid #cccccc;
+    color: #acacac;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0;
+    padding: 19px 0 18px 10px;
+}
+
+.DOPBSPReservationsCalendar-tooltip.dopbsp-selected .dopbsp-instructions{
+    display: none;
+}
+
+/*
+ * Buttons
+ */
+.DOPBSPReservationsCalendar-tooltip .dopbsp-buttons-wrapper{
+    border-top: 1px solid #cccccc;
+    display: none;
+    overflow: hidden;
+    padding: 19px 10px 18px 0;
+}
+
+.DOPBSPReservationsCalendar-tooltip.dopbsp-selected .dopbsp-buttons-wrapper{
+    display: block;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-buttons-wrapper .dopbsp-button-approve,
+.DOPBSPReservationsCalendar-tooltip .dopbsp-buttons-wrapper .dopbsp-button-reject,
+.DOPBSPReservationsCalendar-tooltip .dopbsp-buttons-wrapper .dopbsp-button-cancel,
+.DOPBSPReservationsCalendar-tooltip .dopbsp-buttons-wrapper .dopbsp-button-delete,
+.DOPBSPReservationsCalendar-tooltip .dopbsp-buttons-wrapper .dopbsp-button-close{
+    color: #ffffff;
+    display: block;
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0 0 0 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 80px;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-buttons-wrapper .dopbsp-button-approve{
+    background: #9cbc72 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your APPROVED color. */
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-buttons-wrapper .dopbsp-button-reject{
+    background: #f1705c !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your REJECTED color. */
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-buttons-wrapper .dopbsp-button-cancel{
+    background: #fdaa29 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your CANCELED color. */
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-buttons-wrapper .dopbsp-button-delete{
+    background: #fd4c29 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DELETE color. */
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-buttons-wrapper .dopbsp-button-close{
+    background: #464646 !important;
+}
+
+.DOPBSPReservationsCalendar-tooltip .dopbsp-buttons-wrapper .dopbsp-button-approve:hover,
+.DOPBSPReservationsCalendar-tooltip .dopbsp-buttons-wrapper .dopbsp-button-reject:hover,
+.DOPBSPReservationsCalendar-tooltip .dopbsp-buttons-wrapper .dopbsp-button-cancel:hover,
+.DOPBSPReservationsCalendar-tooltip .dopbsp-buttons-wrapper .dopbsp-button-delete:hover,
+.DOPBSPReservationsCalendar-tooltip .dopbsp-buttons-wrapper .dopbsp-button-close:hover{
+    background: #ff6300 !important;
+}
+/*
+ * ***************************************************************************** End tooltip.
+ */
+
+/*
+ * ***************************************************************************** Begin retina.
+ */
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi){
+    .DOPBSPReservationsCalendar-navigation .dopbsp-add-btn,
+    .DOPBSPReservationsCalendar-navigation .dopbsp-next-btn,
+    .DOPBSPReservationsCalendar-navigation .dopbsp-previous-btn,
+    .DOPBSPReservationsCalendar-navigation .dopbsp-remove-btn{
+        background-image: url('../images/sprite-retina.png') !important;
+        background-size: 600px 500px !important;
+    }
+}
+/*
+ * ***************************************************************************** End retina.
+ */

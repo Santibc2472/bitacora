@@ -1,0 +1,937 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin
+* Version                 : 2.1.1
+* File                    : assets/gui/css/jquery.dop.backend.BSPCalendar.css
+* File Version            : 1.0.1
+* Created / Last Modified : 26 August 2015
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Back end calendar jQuery plugin stylesheet.
+*/
+
+/*
+ * ***************************************************************************** Container
+ */
+.DOPBSPCalendar-container{
+    background: none;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.DOPBSPCalendar-clear{
+    clear: both;
+}
+
+/*
+ * ***************************************************************************** Begin navigation.
+ */
+.DOPBSPCalendar-navigation{
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    margin: 0 0 5px 0;
+    padding: 0;
+    position: relative;
+}
+
+.DOPBSPCalendar-navigation .add-btn,
+.DOPBSPCalendar-navigation .next-btn,
+.DOPBSPCalendar-navigation .previous-btn,
+.DOPBSPCalendar-navigation .remove-btn{
+    background-color: #c9c9c9;
+    background-image:url('../images/sprite.png');
+    display: block;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 40px;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;
+}
+
+.DOPBSPCalendar-navigation .add-btn:hover,
+.DOPBSPCalendar-navigation .next-btn:hover,
+.DOPBSPCalendar-navigation .previous-btn:hover,
+.DOPBSPCalendar-navigation .remove-btn:hover{
+    background-color: #ff6300;
+}
+
+.DOPBSPCalendar-navigation .add-btn{
+    background-position: 0 -80px;
+    left: 9px;
+    top: 9px;
+}
+
+.DOPBSPCalendar-navigation .remove-btn{
+    background-position: -40px -80px;
+    display: none;
+    left: 51px;
+    top: 9px;
+}
+
+.DOPBSPCalendar-navigation .previous-btn{
+    background-position: -80px -80px;
+    display: none;
+    right: 51px;
+    top: 9px;
+}
+
+.DOPBSPCalendar-navigation .next-btn{
+    background-position: -120px -80px;
+    right: 9px;
+    top: 9px;
+}
+
+.DOPBSPCalendar-navigation .add-btn .info,
+.DOPBSPCalendar-navigation .next-btn .info,
+.DOPBSPCalendar-navigation .previous-btn .info,
+.DOPBSPCalendar-navigation .remove-btn .info{
+    background-color: #252525;
+    color: #ffffff;
+    display: none;
+    font-family: 'Open Sans' !important;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    max-width: 230px;
+    margin: 42px 0 0 0;
+    padding: 10px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1000000;
+}
+
+.DOPBSPCalendar-navigation .next-btn .info,
+.DOPBSPCalendar-navigation .previous-btn .info{
+    right: 0;
+}
+
+.DOPBSPCalendar-navigation .add-btn:hover .info,
+.DOPBSPCalendar-navigation .next-btn:hover .info,
+.DOPBSPCalendar-navigation .previous-btn:hover .info,
+.DOPBSPCalendar-navigation .remove-btn:hover .info{
+    display: block;
+}
+
+.DOPBSPCalendar-navigation .month-year{
+    color: #464646;
+    font-family: 'Open Sans' !important;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 0;
+    padding: 9px 9px 10px 9px;
+    text-align: center;
+}
+
+.DOPBSPCalendar-navigation .week{
+    margin: 0;
+    overflow: hidden;
+    padding: 0 4px 9px 4px;
+}
+
+.DOPBSPCalendar-navigation .week .day{
+    color: #898989;
+    display: block;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px;
+    line-height: 20px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/*
+ * ***************************************************************************** End navigation.
+ */
+
+/*
+ * ***************************************************************************** Begin calendar.
+ */
+.DOPBSPCalendar-calendar{
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+
+.DOPBSPCalendar-month{
+    border: 1px solid #cccccc;
+    background: #eeeeee;
+    margin: 5px 0 0 0;
+    overflow: hidden;
+    padding: 9px 0 9px 5px;
+}
+
+.DOPBSPCalendar-month-year{
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    color: #464646;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 38px;
+    height: 38px;
+    margin: 20px 0 5px 0;
+    overflow: hidden;
+    padding: 0 0 0 9px;
+    text-align: left;
+}
+
+/*
+ * ***************************************************************** Begin days.
+ */
+.DOPBSPCalendar-day{
+    clear: none !important;
+    float: left;
+    margin:  0 0 2px 0;
+    padding: 0;
+}
+
+.DOPBSPCalendar-day .bind-left, 
+.DOPBSPCalendar-day .bind-right{
+    float: left;
+    opacity: 0;
+    width: 1px;
+}
+
+.DOPBSPCalendar-day .bind-left.enabled, 
+.DOPBSPCalendar-day .bind-right.enabled{
+    opacity: 1;
+}
+
+.DOPBSPCalendar-day .bind-left .header, 
+.DOPBSPCalendar-day .bind-right .header{
+    background-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-left: none !important;
+    border-right: none !important;
+    height: 17px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 1px !important;
+}
+
+.DOPBSPCalendar-day .bind-left .content, 
+.DOPBSPCalendar-day .bind-right .content{
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    line-height: 19px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 1px !important;
+}
+
+.DOPBSPCalendar-day .bind-content{
+    float: left;
+}
+
+.DOPBSPCalendar-day .bind-content .header{
+    background-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    display: block !important;
+    height: 17px !important;
+    margin: 0 !important;
+    overflow: hidden;
+    padding: 0 0 0 4px !important;
+    width: auto !important;
+}
+
+.DOPBSPCalendar-day .bind-content.group1 .header{
+    border-right: none !important;
+}
+
+.DOPBSPCalendar-day .bind-content.group2 .header{
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.DOPBSPCalendar-day .bind-content.group3 .header{
+    border-left: none !important;
+}
+
+.DOPBSPCalendar-day .bind-content .header .day{
+    color: #ffffff;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    line-height: 17px !important;
+    margin: 0;
+    padding: 0;
+}
+
+.DOPBSPCalendar-day .bind-content .header .hours,
+.DOPBSPCalendar-day .bind-content .header .info,
+.DOPBSPCalendar-day .bind-content .header .notes{
+    background-color: transparent;
+    background-image: url('../images/sprite.png');
+    float: right;
+    height: 17px;
+    margin: 0 0 0 1px;
+    width: 17px;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+.DOPBSPCalendar-day .bind-content .header .hours:hover,
+.DOPBSPCalendar-day .bind-content .header .info:hover,
+.DOPBSPCalendar-day .bind-content .header .notes:hover{
+    background-color: #ff6300;
+}
+
+.DOPBSPCalendar-day .bind-content .header .hours{
+    background-position: -162px -82px;
+}
+
+.DOPBSPCalendar-day .bind-content .header .info{
+    background-position: -162px -102px;
+}
+
+.DOPBSPCalendar-day .bind-content .header .notes{
+    background-position: -182px -102px;
+}
+
+.DOPBSPCalendar-day .bind-content .content{
+    background-color: #ffffff !important;
+    border: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-top: none !important;
+    color: #222222 !important;
+    display: block !important;
+    float: none !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    line-height: 19px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    vertical-align: middle !important;
+    width: auto !important;
+}
+
+.DOPBSPCalendar-day .bind-content.group1 .content{
+    border-right: none !important;
+}
+
+.DOPBSPCalendar-day .bind-content.group2 .content{
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.DOPBSPCalendar-day .bind-content.group3 .content{
+    border-left: none !important;
+}
+
+.DOPBSPCalendar-day .bind-content .content .old-price{
+    color: #acacac;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 300;
+    line-height: 19px !important;
+    margin: 0 !important;
+    padding: 0 0 0 5px !important;
+    text-decoration: line-through;
+}
+
+.DOPBSPCalendar-day .bind-content .content .price{
+    color: #464646;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    line-height: 19px !important;
+    margin: 0 !important;
+    padding: 0 0 0 5px !important;
+}
+
+.DOPBSPCalendar-day .bind-content .content .available{
+    color: #acacac;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 300;
+    line-height: 19px !important;
+    padding: 0 0 0 5px !important;
+    width: 100%;
+}
+
+/*
+ * Last month day.
+ */
+.DOPBSPCalendar-day.last-month{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/* 
+ * Past day.
+ */
+.DOPBSPCalendar-day.past-day{
+    opacity: 0.25;
+}
+
+/*
+ * Current month day.
+ */
+.DOPBSPCalendar-day.curr-month{
+    cursor: pointer;
+}
+
+/*
+ * Next month day.
+ */
+.DOPBSPCalendar-day.next-month{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/*
+ * Available day.
+ */
+.DOPBSPCalendar-day.available .header{
+    background-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+    border-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPCalendar-day.available .content{
+    border-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+/*
+ * Booked day.
+ */
+.DOPBSPCalendar-day.booked .header{
+    background-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+    border-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPCalendar-day.booked .content{
+    border-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+/*
+ * Special day.
+ */
+.DOPBSPCalendar-day.special .header{
+    background-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+    border-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPCalendar-day.special .content{
+    border-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+/*
+ * Unavailable day.
+ */
+.DOPBSPCalendar-day.unavailable .header{
+    background-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+    border-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPCalendar-day.unavailable .content{
+    border-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+/*
+ * Selected day.
+ */
+.DOPBSPCalendar-day.selected .header{
+    background-color: #464646 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+    border-color: #464646 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPCalendar-day.selected .header .notes{
+    display: none;
+}
+
+.DOPBSPCalendar-day.selected .header .info{
+    display: none;
+}
+
+.DOPBSPCalendar-day.selected .header .hours{
+    display: none;
+}
+
+.DOPBSPCalendar-day.selected .content{
+    color: #464646 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+    border-color: #464646 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+/*
+ * Day jump day.
+ */
+.DOPBSPCalendar-day.day-jump .header{
+    background-color: #464646 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DAY JUMP color. */
+    border-color: #464646 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DAY JUMP color. */
+    -webkit-transition: background 1000ms linear, border-color 1000ms linear;
+    -moz-transition: background 1000ms linear, border-color 1000ms linear;
+    -ms-transition: background 1000ms linear, border-color 1000ms linear;
+    -o-transition: background 1000ms linear, border-color 1000ms linear;
+    transition: background 1000ms linear, border-color 1000ms linear;
+}
+
+.DOPBSPCalendar-day.day-jump .content{
+    border-color: #464646 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DAY JUMP color. */
+    -webkit-transition: border-color 1000ms linear;
+    -moz-transition: border-color 1000ms linear;
+    -ms-transition: border-color 1000ms linear;
+    -o-transition: border-color 1000ms linear;
+    transition: border-color 1000ms linear;
+}
+
+/*
+ * Mask day.
+ */
+.DOPBSPCalendar-day.mask{
+    cursor: default;
+    opacity: 0;  
+}
+
+/*
+ * Hide day.
+ */
+.DOPBSPCalendar-day.hide{
+    display: none;
+}
+
+/*
+ * Grouped days - first column.
+ */
+.DOPBSPCalendar-day.first-column .bind-left{
+    opacity: 0 !important;
+}
+
+/*
+ * Grouped days - last column.
+ */
+.DOPBSPCalendar-day.last-column .bind-content.group1 .header .ci,
+.DOPBSPCalendar-day.last-column .bind-content.group2 .header .ci{
+    right: 0px !important;
+}
+
+.DOPBSPCalendar-day.last-column .bind-right{
+    opacity: 0 !important;
+}
+/*
+ * ******************************************************************* End days.
+ */ 
+
+/*
+ * **************************************************************** Begin hours.
+ */ 
+.DOPBSPCalendar-hours{
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    border-top: none;
+    display: none;
+    padding: 5px 5px 4px 5px;
+}
+
+.DOPBSPCalendar-hour{
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    text-align: left;
+}
+
+.DOPBSPCalendar-hour .bind-top, 
+.DOPBSPCalendar-hour .bind-bottom{
+    background-color: #ffffff;
+    border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-bottom: none;
+    border-top: none;
+    height: 1px;
+    opacity: 0; 
+}
+
+.DOPBSPCalendar-hour .bind-top .hour, 
+.DOPBSPCalendar-hour .bind-bottom .hour{
+    background: #ffffff;
+    color: #ffffff;
+    float: left;
+    line-height: 1px !important;
+    padding: 0 5px;
+}
+
+.DOPBSPCalendar-hour .bind-top.enabled, 
+.DOPBSPCalendar-hour .bind-bottom.enabled{
+    opacity: 1;
+}
+
+.DOPBSPCalendar-hour .bind-top.enabled .hour, 
+.DOPBSPCalendar-hour .bind-bottom.enabled .hour{
+    background-color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+}
+
+.DOPBSPCalendar-hour .bind-content{    
+    background-color: #ffffff;
+    border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    height: 16px;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.DOPBSPCalendar-hour .bind-content.group1{
+    border-bottom: none;
+}
+
+.DOPBSPCalendar-hour .bind-content.group2{
+    border-bottom: none;
+    border-top: none;
+}
+
+.DOPBSPCalendar-hour .bind-content.group3{
+    border-top: none;
+}
+
+.DOPBSPCalendar-hour .bind-content .hour{    
+    background-color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    color: #ffffff;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    line-height: 16px !important;
+    padding: 0 5px 0 4px;
+}
+
+.DOPBSPCalendar-hour .bind-content .price, 
+.DOPBSPCalendar-hour .bind-content .price-promo{
+    color: #464646;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    padding: 0 0 0 10px !important;
+}
+
+.DOPBSPCalendar-hour .bind-content .old-price{
+    color: #acacac;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    padding: 0 0 0 5px !important;
+    text-decoration: line-through;
+}
+
+.DOPBSPCalendar-hour .bind-content .available{
+    color: #acacac;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 11px !important;
+    line-height: 16px !important;
+    padding: 0 10px !important;
+}
+
+.DOPBSPCalendar-hour .bind-content .info,
+.DOPBSPCalendar-hour .bind-content .notes{
+    background-color: #cccccc;
+    background-image: url('../images/sprite.png');
+    float: right;
+    height: 16px;
+    margin: 0;
+    width: 16px;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+.DOPBSPCalendar-hour .bind-content .info:hover,
+.DOPBSPCalendar-hour .bind-content .notes:hover{
+    background-color: #ff6300 !important;
+}
+
+.DOPBSPCalendar-hour .bind-content .info{
+    background-position: -162px -102px;
+}
+
+.DOPBSPCalendar-hour .bind-content .notes{
+    background-position: -182px -102px;
+}
+
+/*
+ * Available hour.
+ */
+.DOPBSPCalendar-hour.available .hour,
+.DOPBSPCalendar-hour.available .bind-content .info,
+.DOPBSPCalendar-hour.available .bind-content .notes{    
+    background-color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.available .bind-content{    
+    border-color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.available .bind-top{    
+    border-color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.available .bind-top .hour{    
+    color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.available .bind-bottom{    
+    border-color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.available .bind-bottom .hour{    
+    color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.available .bind-top.enabled .hour,
+.DOPBSPCalendar-hour.available .bind-bottom.enabled .hour{
+    background-color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+    color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+/*
+ * Booked hour.
+ */
+.DOPBSPCalendar-hour.booked .hour,
+.DOPBSPCalendar-hour.booked .bind-content .info,
+.DOPBSPCalendar-hour.booked .bind-content .notes{    
+    background-color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPCalendar-hour.booked .bind-content{    
+    border-color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPCalendar-hour.booked .bind-top{    
+    border-color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPCalendar-hour.booked .bind-top .hour{    
+    color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPCalendar-hour.booked .bind-bottom{    
+    border-color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPCalendar-hour.booked .bind-bottom .hour{    
+    color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPCalendar-hour.booked .bind-top.enabled .hour,
+.DOPBSPCalendar-hour.booked .bind-bottom.enabled .hour{
+    background-color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+    color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+/*
+ * Special hour.
+ */
+.DOPBSPCalendar-hour.special .hour,
+.DOPBSPCalendar-hour.special .bind-content .info,
+.DOPBSPCalendar-hour.special .bind-content .notes{    
+    background-color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPCalendar-hour.special .bind-content{    
+    border-color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPCalendar-hour.special .bind-top{    
+    border-color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPCalendar-hour.special .bind-top .hour{    
+    color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPCalendar-hour.special .bind-bottom{    
+    border-color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPCalendar-hour.special .bind-bottom .hour{    
+    color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPCalendar-hour.special .bind-top.enabled .hour,
+.DOPBSPCalendar-hour.special .bind-bottom.enabled .hour{
+    background-color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+    color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+/*
+ * Unavailable hour.
+ */
+.DOPBSPCalendar-hour.unavailable .hour,
+.DOPBSPCalendar-hour.unavailable .bind-content .info,
+.DOPBSPCalendar-hour.unavailable .bind-content .notes{
+    background-color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.unavailable .bind-content{    
+    border-color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.unavailable .bind-top{    
+    border-color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.unavailable .bind-top .hour{    
+    color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.unavailable .bind-bottom{    
+    border-color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.unavailable .bind-bottom .hour{    
+    color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.unavailable .bind-top.enabled .hour,
+.DOPBSPCalendar-hour.unavailable .bind-bottom.enabled .hour{
+    background-color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+    color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+/*
+ * Selected hour.
+ */
+.DOPBSPCalendar-hour.selected .bind-content{    
+    border-color: #464646; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPCalendar-hour.selected .bind-content .hour{    
+    background: #464646; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPCalendar-hour.selected .bind-top{    
+    border-color: #464646; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPCalendar-hour.selected .bind-top .hour{    
+    color: #464646; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPCalendar-hour.selected .bind-bottom{    
+    border-color: #464646; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPCalendar-hour.selected .bind-bottom .hour{    
+    color: #464646; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPCalendar-hour.selected .bind-top .hour,
+.DOPBSPCalendar-hour.selected .bind-bottom .hour,
+.DOPBSPCalendar-hour.selected .bind-top.enabled .hour,
+.DOPBSPCalendar-hour.selected .bind-bottom.enabled .hour{ 
+    background-color: #464646; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+    color: #464646; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBSPCalendar-hour.selected .bind-content .notes{
+    display: none;
+}
+
+.DOPBSPCalendar-hour.selected .bind-content .info{
+    display: none;
+}
+
+/*
+ * Past hour.
+ */
+
+.DOPBSPCalendar-hour.past-hour{  
+    cursor: default;
+    opacity: 0.25;
+}
+
+.DOPBSPCalendar-hour.past-hour .bind-content .notes{
+    display: none;
+}
+
+.DOPBSPCalendar-hour.past-hour .bind-content .info{
+    display: none;
+}
+/*
+ * ****************************************************************** End hours.
+ */
+/*
+ * ***************************************************************************** End calendar.
+ */
+
+/*
+ * ***************************************************************************** Begin form.
+ */
+.DOPBSPCalendar-form-buttons{
+    height: 40px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.DOPBSPCalendar-form{
+    margin: 0;
+    padding: 0;
+}
+
+.DOPBSPCalendar-form .input-wrapper{
+    margin: 0 0 10px 0;
+}
+
+.DOPBSPCalendar-form .input-wrapper label.for-checkbox{
+    display: block;
+    float: none !important;
+    padding: 0 0 0 23px !important;
+}
+
+.DOPBSPCalendar-form .input-wrapper label.for-textarea{
+    margin: 0;
+    width: 100%;
+}
+
+.DOPBSPCalendar-form .input-wrapper textarea{
+    width: 100% !important;
+}
+/*
+ * ***************************************************************************** End form.
+ */
+
+/*
+ * ***************************************************************************** Begin info popup.
+ */
+.DOPBSPCalendar-tooltip{
+    background: #ffffff;
+    border: 1px solid #ff6300;
+    color: #464646;
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    left: 0px;
+    line-height: 20px;
+    max-width: 500px;
+    padding: 9px;
+    position: absolute;
+    top: 0px;
+    z-index: 1000000;
+}
+
+.DOPBSPCalendar-tooltip.text{
+    padding: 19px 9px;
+}
+/*
+ * ***************************************************************************** End info popup.
+ */
